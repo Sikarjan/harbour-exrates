@@ -1,10 +1,41 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
+import QtQuick.LocalStorage 2.0
 import "pages"
+import "js/parser.js" as Parser
 
 ApplicationWindow
 {
     initialPage: Component { FirstPage { } }
     cover: Qt.resolvedUrl("cover/CoverPage.qml")
     allowedOrientations: defaultAllowedOrientations
+
+    ListModel {
+        id: rateModel
+
+        property string baseCurrency: ""
+        property string baseName: ""
+        property string cName: ""
+        property string cFullName: ""
+        property real rate: 1
+        property string rateDate: ""
+        property bool hasError: false
+        property string errorMsg: ""
+
+        onCNameChanged: {
+            cFullName = Parser.cNames[cName]
+            Parser.setSetting("cName", rateModel.cName)
+            Parser.setSetting("cRate", rateModel.rate)
+        }
+    }
+    ListModel {
+        id: baseRateModel
+    }
+
+    Component.onCompleted: {
+        Parser.initialize()
+        if(Parser.getSetting("lastUpdate") !== ""){
+            Parser.getSettings()
+        }
+    }
 }

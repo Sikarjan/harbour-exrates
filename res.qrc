@@ -1,2 +1,39 @@
-<!DOCTYPE RCC>
-<RCC version="1.0"/>
+<RCC>
+    <qresource prefix="/">
+        <file>icons/flags/AUD.png</file>
+        <file>icons/flags/BRL.png</file>
+        <file>icons/flags/CAD.png</file>
+        <file>icons/flags/CHF.png</file>
+        <file>icons/flags/CNY.png</file>
+        <file>icons/flags/CZK.png</file>
+        <file>icons/flags/DKK.png</file>
+        <file>icons/flags/GBP.png</file>
+        <file>icons/flags/HUF.png</file>
+        <file>icons/flags/IDR.png</file>
+        <file>icons/flags/ILS.png</file>
+        <file>icons/flags/INR.png</file>
+        <file>icons/flags/ISK.png</file>
+        <file>icons/flags/JPY.png</file>
+        <file>icons/flags/KRW.png</file>
+        <file>icons/flags/MXN.png</file>
+        <file>icons/flags/MYR.png</file>
+        <file>icons/flags/NOK.png</file>
+        <file>icons/flags/NZD.png</file>
+        <file>icons/flags/PEN.png</file>
+        <file>icons/flags/PHP.png</file>
+        <file>icons/flags/PLN.png</file>
+        <file>icons/flags/RON.png</file>
+        <file>icons/flags/RUB.png</file>
+        <file>icons/flags/SAR.png</file>
+        <file>icons/flags/SEK.png</file>
+        <file>icons/flags/SGD.png</file>
+        <file>icons/flags/THB.png</file>
+        <file>icons/flags/TRY.png</file>
+        <file>icons/flags/TWD.png</file>
+        <file>icons/flags/USD.png</file>
+        <file>icons/flags/ZAR.png</file>
+        <file>icons/flags/EUR.png</file>
+        <file>icons/flags/HKD.png</file>
+        <file>icons/app/appIcon.png</file>
+    </qresource>
+</RCC>

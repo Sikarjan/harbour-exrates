@@ -7,24 +7,24 @@ Page {
     // The effective value will be restricted by ApplicationWindow.allowedOrientations
     allowedOrientations: Orientation.All
 
-    SilicaListView {
-        id: listView
-        model: 20
+    Column {
         anchors.fill: parent
-        header: PageHeader {
-            title: qsTr("Nested Page")
-        }
-        delegate: BackgroundItem {
-            id: delegate
+        x: Theme.horizontalPageMargin
+        width: parent.width -2*x
 
-            Label {
-                x: Theme.horizontalPageMargin
-                text: qsTr("Item") + " " + index
-                anchors.verticalCenter: parent.verticalCenter
-                color: delegate.highlighted ? Theme.highlightColor : Theme.primaryColor
-            }
-            onClicked: console.log("Clicked " + index)
+        PageHeader {
+            title: qsTr("App Settings")
         }
+
         VerticalScrollDecorator {}
+
+        ComboBox {
+            width: parent.width
+            label: qsTr("Source")
+
+            menu: ContextMenu {
+                MenuItem { text: "exchangerate-api.com" }
+            }
+        }
     }
 }

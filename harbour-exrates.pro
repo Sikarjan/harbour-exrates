@@ -19,13 +19,15 @@ SOURCES += src/harbour-exrates.cpp
 DISTFILES += qml/harbour-exrates.qml \
     qml/cover/CoverPage.qml \
     qml/pages/FirstPage.qml \
-    qml/pages/SecondPage.qml \
     rpm/harbour-exrates.changes.in \
     rpm/harbour-exrates.changes.run.in \
     rpm/harbour-exrates.spec \
     rpm/harbour-exrates.yaml \
     translations/*.ts \
-    harbour-exrates.desktop
+    harbour-exrates.desktop \
+    qml/pages/OptionPage.qml \
+    qml/pages/BasePage.qml \
+    qml/pages/AboutPage.qml
 
 SAILFISHAPP_ICONS = 86x86 108x108 128x128 172x172
 
@@ -38,3 +40,6 @@ CONFIG += sailfishapp_i18n
 # following TRANSLATIONS line. And also do not forget to
 # modify the localized app name in the the .desktop file.
 TRANSLATIONS += translations/harbour-exrates-de.ts
+
+RESOURCES += \
+    res.qrc
