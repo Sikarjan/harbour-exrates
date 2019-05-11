@@ -17,15 +17,17 @@ ApplicationWindow
         property string baseName: ""
         property string cName: ""
         property string cFullName: ""
-        property real rate: 1
+        property real rate: 0
         property string rateDate: ""
         property bool hasError: false
         property string errorMsg: ""
 
         onCNameChanged: {
             cFullName = Parser.cNames[cName]
-            Parser.setSetting("cName", rateModel.cName)
-            Parser.setSetting("cRate", rateModel.rate)
+            if(rateModel.rate > 0){
+                Parser.setSetting("cName", rateModel.cName)
+                Parser.setSetting("cRate", rateModel.rate)
+            }
         }
     }
     ListModel {

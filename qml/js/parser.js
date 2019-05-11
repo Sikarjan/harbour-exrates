@@ -3,7 +3,7 @@ var response
 var cNamesTxt = '{"AUD":"Australian Dollar", "BRL":"Brazilian Real", "CAD":"Canadian Dollar", "CHF":"Swiss Franc", "CNY":"Chinese Renminbi", "CZK":"Czech Koruna", "DKK":"Danish Krone", "EUR":"Euro", "GBP":"Pound Sterling", "HKD":"Hong Kong Dollar", "HUF":"Hungarian Forint", "IDR":"Indonesian Rupiah", "ILS":"Israeli Shekel", "INR":"Indian Rupee", "ISK":"Icelandic Krona", "JPY":"Japanese Yen", "KRW":"South Korean Won", "MXN":"Mexican Peso", "MYR":"Malaysian Ringgit", "NOK":"Norwegian Krone", "NZD":"New Zealand Dollar", "PEN":"Peruvian Nuevo Sol", "PHP":"Philippine Peso", "PLN":"Polish Zloty", "RON":"Romanian Leu", "RUB":"Russian Ruble", "SAR":"Saudi Riyal", "SEK":"Swedish Krona", "SGD":"Singapore Dollar", "THB":"Thai Baht", "TRY":"Turkish Lira", "TWD":"New Taiwan Dollar", "USD":"US Dollar", "ZAR":"South African Rand" }'
 var cNames = JSON.parse(cNamesTxt)
 
-function getBaseRates(currency){
+function getBaseRates(currency, save){
     var xhr = new XMLHttpRequest();
     xhr.open("POST", "https://api.exchangerate-api.com/v4/latest/"+currency);
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
@@ -17,25 +17,41 @@ function getBaseRates(currency){
                 rateModel.errorMsg = qsTr("The api respnded with an error. Currently no exchange rates are available. Please try again later or file a bug report on GitHub, see about page for details.")
             }else{
                 rateModel.hasError = false
-                editResponse(response, currency);
+                if(save){
+                    editResponse(response, currency);
+                }else{
+                    updateBaseRateModel(response);
+                }
             }
         }else{
             rateModel.hasError = true
             rateModel.errorMsg = qsTr("The api did not respond. Please try again laiter.")
-            console.log(xhr.error)
+            console.log(xhr.statusText)
         }
       }
     };
 
     xhr.send();
 }
+function updateBaseRateModel(response){
+    baseRateModel.clear()
+
+    for(var currency in response.rates){
+        baseRateModel.append({"currency": currency, "cName": cNames[currency], "rate": parseFloat(response.rates[currency])})
+    }
+}
 
 function editResponse(response, baseRate){
     rateModel.clear()
-    baseRateModel.clear()
     clearTable()
 
-    rateModel.rateDate = new Date(response.time_last_updated*1000);
+    var time = new Date(response.time_last_updated*1000);
+    var options = {
+        year: "numeric", month: "2-digit",
+        day: "2-digit", hour: "2-digit", minute: "2-digit"
+    };
+    rateModel.rateDate = time.toLocaleString(Qt.locale().name, options)
+
     setSetting("lastUpdate", rateModel.rateDate)
 
     var i = 0
@@ -44,7 +60,6 @@ function editResponse(response, baseRate){
             setSetting(currency, response.rates[currency])
             rateModel.append({"currency": currency, "cName": cNames[currency], "rate": parseFloat(response.rates[currency])})
         }
-        baseRateModel.append({"currency": currency, "cName": cNames[currency], "rate": parseFloat(response.rates[currency])})
     }
 }
 
@@ -67,7 +82,7 @@ function clearTable(){
 
     db.transaction(
                 function(tx) {
-                    tx.executeSql('DELETE FROM settings');
+                    tx.executeSql('DELETE FROM settings WHERE LENGTH(setting) < 5');
                 });
 }
 
@@ -116,5 +131,4 @@ function getSettings() {
             }
         }
     });
-    console.log()
 }

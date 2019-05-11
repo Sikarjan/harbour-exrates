@@ -33,7 +33,7 @@ Page {
             }
             MenuItem {
                 text: qsTr("Update Rates")
-                onClicked: Parser.getBaseRates(rateModel.baseCurrency)
+                onClicked: Parser.getBaseRates(rateModel.baseCurrency, true)
                 visible: rateModel.count > 1
             }
         }
@@ -67,7 +67,7 @@ Page {
                     font.pixelSize: Theme.fontSizeExtraLarge
                 }
                 Label {
-                    text: qsTr("Last update: ")+rateModel.rateDate.toLocaleString(Qt.locale())
+                    text: qsTr("Last update: ")+rateModel.rateDate
                     color: Theme.secondaryHighlightColor
                     font.pixelSize: Theme.fontSizeSmall 
                 }

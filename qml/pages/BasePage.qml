@@ -10,7 +10,7 @@ Page {
     allowedOrientations: Orientation.All
 
     Component.onCompleted: {
-        Parser.getBaseRates("EUR")
+        Parser.getBaseRates("EUR", false)
     }
 
     BusyIndicator {
@@ -49,7 +49,7 @@ Page {
             }
 
             onClicked: {
-                Parser.getBaseRates(currency)
+                Parser.getBaseRates(currency, true)
                 rateModel.baseName = cName
                 rateModel.baseCurrency = currency
                 Parser.setSetting("baseCurrency", currency)
