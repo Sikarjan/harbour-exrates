@@ -1,6 +1,6 @@
 Qt.include("QtQuick.LocalStorage");
 var response
-var cNamesTxt = '{"AUD":"Australian Dollar", "BRL":"Brazilian Real", "CAD":"Canadian Dollar", "CHF":"Swiss Franc", "CNY":"Chinese Renminbi", "CZK":"Czech Koruna", "DKK":"Danish Krone", "EUR":"Euro", "GBP":"Pound Sterling", "HKD":"Hong Kong Dollar", "HUF":"Hungarian Forint", "IDR":"Indonesian Rupiah", "ILS":"Israeli Shekel", "INR":"Indian Rupee", "ISK":"Icelandic Krona", "JPY":"Japanese Yen", "KRW":"South Korean Won", "MXN":"Mexican Peso", "MYR":"Malaysian Ringgit", "NOK":"Norwegian Krone", "NZD":"New Zealand Dollar", "PEN":"Peruvian Nuevo Sol", "PHP":"Philippine Peso", "PLN":"Polish Zloty", "RON":"Romanian Leu", "RUB":"Russian Ruble", "SAR":"Saudi Riyal", "SEK":"Swedish Krona", "SGD":"Singapore Dollar", "THB":"Thai Baht", "TRY":"Turkish Lira", "TWD":"New Taiwan Dollar", "USD":"US Dollar", "ZAR":"South African Rand" }'
+var cNamesTxt = '{"AUD":"Australian Dollar", "BGN":"Bulgarian Lev", "BRL":"Brazilian Real", "CAD":"Canadian Dollar", "CHF":"Swiss Franc", "CNY":"Chinese Renminbi", "CZK":"Czech Koruna", "DKK":"Danish Krone", "EUR":"Euro", "GBP":"Pound Sterling", "HKD":"Hong Kong Dollar", "HRK":"Croatian Kuna", "HUF":"Hungarian Forint", "IDR":"Indonesian Rupiah", "ILS":"Israeli Shekel", "INR":"Indian Rupee", "ISK":"Icelandic Krona", "JPY":"Japanese Yen", "KRW":"South Korean Won", "MXN":"Mexican Peso", "MYR":"Malaysian Ringgit", "NOK":"Norwegian Krone", "NZD":"New Zealand Dollar", "PEN":"Peruvian Nuevo Sol", "PHP":"Philippine Peso", "PLN":"Polish Zloty", "RON":"Romanian Leu", "RUB":"Russian Ruble", "SAR":"Saudi Riyal", "SEK":"Swedish Krona", "SGD":"Singapore Dollar", "THB":"Thai Baht", "TRY":"Turkish Lira", "TWD":"New Taiwan Dollar", "USD":"US Dollar", "ZAR":"South African Rand" }'
 var cNames = JSON.parse(cNamesTxt)
 
 function getBaseRates(currency, save){
@@ -14,7 +14,7 @@ function getBaseRates(currency, save){
             response = JSON.parse(xhr.responseText)
             if(typeof response.time_last_updated === 'undefined'){
                 rateModel.hasError = true
-                rateModel.errorMsg = qsTr("The api respnded with an error. Currently no exchange rates are available. Please try again later or file a bug report on GitHub, see about page for details.")
+                rateModel.errorMsg = qsTr("The api responded with an error. Currently no exchange rates are available. Please try again later or file a bug report on GitHub, see about page for details.")
             }else{
                 rateModel.hasError = false
                 if(save){
@@ -43,7 +43,7 @@ function updateBaseRateModel(response){
 
 function editResponse(response, baseRate){
     rateModel.clear()
-    clearTable()
+    clearCurrencies()
 
     var time = new Date(response.time_last_updated*1000);
     var options = {
@@ -54,35 +54,26 @@ function editResponse(response, baseRate){
 
     setSetting("lastUpdate", rateModel.rateDate)
 
-    var i = 0
     for(var currency in response.rates){
         if(currency !== baseRate){
-            setSetting(currency, response.rates[currency])
-            rateModel.append({"currency": currency, "cName": cNames[currency], "rate": parseFloat(response.rates[currency])})
+            setCurrValue(currency, response.rates[currency])
         }
     }
+
+    loadRateModel()
 }
 
 function getDatabase() {
     return LocalStorage.openDatabaseSync("Settings", "1.0", "StorageDatabase", 100000);
 }
 
-function initialize() {
+function initSettings() {
     var db = getDatabase();
 
     db.transaction(
                 function(tx) {
                     tx.executeSql('CREATE TABLE IF NOT EXISTS'+
                                   ' settings(setting TEXT UNIQUE, value TEXT)');
-                });
-}
-
-function clearTable(){
-    var db = getDatabase();
-
-    db.transaction(
-                function(tx) {
-                    tx.executeSql('DELETE FROM settings WHERE LENGTH(setting) < 5');
                 });
 }
 
@@ -110,7 +101,7 @@ function getSetting(setting) {
 
 function getSettings() {
     var db = getDatabase();
-    var res="";
+
     db.transaction(function(tx) {
         var rs = tx.executeSql('SELECT * FROM settings ORDER BY setting');
         if(rs.rows.length > 0){
@@ -126,9 +117,71 @@ function getSettings() {
                 }else if(rs.rows.item(i).setting === "cRate"){
                     rateModel.rate = rs.rows.item(i).value
                 }else{
-                    rateModel.append({"currency": rs.rows.item(i).setting, "cName": cNames[rs.rows.item(i).setting], "rate": parseFloat(rs.rows.item(i).value)})
+                    console.log("Unknown Setting: "+rs.rows.item(i).setting)
                 }
             }
         }
     });
+
+    loadRateModel()
+}
+
+function loadRateModel() {
+    var db = getDatabase();
+
+    db.transaction(function(tx) {
+        var rs = tx.executeSql('SELECT * FROM currencies WHERE rate <> 0 ORDER BY pos ASC');
+        if(rs.rows.length > 0){
+            for(var i=0;i<rs.rows.length;i++){
+                rateModel.append({"currency": rs.rows.item(i).currency, "cName": cNames[rs.rows.item(i).currency], "rate": rs.rows.item(i).rate})
+//console.log(rs.rows.item(i).pos + ": " +rs.rows.item(i).currency )
+            }
+        }
+    });
+}
+
+function initCurrencies(){
+    var db = getDatabase();
+
+    db.transaction(
+                function(tx) {
+                    tx.executeSql('CREATE TABLE IF NOT EXISTS'+
+                                  ' currencies(currency TEXT UNIQUE, rate REAL, pos INTEGER)');
+                   });
+}
+
+function setCurrValue(curr, value){
+    var db = getDatabase()
+    var res = ""
+    db.transaction(function(tx) {
+        var rs = tx.executeSql('INSERT OR REPLACE INTO currencies'+
+                               ' (currency, rate, pos) VALUES (?,?, COALESCE((SELECT pos FROM currencies WHERE currency = ?), 1));', [curr,value,curr]);
+        res = rs.rowsAffected > 0 ? "OK":"NOK";
+    });
+    return res;
+}
+
+function rePosCurr(curr, pos){
+    var db = getDatabase()
+    var res = ""
+
+    db.transaction(function(tx) {
+       tx.executeSql('UPDATE currencies SET pos = pos + 1 WHERE pos <150 AND pos >= ?', [pos])
+    });
+
+    db.transaction(function(tx) {
+        var rs = tx.executeSql('UPDATE currencies'+
+                               ' SET pos = ? WHERE currency = ?', [pos, curr]);
+        res = rs.rowsAffected > 0 ? "OK":"NOK";
+    });
+    return res;
+}
+
+function clearCurrencies(){
+    var db = getDatabase();
+
+    db.transaction(
+                function(tx) {
+                    tx.executeSql('UPDATE currencies SET rate = 0');
+                });
 }

@@ -35,7 +35,8 @@ ApplicationWindow
     }
 
     Component.onCompleted: {
-        Parser.initialize()
+        Parser.initSettings()
+        Parser.initCurrencies()
         if(Parser.getSetting("lastUpdate") !== ""){
             Parser.getSettings()
         }

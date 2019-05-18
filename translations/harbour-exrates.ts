@@ -30,7 +30,7 @@
 <context>
     <name>FirstPage</name>
     <message>
-        <source>ExRates</source>
+        <source>About</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -38,27 +38,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Sum to convert</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Enter sum</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Sum in </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Update Rates</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Convert to: </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Result</source>
+        <source>ExRates</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -70,11 +54,35 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>Sum to convert</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enter sum</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Sum in </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Convert to: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Select a base currency from the drop down menu. This requires a internet connection. New rates can be downloaded once per day.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>About</source>
+        <source>Move up</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Move down</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

@@ -17,6 +17,12 @@ Page {
             title: qsTr("About")
         }
 
+        Label {
+            color: Theme.highlightColor
+            font.pixelSize: Theme.fontSizeMedium
+            text: "Version: 0.3"
+        }
+
         Text {
             id: listView
             x: Theme.horizontalPageMargin

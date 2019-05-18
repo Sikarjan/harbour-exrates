@@ -93,7 +93,7 @@
 <context>
     <name>parser</name>
     <message>
-        <source>The api respnded with an error. Currently no exchange rates are available. Please try again later or file a bug report on GitHub, see about page for details.</source>
+        <source>The api responded with an error. Currently no exchange rates are available. Please try again later or file a bug report on GitHub, see about page for details.</source>
         <translation>api返回一个错误。 目前没有汇率可用。 请稍后再试或在GitHub上提交错误报告，有关详细信息，请参阅页面。</translation>
     </message>
     <message>

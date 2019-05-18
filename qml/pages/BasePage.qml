@@ -42,7 +42,7 @@ Page {
 
                 Label {
                     x: Theme.horizontalPageMargin
-                    text: cName
+                    text: cName === "" ? currency:cName
                     anchors.verticalCenter: parent.verticalCenter
                     color: delegate.highlighted ? Theme.highlightColor : Theme.primaryColor
                 }

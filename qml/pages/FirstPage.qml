@@ -40,15 +40,15 @@ Page {
 
         // Tell SilicaFlickable the height of its content.
         contentHeight: column.height
+        VerticalScrollDecorator {}
 
         // Place our content in a Column.  The PageHeader is always placed at the top
         // of the page, followed by our content.
         Column {
             id: column
-
-            x: Theme.horizontalPageMargin
-            width: root.width - 2*x
+            width: parent.width
             spacing: Theme.paddingLarge
+
             PageHeader {
                 id: pageHead
                 title: qsTr("ExRates")
@@ -57,14 +57,16 @@ Page {
             Column {
                 id: content
 
-                width: parent.width
+                x: Theme.horizontalPageMargin
+                width: root.width - 2*x
                 spacing: Theme.paddingMedium
                 visible: rateModel.count > 1
 
-                Label {
-                    text: qsTr("Base Currency: ") + rateModel.baseName
+                Text {
+                    text: qsTr("Base Currency: ")+ "<br>" + rateModel.baseName
                     color: Theme.highlightColor
-                    font.pixelSize: Theme.fontSizeExtraLarge
+                    font.pixelSize: Theme.fontSizeLarge
+                    textFormat: Text.RichText
                 }
                 Label {
                     text: qsTr("Last update: ")+rateModel.rateDate
@@ -78,7 +80,7 @@ Page {
                     label: qsTr("Sum to convert")
                     placeholderText: qsTr("Enter sum")
                     inputMethodHints: Qt.ImhDigitsOnly
-                    onTextChanged: {
+                    EnterKey.onClicked:  {
                         result.text = Math.round(text * rateModel.rate*100)/100
                     }
                 }
@@ -86,11 +88,15 @@ Page {
                 TextField {
                     id: result
                     width: parent.width
-                    readOnly: true
                     color: Theme.highlightColor
+                    inputMethodHints: Qt.ImhDigitsOnly
 
                     placeholderText: qsTr("Result")
                     label: qsTr("Sum in ") + rateModel.cFullName
+
+                    EnterKey.onClicked: {
+                        insert.text = Math.round(text * 1/rateModel.rate*100)/100
+                    }
                 }
 
                 Label {
@@ -104,7 +110,8 @@ Page {
             Text {
                 id: into
                 visible: rateModel.count == 0 || rateModel.hasError
-                width: parent.width
+                width: content.width
+                x: Theme.horizontalPageMargin
                 wrapMode: Text.WordWrap
                 color: Theme.secondaryHighlightColor
                 font.pixelSize: Theme.fontSizeLarge
@@ -112,29 +119,59 @@ Page {
             }
 
             SilicaListView {
-                width: parent.width
-                height: root.height - content.height - pageHead.height - 2*column.spacing
+                width: root.width
+                height: root.height < 730 ? 600:root.height - content.height - pageHead.height - 2*column.spacing
                 model: rateModel
                 clip: true
 
                 VerticalScrollDecorator {}
 
-                delegate: BackgroundItem {
+                delegate: ListItem {
                     width: ListView.view.width
                     contentHeight: Theme.itemSizeSmall
 
                     Row {
+                        x: Theme.horizontalPageMargin
                         spacing: Theme.paddingMedium
-                        Image { source: "qrc:/icons/flags/"+ currency + ".png" }
+                        Image { source: "qrc:/icons/flags/"+ currency + ".png"}
                         Label { text: cName; width: Theme.fontSizeMedium*8 }
                         Label { text: currency }
-                        Label { text: rate }
+                        Label { text: insert.text === "" ? rate:Math.round(insert.text * rate*100)/100 }
                     }
                     onClicked: {
                         rateModel.rate = rate
                         rateModel.cName = currency
                         rateModel.move(index, 0, 1)
+                        Parser.rePosCurr(currency, 0)
                         result.text = Math.round(insert.text * rateModel.rate*100)/100
+                    }
+
+                    menu: Component {
+                       id: contextMenu
+                       ContextMenu {
+                          MenuItem {
+                              text: qsTr("Move up")
+                              visible: index > 0
+                              onClicked: {
+                                  rateModel.move(index, index-1, 1)
+                                  Parser.rePosCurr(currency, index-1)
+                              }
+                          }
+                          MenuItem {
+                              text: qsTr("Move down")
+                              visible: index < rateModel.count -1
+                              onClicked: {
+                                  rateModel.move(index, index+1, 1)
+                                  Parser.rePosCurr(currency, index+1)
+                              }
+                          }
+/*                          MenuItem {
+                              text: qsTr("Make base rate")
+                              onClicked: {
+
+                              }
+                          }*/
+                       }
                     }
                 }
             }

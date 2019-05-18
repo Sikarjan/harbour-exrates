@@ -35,5 +35,7 @@
         <file>icons/flags/EUR.png</file>
         <file>icons/flags/HKD.png</file>
         <file>icons/app/appIcon.png</file>
+        <file>icons/flags/BGN.png</file>
+        <file>icons/flags/HRK.png</file>
     </qresource>
 </RCC>

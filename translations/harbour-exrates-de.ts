@@ -93,12 +93,12 @@
 <context>
     <name>parser</name>
     <message>
-        <source>The api respnded with an error. Currently no exchange rates are available. Please try again later or file a bug report on GitHub, see about page for details.</source>
-        <translation type="unfinished"></translation>
+        <source>The api responded with an error. Currently no exchange rates are available. Please try again later or file a bug report on GitHub, see about page for details.</source>
+        <translation>Die API hat mit einem Fehler geantwortet. Aktuell sind keine Wechselkurse verfügbar. Bitte versuchen Sie es später nocheinmal oder stellen Sie einen Fehlerbericht auf GitHub, Details in Über die App.</translation>
     </message>
     <message>
         <source>The api did not respond. Please try again laiter.</source>
-        <translation type="unfinished"></translation>
+        <translation>Die API hat nicht geantwortet. Bitte versuchen Sie es später nocheinmal</translation>
     </message>
 </context>
 </TS>
