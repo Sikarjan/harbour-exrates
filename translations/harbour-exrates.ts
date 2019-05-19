@@ -104,7 +104,7 @@
 <context>
     <name>parser</name>
     <message>
-        <source>The api did not respond. Please try again laiter.</source>
+        <source>The api did not respond. Please try again later.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
