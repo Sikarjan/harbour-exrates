@@ -24,6 +24,7 @@ Page {
 
             menu: ContextMenu {
                 MenuItem { text: "exchangerate-api.com" }
+                MenuItem { text: "floatrates.com" }
             }
         }
     }

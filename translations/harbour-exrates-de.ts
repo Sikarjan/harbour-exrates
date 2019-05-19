@@ -9,9 +9,13 @@
     </message>
     <message>
         <source>&lt;p&gt;Currently this app only uses one open source api to get exchange rates. The used api is &lt;a href=&quot;https://www.exchangerate-api.com/index.php&quot;&gt;ExchangeRate-API&lt;/a&gt;. This api does not provide rates for all currencies therefore the currency your are looking for might miss. I will try to add other resources at a later stage. Also the rates are only updated once per day.&lt;/p&gt;
-&lt;p&gt;Please support me by sending me bug reports via github. You can find the project &lt;a href=&quot;https://github.com/Sikarjan/harbour-exrates&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Aktuell greift diese App nur auf eine öffentliche Quelle für Wechselkurse zurück. Die Verwendete Quelle ist &lt;a href=&quot;https://www.exchangerate-api.com/index.php&quot;&gt;ExchangeRate-API&lt;/a&gt;. Diese Quelle stellt nicht für alle Währeung aktuelle Wechselkurse zur Verfügung. Es ist geplant weitere Quellen in Zukunft hinzuzufügen. Die Wechselkurse werden nur einmal am Tag aktualisiert.&lt;/p&gt;
+&lt;p&gt;Please support me by sending bug reports via Github. You can find the project &lt;a href=&quot;https://github.com/Sikarjan/harbour-exrates&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</source>
+        <translation>&lt;p&gt;Aktuell greift diese App nur auf eine öffentliche Quelle für Wechselkurse zurück. Die Verwendete Quelle ist &lt;a href=&quot;https://www.exchangerate-api.com/index.php&quot;&gt;ExchangeRate-API&lt;/a&gt;. Diese Quelle stellt nicht für alle Währungen aktuelle Wechselkurse zur Verfügung. Es ist geplant weitere Quellen in Zukunft hinzuzufügen. Die Wechselkurse werden nur einmal am Tag aktualisiert.&lt;/p&gt;
 &lt;p&gt;Man kann mich unterstützen in dem man Fehlerberichte via GitHub meldet. Das Projekt kann &lt;a href=&quot;https://github.com/Sikarjan/harbour-exrates&quot;&gt;hier&lt;/a&gt; gefunden werden.&lt;/p&gt;</translation>
+    </message>
+    <message>
+        <source>Version:</source>
+        <translation>Version:</translation>
     </message>
 </context>
 <context>
@@ -77,6 +81,14 @@
     <message>
         <source>About</source>
         <translation>Über die App</translation>
+    </message>
+    <message>
+        <source>Move up</source>
+        <translation>Nach oben</translation>
+    </message>
+    <message>
+        <source>Move down</source>
+        <translation>Nach unten</translation>
     </message>
 </context>
 <context>

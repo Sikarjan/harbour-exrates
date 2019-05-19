@@ -8,8 +8,12 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>Version:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>&lt;p&gt;Currently this app only uses one open source api to get exchange rates. The used api is &lt;a href=&quot;https://www.exchangerate-api.com/index.php&quot;&gt;ExchangeRate-API&lt;/a&gt;. This api does not provide rates for all currencies therefore the currency your are looking for might miss. I will try to add other resources at a later stage. Also the rates are only updated once per day.&lt;/p&gt;
-&lt;p&gt;Please support me by sending me bug reports via github. You can find the project &lt;a href=&quot;https://github.com/Sikarjan/harbour-exrates&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</source>
+&lt;p&gt;Please support me by sending bug reports via Github. You can find the project &lt;a href=&quot;https://github.com/Sikarjan/harbour-exrates&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -100,11 +104,11 @@
 <context>
     <name>parser</name>
     <message>
-        <source>The api respnded with an error. Currently no exchange rates are available. Please try again later or file a bug report on GitHub, see about page for details.</source>
+        <source>The api did not respond. Please try again laiter.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>The api did not respond. Please try again laiter.</source>
+        <source>The api responded with an error. Currently no exchange rates are available. Please try again later or file a bug report on GitHub, see about page for details.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

@@ -4,6 +4,7 @@
 - [new] "Convert to" list keeps its order
 - [new] Chinese translation added
 - [new] Result field is editable to convert selected currency to base currency
+- [new] Items in "Convert to" list can be moved up or down
 - [bug] "Convert to" list not visible in lanscape
 
 * Sat May 10 2019 Sikarjan <store@innobiz.de> 0.2-1

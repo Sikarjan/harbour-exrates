@@ -9,7 +9,7 @@
     </message>
     <message>
         <source>&lt;p&gt;Currently this app only uses one open source api to get exchange rates. The used api is &lt;a href=&quot;https://www.exchangerate-api.com/index.php&quot;&gt;ExchangeRate-API&lt;/a&gt;. This api does not provide rates for all currencies therefore the currency your are looking for might miss. I will try to add other resources at a later stage. Also the rates are only updated once per day.&lt;/p&gt;
-&lt;p&gt;Please support me by sending me bug reports via github. You can find the project &lt;a href=&quot;https://github.com/Sikarjan/harbour-exrates&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</source>
+&lt;p&gt;Please support me by sending bug reports via Github. You can find the project &lt;a href=&quot;https://github.com/Sikarjan/harbour-exrates&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</source>
         <translation>目前此应用仅使用一个开源API来获取汇率。 使用的api是 https://www.exchangerate-api.com/index.php&quot;＆gt; ExchangeRate-API＆lt; / a＆gt;。 此api不提供所有货币的汇率，因此你可能找不到正在寻找的货币。 我将尝试在稍后阶段添加其他资源。 此外，汇率每天只更新一次。＆lt; / p＆gt;
 ＆lt; p＆gt;请通过github向我发送错误报告来支持我。 你可以在此找到项目 https://github.com/Sikarjan/harbour-exrates&quot;＆gt; here＆lt; / a＆gt;。＆lt; / p＆gt;</translation>
     </message>

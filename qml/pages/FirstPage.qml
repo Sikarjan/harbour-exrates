@@ -123,8 +123,15 @@ Page {
                 height: root.height < 730 ? 600:root.height - content.height - pageHead.height - 2*column.spacing
                 model: rateModel
                 clip: true
+                visible: rateModel.count > 0
 
                 VerticalScrollDecorator {}
+
+                BusyIndicator {
+                    size: BusyIndicatorSize.Large
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    running: rateModel.count === 0
+                }
 
                 delegate: ListItem {
                     width: ListView.view.width

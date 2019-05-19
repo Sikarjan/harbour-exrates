@@ -59,7 +59,6 @@ function editResponse(response, baseRate){
             setCurrValue(currency, response.rates[currency])
         }
     }
-
     loadRateModel()
 }
 
