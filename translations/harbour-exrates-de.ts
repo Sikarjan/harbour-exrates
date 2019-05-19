@@ -110,7 +110,7 @@
     </message>
     <message>
         <source>The api did not respond. Please try again laiter.</source>
-        <translation>Die API hat nicht geantwortet. Bitte versuchen Sie es später nocheinmal</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

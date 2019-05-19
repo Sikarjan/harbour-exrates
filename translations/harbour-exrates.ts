@@ -104,11 +104,11 @@
 <context>
     <name>parser</name>
     <message>
-        <source>The api did not respond. Please try again later.</source>
+        <source>The api responded with an error. Currently no exchange rates are available. Please try again later or file a bug report on GitHub, see about page for details.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>The api responded with an error. Currently no exchange rates are available. Please try again later or file a bug report on GitHub, see about page for details.</source>
+        <source>The api did not respond. Please try again laiter.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

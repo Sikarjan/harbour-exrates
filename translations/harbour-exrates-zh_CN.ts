@@ -97,7 +97,7 @@
         <translation>api返回一个错误。 目前没有汇率可用。 请稍后再试或在GitHub上提交错误报告，有关详细信息，请参阅页面。</translation>
     </message>
     <message>
-        <source>The api did not respond. Please try again laiter.</source>
+        <source>The api did not respond. Please try again later.</source>
         <translation>api未响应，请稍后再试。</translation>
     </message>
 </context>
