@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="fr_FR">
+<TS version="2.1" language="fr">
 <context>
     <name>AboutPage</name>
     <message>
@@ -14,7 +14,7 @@
     <message>
         <source>&lt;p&gt;Currently this app only uses one open source api to get exchange rates. The used api is &lt;a href=&quot;https://www.exchangerate-api.com/index.php&quot;&gt;ExchangeRate-API&lt;/a&gt;. This api does not provide rates for all currencies therefore the currency your are looking for might miss. I will try to add other resources at a later stage. Also the rates are only updated once per day.&lt;/p&gt;
 &lt;p&gt;Please support me by sending bug reports via Github. You can find the project &lt;a href=&quot;https://github.com/Sikarjan/harbour-exrates&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Cette application utilise actuellement une API libre pour obtenir les taux de chance. L’API utilisée est &lt;a href=&quot;https://www.exchangerate-api.com/index.php&quot;&gt;ExchangeRate-API&lt;/a&gt;. Cette API ne fournit pas tous les taux de change, il se peut que la devise que vous cherchez manque. Je tâcherai d’ajouter d’autres ressources à une autre étape. Notez que les taux ne sont actualisés qu’une fois par jour.&lt;/p&gt; &lt;p&gt;Merci de me soutenir en m’envoyant des signalements de bug via via Github. Retrouvez le projet sur &lt;a href=&quot;https://github.com/Sikarjan/harbour-exrates&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
