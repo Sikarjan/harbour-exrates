@@ -24,7 +24,7 @@ Page {
             width: parent.width
             color: Theme.highlightColor
             font.pixelSize: Theme.fontSizeMedium
-            text: qsTr("Version:")+" 0.3"
+            text: qsTr("Version:")+" 1.0"
         }
 
         Text {
@@ -34,8 +34,14 @@ Page {
             textFormat: Text.RichText
             color: Theme.highlightColor
             font.pixelSize: Theme.fontSizeMedium
-            text: "<html><style>a {color:"+ Theme.primaryColor +";}</style>" +qsTr("<p>Currently this app only uses one open source api to get exchange rates. The used api is <a href=\"https://www.exchangerate-api.com/index.php\">ExchangeRate-API</a>. This api does not provide rates for all currencies therefore the currency your are looking for might miss. I will try to add other resources at a later stage. Also the rates are only updated once per day.</p>
-<p>Please support me by sending bug reports via Github. You can find the project <a href=\"https://github.com/Sikarjan/harbour-exrates\">here</a>.</p>")+"</html>"
+            text: "<html><style>a {color:"+ Theme.primaryColor +";}</style>" +qsTr("
+<p>Currently this app only uses only open source apis to get exchange rates. The following apis are used:
+<ul>
+    <li><a href=\"https://www.floatrates.com/indes.php\">FloatRates-API</a></li>
+    <li><a href=\"https://www.exchangerate-api.com/index.php\">ExchangeRate-API</a></li>
+</ul>
+The apis provide rates for different currencies therefore the currency your are looking for might not be available. Also the rates are only updated once per day.</p>
+<p>Please support me by sending bug reports or suggestions via Github. You can find the project <a href=\"https://github.com/Sikarjan/harbour-exrates\">here</a>.</p>")+"</html>"
             onLinkActivated: Qt.openUrlExternally(link);
         }
     }

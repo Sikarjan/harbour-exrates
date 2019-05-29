@@ -21,6 +21,7 @@ ApplicationWindow
         property string rateDate: ""
         property bool hasError: false
         property string errorMsg: ""
+        property int source: 0
 
         onCNameChanged: {
             cFullName = Parser.cNames[cName]

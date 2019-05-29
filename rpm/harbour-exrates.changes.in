@@ -1,3 +1,9 @@
+* Sat May 10 2019 Sikarjan <store@innobiz.de> 1.0-1
+- [new] Second source added
+- [new] Option page added
+- [new] Search option added to Base Rates Page
+- [improvment] Convert to delegates, width for code and rate adjusted to screen size
+
 * Sat May 10 2019 Sikarjan <store@innobiz.de> 0.3-1
 - [new] Rates BGN and HRK added
 - [new] Entered sum is converted into all available currencies

@@ -39,7 +39,9 @@ CONFIG += sailfishapp_i18n
 # planning to localize your app, remember to comment out the
 # following TRANSLATIONS line. And also do not forget to
 # modify the localized app name in the the .desktop file.
-TRANSLATIONS += translations/harbour-exrates-de.ts
+TRANSLATIONS += translations/harbour-exrates-de.ts \
+    translations/harbour-exrates-fr.ts \
+    translations/harbour-exrates-zh_CN.ts
 
 RESOURCES += \
     res.qrc

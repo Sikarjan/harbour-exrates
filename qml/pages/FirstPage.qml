@@ -19,13 +19,13 @@ Page {
 
         // PullDownMenu and PushUpMenu must be declared in SilicaFlickable, SilicaListView or SilicaGridView
         PullDownMenu {
-/*            MenuItem { // Currently no options available
-                text: qsTr("Options")
-                onClicked: pageStack.push(Qt.resolvedUrl("OptionPage.qml"))
-            }*/
             MenuItem {
                 text: qsTr("About")
                 onClicked: pageStack.push(Qt.resolvedUrl("AboutPage.qml"))
+            }
+            MenuItem {
+                text: qsTr("Options")
+                onClicked: pageStack.push(Qt.resolvedUrl("OptionPage.qml"))
             }
             MenuItem {
                 text: qsTr("Select Base Currency")
@@ -47,7 +47,7 @@ Page {
         Column {
             id: column
             width: parent.width
-            spacing: Theme.paddingLarge
+            spacing: Theme.paddingMedium
 
             PageHeader {
                 id: pageHead
@@ -108,7 +108,7 @@ Page {
             }
 
             Text {
-                id: into
+                id: intro
                 visible: rateModel.count == 0 || rateModel.hasError
                 width: content.width
                 x: Theme.horizontalPageMargin
@@ -138,12 +138,18 @@ Page {
                     contentHeight: Theme.itemSizeSmall
 
                     Row {
+                        id: line
                         x: Theme.horizontalPageMargin
                         spacing: Theme.paddingMedium
                         Image { source: "qrc:/icons/flags/"+ currency + ".png"}
-                        Label { text: cName; width: Theme.fontSizeMedium*8 }
-                        Label { text: currency }
-                        Label { text: insert.text === "" ? rate:Math.round(insert.text * rate*100)/100 }
+                        Label { text: cName; width: line.contentWidth; clip: true }
+                        Label { text: currency; width: Theme.fontSizeMedium*2 }
+                        Label {
+                            text: insert.text === "" ? Math.round(rate*10000)/10000:Math.round(insert.text * rate*100)/100
+                            width: Theme.fontSizeMedium*3
+                        }
+
+                        property int contentWidth: root.width - 2*x - 3*spacing - 80 - Theme.fontSizeMedium*5
                     }
                     onClicked: {
                         rateModel.rate = rate
@@ -172,12 +178,6 @@ Page {
                                   Parser.rePosCurr(currency, index+1)
                               }
                           }
-/*                          MenuItem {
-                              text: qsTr("Make base rate")
-                              onClicked: {
-
-                              }
-                          }*/
                        }
                     }
                 }
