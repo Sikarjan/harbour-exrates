@@ -117,6 +117,22 @@ Die APIs haben Wechselkruse für unterschiedliche Währungen und nicht alle Wäh
         <source>Options</source>
         <translation>Einstellungen</translation>
     </message>
+    <message>
+        <source>Search</source>
+        <translation>Suche</translation>
+    </message>
+    <message>
+        <source>Hide search field</source>
+        <translation>Suchfeld ausblenden</translation>
+    </message>
+    <message>
+        <source>Show search field</source>
+        <translation>Suche einblenden</translation>
+    </message>
+    <message>
+        <source>Okay</source>
+        <translation>Okay</translation>
+    </message>
 </context>
 <context>
     <name>OptionPage</name>
@@ -148,6 +164,14 @@ Die APIs haben Wechselkruse für unterschiedliche Währungen und nicht alle Wäh
         <source>List was successfully reset</source>
         <translation>Die Liste ist erfolgreich zurückgesetzt worden</translation>
     </message>
+    <message>
+        <source>Rearrange &apos;Convert to&apos; list</source>
+        <translation>&apos;Umrechnung in&apos; Liste neuordnen</translation>
+    </message>
+    <message>
+        <source>Puts the selected currency on top of &apos;Convert to&apos; list.</source>
+        <translation>Verschiebt die ausgewählte Währung an den Anfang der &apos;Umrechnung in&apos; Liste.</translation>
+    </message>
 </context>
 <context>
     <name>parser</name>
@@ -161,27 +185,27 @@ Die APIs haben Wechselkruse für unterschiedliche Währungen und nicht alle Wäh
     </message>
     <message>
         <source>U.A.E Dirham</source>
-        <translation type="unfinished"></translation>
+        <translation>VAE Dirham</translation>
     </message>
     <message>
         <source>Afghan Afghani</source>
-        <translation type="unfinished"></translation>
+        <translation>Afganischer Afghani</translation>
     </message>
     <message>
         <source>Albanian Lek</source>
-        <translation type="unfinished"></translation>
+        <translation>Albanischer Lek</translation>
     </message>
     <message>
         <source>Armenia Dram</source>
-        <translation type="unfinished"></translation>
+        <translation>Armenischer Dram</translation>
     </message>
     <message>
         <source>Neth. Antillean Guilder</source>
-        <translation type="unfinished"></translation>
+        <translation>Niederländische Antillen-Gulden</translation>
     </message>
     <message>
         <source>Angolan Kwanza</source>
-        <translation type="unfinished"></translation>
+        <translation>Angolischer Kwanza</translation>
     </message>
     <message>
         <source>Argentine Peso</source>
@@ -193,11 +217,11 @@ Die APIs haben Wechselkruse für unterschiedliche Währungen und nicht alle Wäh
     </message>
     <message>
         <source>Aruban Florin</source>
-        <translation type="unfinished"></translation>
+        <translation>Aruba Florin</translation>
     </message>
     <message>
         <source>Azerbaijan Manat</source>
-        <translation type="unfinished"></translation>
+        <translation>Aserbaidschan Manat</translation>
     </message>
     <message>
         <source>Bosnia and Herzegovina convertible Mark</source>

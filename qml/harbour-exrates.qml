@@ -22,6 +22,7 @@ ApplicationWindow
         property bool hasError: false
         property string errorMsg: ""
         property int source: 0
+        property bool updateConvertToList
 
         onCNameChanged: {
             cFullName = Parser.cNames[cName]
@@ -33,6 +34,9 @@ ApplicationWindow
     }
     ListModel {
         id: baseRateModel
+    }
+    ListModel {
+        id:rateModelCopy
     }
 
     Component.onCompleted: {

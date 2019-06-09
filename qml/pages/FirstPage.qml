@@ -42,6 +42,44 @@ Page {
         contentHeight: column.height
         VerticalScrollDecorator {}
 
+        Rectangle {
+            id: popUp
+            anchors.fill: parent
+            z: 500
+            color: Qt.rgba(0, 0, 0, 0.6)
+            visible: msg !== ""
+
+            default property alias msg: msgBox.text
+
+            Column {
+                anchors.verticalCenter: parent.verticalCenter
+                x: Theme.paddingLarge
+                width: parent.width -2*x
+                spacing: Theme.paddingLarge
+
+                Text {
+                    id: msgBox
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    width: parent.width
+                    wrapMode: Text.WordWrap
+                    textFormat: Text.RichText
+                    color: Theme.highlightColor
+                    font.pixelSize: Theme.fontSizeMedium
+                    text: rateModel.errorMsg
+                }
+
+                Button {
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    text: qsTr("Okay")
+
+                    onClicked: {
+                        rateModel.errorMsg = ""
+                    }
+                }
+            }
+        }
+
+
         // Place our content in a Column.  The PageHeader is always placed at the top
         // of the page, followed by our content.
         Column {
@@ -60,7 +98,7 @@ Page {
                 x: Theme.horizontalPageMargin
                 width: root.width - 2*x
                 spacing: Theme.paddingMedium
-                visible: rateModel.count > 1
+                visible: rateModel.count > 1 && searchField.text === ""
 
                 Text {
                     text: qsTr("Base Currency: ")+ "<br>" + rateModel.baseName
@@ -109,14 +147,24 @@ Page {
 
             Text {
                 id: intro
-                visible: rateModel.count == 0 || rateModel.hasError
+                visible: rateModel.count == 0
                 width: content.width
                 x: Theme.horizontalPageMargin
                 wrapMode: Text.WordWrap
                 color: Theme.secondaryHighlightColor
                 font.pixelSize: Theme.fontSizeLarge
-                text: rateModel.hasError ? rateModel.errorMsg:qsTr("Select a base currency from the drop down menu. This requires a internet connection. New rates can be downloaded once per day.")
+                text: qsTr("Select a base currency from the drop down menu. This requires a internet connection. New rates can be downloaded once per day.")
             }
+
+            SearchField {
+                id:searchField
+                 width: parent.width
+                 placeholderText: qsTr("Search")
+                 visible: false
+                 height: visible ? Theme.itemSizeSmall:0
+
+                 onTextChanged: Parser.rateSearch(text)
+             }
 
             SilicaListView {
                 width: root.width
@@ -125,6 +173,8 @@ Page {
                 clip: true
                 visible: rateModel.count > 0
 
+                currentIndex: -1
+
                 VerticalScrollDecorator {}
 
                 BusyIndicator {
@@ -132,6 +182,8 @@ Page {
                     anchors.horizontalCenter: parent.horizontalCenter
                     running: rateModel.count === 0
                 }
+
+                header: searchField
 
                 delegate: ListItem {
                     width: ListView.view.width
@@ -154,8 +206,12 @@ Page {
                     onClicked: {
                         rateModel.rate = rate
                         rateModel.cName = currency
-                        rateModel.move(index, 0, 1)
-                        Parser.rePosCurr(currency, 0)
+                        if(rateModel.updateConvertToList){
+                            Parser.rePosCurr(currency, 0)
+                        }
+                        searchField.text = ""
+                        searchField.visible = false
+                        Parser.loadRateModel()
                         result.text = Math.round(insert.text * rateModel.rate*100)/100
                     }
 
@@ -181,6 +237,13 @@ Page {
                        }
                     }
                 }
+            }
+        }
+
+        PushUpMenu {
+            MenuItem {
+                text: searchField.visible ? qsTr("Hide search field"):qsTr("Show search field")
+                onClicked: searchField.visible = !searchField.visible
             }
         }
     }

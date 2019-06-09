@@ -50,7 +50,7 @@ function updateBaseRateModel(){
         response = sortByProperty(response, "name")
         baseRateModelCopy = response
         for(var i in response){
-            baseRateModel.append({"currency": response[i].code, "cName": response[i].name})
+            baseRateModel.append({"currency": response[i].code, "cName": cNames[response[i].code]})
         }
     }else{
         baseRateModelCopy.clear()
@@ -71,6 +71,19 @@ function baseRateSearch(querry){
     }
     if(baseRateModel.count === 0){
         baseRateModel.append({"currency": "ERR", "cName": qsTr("No match") })
+    }
+}
+
+function rateSearch(querry){
+    rateModel.clear()
+
+    for (var i=0; i<rateModelCopy.count; i++) {
+        if (querry === "" || rateModelCopy.get(i).cName.indexOf(querry) >= 0) {
+            rateModel.append(rateModelCopy.get(i))
+        }
+    }
+    if(rateModel.count === 0){
+        rateModel.append({"cName": qsTr("No match"), "currency": "ERR", "rate": 0 })
     }
 }
 
@@ -167,6 +180,8 @@ function getSettings() {
                     rateModel.rate = rs.rows.item(i).value
                 }else if(rs.rows.item(i).setting === "source"){
                     rateModel.source = rs.rows.item(i).value
+                }else if(rs.rows.item(i).setting === "updateCTL"){
+                    rateModel.updateConvertToList = rs.rows.item(i).value === "0" ? false:true
                 }else{
                     console.log("Unknown Setting: "+rs.rows.item(i).setting)
                 }
@@ -181,12 +196,14 @@ function loadRateModel() {
     var db = getDatabase();
 
     rateModel.clear()
+    rateModelCopy.clear()
 
     db.transaction(function(tx) {
         var rs = tx.executeSql('SELECT * FROM currencies WHERE rate <> 0 ORDER BY pos ASC');
         if(rs.rows.length > 0){
             for(var i=0;i<rs.rows.length;i++){
                 rateModel.append({"currency": rs.rows.item(i).currency, "cName": cNames[rs.rows.item(i).currency], "rate": rs.rows.item(i).rate})
+                rateModelCopy.append({"currency": rs.rows.item(i).currency, "cName": cNames[rs.rows.item(i).currency], "rate": rs.rows.item(i).rate})
             }
         }
     });
@@ -218,7 +235,7 @@ function rePosCurr(curr, pos){
     var res = ""
 
     db.transaction(function(tx) {
-       tx.executeSql('UPDATE currencies SET pos = pos + 1 WHERE pos <150 AND pos >= ?', [pos])
+       tx.executeSql('UPDATE currencies SET pos = pos + 1 WHERE pos < 200 AND pos >= ?', [pos])
     });
 
     db.transaction(function(tx) {
@@ -226,6 +243,7 @@ function rePosCurr(curr, pos){
                                ' SET pos = ? WHERE currency = ?', [pos, curr]);
         res = rs.rowsAffected > 0 ? "OK":"NOK";
     });
+
     return res;
 }
 

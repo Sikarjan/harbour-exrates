@@ -8,6 +8,7 @@ Page {
 
     Component.onCompleted: {
         source.currentIndex = rateModel.source
+        updateCTL.checked = rateModel.updateConvertToList
     }
 
     // The effective value will be restricted by ApplicationWindow.allowedOrientations
@@ -73,6 +74,16 @@ Page {
                 color: Theme.highlightColor
                 font.pixelSize: Theme.fontSizeMedium
                 text: resetButton.res > 0 ? qsTr("List was successfully reset"):qsTr("This button resets the 'Convert to' list to an alphabetical order.")
+            }
+        }
+
+        TextSwitch {
+            id: updateCTL
+            text: qsTr("Rearrange 'Convert to' list")
+            description: qsTr("Puts the selected currency on top of 'Convert to' list.")
+            onCheckedChanged: {
+                rateModel.updateConvertToList = checked
+                Parser.setSetting('updateCTL', checked)
             }
         }
     }

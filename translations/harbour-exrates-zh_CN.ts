@@ -111,6 +111,22 @@ The apis provide rates for different currencies therefore the currency your are 
         <source>Move down</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Search</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Hide search field</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Show search field</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Okay</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>OptionPage</name>
@@ -140,6 +156,14 @@ The apis provide rates for different currencies therefore the currency your are 
     </message>
     <message>
         <source>This button resets the &apos;Convert to&apos; list to an alphabetical order.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Rearrange &apos;Convert to&apos; list</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Puts the selected currency on top of &apos;Convert to&apos; list.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
