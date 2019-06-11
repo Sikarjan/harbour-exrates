@@ -20,7 +20,7 @@
 &lt;/ul&gt;
 The apis provide rates for different currencies therefore the currency your are looking for might not be available. Also the rates are only updated once per day.&lt;/p&gt;
 &lt;p&gt;Please support me by sending bug reports or suggestions via Github. You can find the project &lt;a href=&quot;https://github.com/Sikarjan/harbour-exrates&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -31,15 +31,15 @@ The apis provide rates for different currencies therefore the currency your are 
     </message>
     <message>
         <source>Hide search field</source>
-        <translation type="unfinished"></translation>
+        <translation>隐藏搜索区域</translation>
     </message>
     <message>
         <source>Show search field</source>
-        <translation type="unfinished"></translation>
+        <translation>显示搜索区域</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>搜索</translation>
     </message>
 </context>
 <context>
@@ -85,7 +85,7 @@ The apis provide rates for different currencies therefore the currency your are 
     </message>
     <message>
         <source>Base Currency: </source>
-        <translation>基础货币；</translation>
+        <translation>基础货币：</translation>
     </message>
     <message>
         <source>Last update: </source>
@@ -93,7 +93,7 @@ The apis provide rates for different currencies therefore the currency your are 
     </message>
     <message>
         <source>Select a base currency from the drop down menu. This requires a internet connection. New rates can be downloaded once per day.</source>
-        <translation>请从下拉菜单中选择基本货币。 这需要互联网连，每天可下载一次新汇率。</translation>
+        <translation>请从下拉菜单中选择基本货币。 这需要互联网连接，每天可下载一次新汇率。</translation>
     </message>
     <message>
         <source>About</source>
@@ -101,31 +101,31 @@ The apis provide rates for different currencies therefore the currency your are 
     </message>
     <message>
         <source>Options</source>
-        <translation type="unfinished"></translation>
+        <translation>选项</translation>
     </message>
     <message>
         <source>Move up</source>
-        <translation type="unfinished"></translation>
+        <translation>上移</translation>
     </message>
     <message>
         <source>Move down</source>
-        <translation type="unfinished"></translation>
+        <translation>下移</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>搜索</translation>
     </message>
     <message>
         <source>Hide search field</source>
-        <translation type="unfinished"></translation>
+        <translation>隐藏搜索区域</translation>
     </message>
     <message>
         <source>Show search field</source>
-        <translation type="unfinished"></translation>
+        <translation>显示搜索区域</translation>
     </message>
     <message>
         <source>Okay</source>
-        <translation type="unfinished"></translation>
+        <translation>确认</translation>
     </message>
 </context>
 <context>
@@ -140,31 +140,31 @@ The apis provide rates for different currencies therefore the currency your are 
     </message>
     <message>
         <source>Requires a rate update or selection of a new base rate to take affect.</source>
-        <translation type="unfinished"></translation>
+        <translation>需要更新汇率或选择新的基础货币以生效。</translation>
     </message>
     <message>
         <source>Reset Currency List</source>
-        <translation type="unfinished"></translation>
+        <translation>重置汇率列表</translation>
     </message>
     <message>
         <source>Resetting List</source>
-        <translation type="unfinished"></translation>
+        <translation>正在重置列表</translation>
     </message>
     <message>
         <source>List was successfully reset</source>
-        <translation type="unfinished"></translation>
+        <translation>已成功重置列表</translation>
     </message>
     <message>
         <source>This button resets the &apos;Convert to&apos; list to an alphabetical order.</source>
-        <translation type="unfinished"></translation>
+        <translation>该按钮重置“转换到”列表为字母表顺序。</translation>
     </message>
     <message>
         <source>Rearrange &apos;Convert to&apos; list</source>
-        <translation type="unfinished"></translation>
+        <translation>重新排列“转换到”列表。</translation>
     </message>
     <message>
         <source>Puts the selected currency on top of &apos;Convert to&apos; list.</source>
-        <translation type="unfinished"></translation>
+        <translation>将所选货币放置于“转换到”列表顶部。</translation>
     </message>
 </context>
 <context>
@@ -179,15 +179,15 @@ The apis provide rates for different currencies therefore the currency your are 
     </message>
     <message>
         <source>The server was not able to load rates for this currency. Please select a different base currency.</source>
-        <translation type="unfinished"></translation>
+        <translation>服务器无法加载该种货币汇率，请另选别的基础货币。</translation>
     </message>
     <message>
         <source>No match</source>
-        <translation type="unfinished"></translation>
+        <translation>无匹配项</translation>
     </message>
     <message>
         <source>U.A.E Dirham</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <source>Afghan Afghani</source>
