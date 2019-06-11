@@ -31,15 +31,15 @@ The apis provide rates for different currencies therefore the currency your are 
     </message>
     <message>
         <source>Hide search field</source>
-        <translation type="unfinished"></translation>
+        <translation>Masquer la recherche</translation>
     </message>
     <message>
         <source>Show search field</source>
-        <translation type="unfinished"></translation>
+        <translation>Afficher la recherche</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Recherche</translation>
     </message>
 </context>
 <context>
@@ -57,7 +57,7 @@ The apis provide rates for different currencies therefore the currency your are 
     </message>
     <message>
         <source>Select Base Currency</source>
-        <translation>Sélectionnez la devise de base</translation>
+        <translation>Sélectionner la devise de base</translation>
     </message>
     <message>
         <source>Update Rates</source>
@@ -97,7 +97,7 @@ The apis provide rates for different currencies therefore the currency your are 
     </message>
     <message>
         <source>Select a base currency from the drop down menu. This requires a internet connection. New rates can be downloaded once per day.</source>
-        <translation>Sélectionnez une devise de base à l’aide du menu déroulant. Ceci nécessite une connexion Internet. Vous pouvez télécharger les nouveaux taux une fois par jour.</translation>
+        <translation>Sélectionnez une devise de base à laide du menu déroulant. Ceci nécessite une connexion Internet. Vous pouvez télécharger les nouveaux taux une fois par jour.</translation>
     </message>
     <message>
         <source>Move up</source>
@@ -109,23 +109,23 @@ The apis provide rates for different currencies therefore the currency your are 
     </message>
     <message>
         <source>Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Options</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Recherche</translation>
     </message>
     <message>
         <source>Hide search field</source>
-        <translation type="unfinished"></translation>
+        <translation>Masquer la recherche</translation>
     </message>
     <message>
         <source>Show search field</source>
-        <translation type="unfinished"></translation>
+        <translation>Afficher la recherche</translation>
     </message>
     <message>
         <source>Okay</source>
-        <translation type="unfinished"></translation>
+        <translation>Valider</translation>
     </message>
 </context>
 <context>
@@ -140,50 +140,50 @@ The apis provide rates for different currencies therefore the currency your are 
     </message>
     <message>
         <source>Requires a rate update or selection of a new base rate to take affect.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nécessite une mise à jour des taux ou le choix d'une autre device de base.</translation>
     </message>
     <message>
         <source>Reset Currency List</source>
-        <translation type="unfinished"></translation>
+        <translation>Restaurer la liste des devises</translation>
     </message>
     <message>
         <source>Resetting List</source>
-        <translation type="unfinished"></translation>
+        <translation>Restauration de la liste</translation>
     </message>
     <message>
         <source>List was successfully reset</source>
-        <translation type="unfinished"></translation>
+        <translation>La liste a été correctement restaurée</translation>
     </message>
     <message>
         <source>This button resets the &apos;Convert to&apos; list to an alphabetical order.</source>
-        <translation type="unfinished"></translation>
+        <translation>Restaure l'ordre d'affichage alphabétique des devises.</translation>
     </message>
     <message>
         <source>Rearrange &apos;Convert to&apos; list</source>
-        <translation type="unfinished"></translation>
+        <translation>Réorganiser la liste</translation>
     </message>
     <message>
         <source>Puts the selected currency on top of &apos;Convert to&apos; list.</source>
-        <translation type="unfinished"></translation>
+        <translation>Place la devise sélectionnée en haut de la liste.</translation>
     </message>
 </context>
 <context>
     <name>parser</name>
     <message>
         <source>The api responded with an error. Currently no exchange rates are available. Please try again later or file a bug report on GitHub, see about page for details.</source>
-        <translation>L’API a répondu avec une erreur. Aucun taux de change disponible pour l’instant. Réessayer plus tard ou signalez un bug sur GitHub, voir la page À propos pour plus de détails.</translation>
+        <translation>LAPI a répondu avec une erreur. Aucun taux de change disponible pour linstant. Réessayer plus tard ou signalez un bug sur GitHub, voir la page À propos pour plus de détails.</translation>
     </message>
     <message>
         <source>The server was not able to load rates for this currency. Please select a different base currency.</source>
-        <translation type="unfinished"></translation>
+        <translation>Le serveur n'a pas pu charger les taux de cette devise. Sélectionnez une devise de base différente.</translation>
     </message>
     <message>
         <source>The api did not respond. Please try again later.</source>
-        <translation type="unfinished"></translation>
+        <translation>L'API n'a pas répondu. Réessayez plus tard.</translation>
     </message>
     <message>
         <source>No match</source>
-        <translation type="unfinished"></translation>
+        <translation>Aucun résultat</translation>
     </message>
     <message>
         <source>U.A.E Dirham</source>
@@ -215,7 +215,7 @@ The apis provide rates for different currencies therefore the currency your are 
     </message>
     <message>
         <source>Australian Dollar</source>
-        <translation type="unfinished"></translation>
+        <translation>Dollar australien</translation>
     </message>
     <message>
         <source>Aruban Florin</source>
@@ -279,7 +279,7 @@ The apis provide rates for different currencies therefore the currency your are 
     </message>
     <message>
         <source>Canadian Dollar</source>
-        <translation type="unfinished"></translation>
+        <translation>Dollar canadien</translation>
     </message>
     <message>
         <source>Congolese Franc</source>
@@ -287,7 +287,7 @@ The apis provide rates for different currencies therefore the currency your are 
     </message>
     <message>
         <source>Swiss Franc</source>
-        <translation type="unfinished"></translation>
+        <translation>Franc suisse</translation>
     </message>
     <message>
         <source>Chilean Peso</source>
@@ -698,7 +698,7 @@ The apis provide rates for different currencies therefore the currency your are 
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Tongan Paʻanga</source>
+        <source>Tongan Pa?anga</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -727,7 +727,7 @@ The apis provide rates for different currencies therefore the currency your are 
     </message>
     <message>
         <source>U.S. Dollar</source>
-        <translation type="unfinished"></translation>
+        <translation>Dollar étasunien</translation>
     </message>
     <message>
         <source>Uruguayan Peso</source>
