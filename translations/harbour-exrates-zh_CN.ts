@@ -348,443 +348,443 @@ apis提供不同货币的汇率，因此您所寻找的货币可能无法使用�
     </message>
     <message>
         <source>Ethiopian Birr</source>
-        <translation></translation>
+        <translation>埃塞俄比亚比尔</translation>
     </message>
     <message>
         <source>Euro</source>
-        <translation></translation>
+        <translation>欧元</translation>
     </message>
     <message>
         <source>Fiji Dollar</source>
-        <translation></translation>
+        <translation斐济元></translation>
     </message>
     <message>
         <source>U.K. Pound Sterling</source>
-        <translation></translation>
+        <translation>英镑</translation>
     </message>
     <message>
         <source>Georgian Lari</source>
-        <translation></translation>
+        <translation>格鲁吉亚拉里</translation>
     </message>
     <message>
         <source>Ghanaian Cedi</source>
-        <translation></translation>
+        <translation>加纳塞迪</translation>
     </message>
     <message>
         <source>Gibraltar Pound</source>
-        <translation></translation>
+        <translation>直布罗陀镑</translation>
     </message>
     <message>
         <source>Gambian Dalasi</source>
-        <translation></translation>
+        <translation>冈比亚达拉西</translation>
     </message>
     <message>
         <source>Guinean Franc</source>
-        <translation></translation>
+        <translation>几内亚法郎</translation>
     </message>
     <message>
         <source>Guatemalan Quetzal</source>
-        <translation></translation>
+        <translation>危地马拉克查尔</translation>
     </message>
     <message>
         <source>Guyanese Dollar</source>
-        <translation></translation>
+        <translation>圭亚那元</translation>
     </message>
     <message>
         <source>Hong Kong Dollar</source>
-        <translation></translation>
+        <translation>港币</translation>
     </message>
     <message>
         <source>Honduran Lempira</source>
-        <translation></translation>
+        <translation>洪都拉斯伦皮拉</translation>
     </message>
     <message>
         <source>Croatian Kuna</source>
-        <translation></translation>
+        <translation>克罗地亚库纳</translation>
     </message>
     <message>
         <source>Haitian Gourde</source>
-        <translation></translation>
+        <translation>海地古尔德</translation>
     </message>
     <message>
         <source>Hungarian Forint</source>
-        <translation></translation>
+        <translation>匈牙利福林</translation>
     </message>
     <message>
         <source>Indonesian Rupiah</source>
-        <translation></translation>
+        <translation>印度尼西亚卢比</translation>
     </message>
     <message>
         <source>Israeli New Sheqel</source>
-        <translation></translation>
+        <translation>以色列新谢克尔</translation>
     </message>
     <message>
         <source>Indian Rupee</source>
-        <translation></translation>
+        <translation>印度卢比</translation>
     </message>
     <message>
         <source>Iraqi Dinar</source>
-        <translation></translation>
+        <translation><伊拉克第纳尔/translation>
     </message>
     <message>
         <source>Iranian Rial</source>
-        <translation></translation>
+        <translation>伊朗里亚尔</translation>
     </message>
     <message>
         <source>Icelandic Krona</source>
-        <translation></translation>
+        <translation>冰岛克朗</translation>
     </message>
     <message>
         <source>Jamaican Dollar</source>
-        <translation></translation>
+        <translation>牙买加元</translation>
     </message>
     <message>
         <source>Jordanian Dinar</source>
-        <translation></translation>
+        <translation>约旦第纳尔</translation>
     </message>
     <message>
         <source>Japanese Yen</source>
-        <translation></translation>
+        <translation>日元</translation>
     </message>
     <message>
         <source>Kenyan Shilling</source>
-        <translation></translation>
+        <translation>肯尼亚先令</translation>
     </message>
     <message>
         <source>Kyrgyzstan Som</source>
-        <translation></translation>
+        <translation>吉尔吉斯斯坦索姆</translation>
     </message>
     <message>
         <source>Cambodian Riel</source>
-        <translation></translation>
+        <translation>柬埔寨里尔</translation>
     </message>
     <message>
         <source>Comoro Franc</source>
-        <translation></translation>
+        <translation>科莫多法郎</translation>
     </message>
     <message>
         <source>South Korean Won</source>
-        <translation></translation>
+        <translation>韩元</translation>
     </message>
     <message>
         <source>Kuwaiti Dinar</source>
-        <translation></translation>
+        <translation>科威特第纳尔</translation>
     </message>
     <message>
         <source>Kazakhstani Tenge</source>
-        <translation></translation>
+        <translation>哈萨克斯坦坚戈</translation>
     </message>
     <message>
         <source>Lao Kip</source>
-        <translation></translation>
+        <translation>老挝基普</translation>
     </message>
     <message>
         <source>Lebanese Pound</source>
-        <translation></translation>
+        <translation>黎巴嫩镑</translation>
     </message>
     <message>
         <source>Sri Lanka Rupee</source>
-        <translation></translation>
+        <translation>斯里兰卡卢比</translation>
     </message>
     <message>
         <source>Liberian Dollar</source>
-        <translation></translation>
+        <translation>利比里亚元</translation>
     </message>
     <message>
         <source>Lesotho Loti</source>
-        <translation></translation>
+        <translation>莱索托洛蒂</translation>
     </message>
     <message>
         <source>Libyan Dinar</source>
-        <translation></translation>
+        <translation>利比亚第纳尔</translation>
     </message>
     <message>
         <source>Moroccan Dirham</source>
-        <translation></translation>
+        <translation>摩洛哥迪拉姆</translation>
     </message>
     <message>
         <source>Moldova Lei</source>
-        <translation></translation>
+        <translation>摩尔多瓦雷</translation>
     </message>
     <message>
         <source>Malagasy Ariary</source>
-        <translation></translation>
+        <translation>马达加斯加阿里</translation>
     </message>
     <message>
         <source>Macedonian Denar</source>
-        <translation></translation>
+        <translation>马其顿德纳尔</translation>
     </message>
     <message>
         <source>Myanma Kyat</source>
-        <translation></translation>
+        <translation>缅甸缅元</translation>
     </message>
     <message>
         <source>Mongolian Togrog</source>
-        <translation></translation>
+        <translation>蒙古国图格里克</translation>
     </message>
     <message>
         <source>Macanese Pataca</source>
-        <translation></translation>
+        <translation>澳门元</translation>
     </message>
     <message>
         <source>Mauritanian Ouguiya</source>
-        <translation></translation>
+        <translation>毛利坦尼亚乌吉亚</translation>
     </message>
     <message>
         <source>Mauritian Rupee</source>
-        <translation></translation>
+        <translation>毛里求斯卢比</translation>
     </message>
     <message>
         <source>Maldivian Rufiyaa</source>
-        <translation></translation>
+        <translation>马尔代夫拉菲亚</translation>
     </message>
     <message>
         <source>Malawian Kwacha</source>
-        <translation></translation>
+        <translation>马拉维克瓦查</translation>
     </message>
     <message>
         <source>Mexican Peso</source>
-        <translation></translation>
+        <translation>墨西哥比索</translation>
     </message>
     <message>
         <source>Malaysian Ringgit</source>
-        <translation></translation>
+        <translation>马来西亚令吉</translation>
     </message>
     <message>
         <source>Mozambican Metical</source>
-        <translation></translation>
+        <translation>莫桑比克梅蒂卡尔</translation>
     </message>
     <message>
         <source>Namibian Dollar</source>
-        <translation></translation>
+        <translation>纳米比亚元</translation>
     </message>
     <message>
         <source>Nigerian Naira</source>
-        <translation></translation>
+        <translation>尼日利亚奈拉</translation>
     </message>
     <message>
         <source>Nicaraguan Córdoba</source>
-        <translation></translation>
+        <translation>尼加拉瓜科尔多瓦</translation>
     </message>
     <message>
         <source>Norwegian Krone</source>
-        <translation></translation>
+        <translation>挪威克朗</translation>
     </message>
     <message>
         <source>Nepalese Rupee</source>
-        <translation ></translation>
+        <translation>尼泊尔卢比</translation>
     </message>
     <message>
         <source>New Zealand Dollar</source>
-        <translation></translation>
+        <translation>新西兰元</translation>
     </message>
     <message>
         <source>Omani Rial</source>
-        <translation></translation>
+        <translation>阿曼里亚尔</translation>
     </message>
     <message>
         <source>Panamanian Balboa</source>
-        <translation></translation>
+        <translation>巴拿马巴波亚</translation>
     </message>
     <message>
         <source>Peruvian Nuevo Sol</source>
-        <translation></translation>
+        <translation>秘鲁新索尔</translation>
     </message>
     <message>
         <source>Papua New Guinean Kina</source>
-        <translation></translation>
+        <translation>巴布亚新几内亚基纳</translation>
     </message>
     <message>
         <source>Philippine Peso</source>
-        <translation</translation>
+        <translation>菲律宾比索</translation>
     </message>
     <message>
         <source>Pakistani Rupee</source>
-        <translation></translation>
+        <translation>巴基斯坦卢比</translation>
     </message>
     <message>
         <source>Polish Zloty</source>
-        <translation></translation>
+        <translation>波兰兹罗提</translation>
     </message>
     <message>
         <source>Paraguayan Guaraní</source>
-        <translation></translation>
+        <translation>巴拉圭瓜拉尼</translation>
     </message>
     <message>
         <source>Qatari Rial</source>
-        <translation ></translation>
+        <translation>卡塔尔里亚尔</translation>
     </message>
     <message>
         <source>Romanian New Leu</source>
-        <translation></translation>
+        <translation>阿曼新列伊</translation>
     </message>
     <message>
         <source>Serbian Dinar</source>
-        <translation></translation>
+        <translation>塞尔维亚第纳尔>/translation>
     </message>
     <message>
         <source>Russian Rouble</source>
-        <translation></translation>
+        <translation>俄罗斯卢布</translation>
     </message>
     <message>
         <source>Rwandan Franc</source>
-        <translation></translation>
+        <translation>卢旺达法郎</translation>
     </message>
     <message>
         <source>Saudi Riyal</source>
-        <translation></translation>
+        <translation>沙特里亚尔</translation>
     </message>
     <message>
         <source>Solomon Islands Dollar</source>
-        <translation></translation>
+        <translation>所罗门群岛元</translation>
     </message>
     <message>
         <source>Seychelles Rupee</source>
-        <translation></translation>
+        <translation>塞舌尔卢比</translation>
     </message>
     <message>
         <source>Sudanese Pound</source>
-        <translation></translation>
+        <translation>苏丹镑</translation>
     </message>
     <message>
         <source>Swedish Krona</source>
-        <translation></translation>
+        <translation>瑞典克朗</translation>
     </message>
     <message>
         <source>Singapore Dollar</source>
-        <translation></translation>
+        <translation>新加坡元</translation>
     </message>
     <message>
         <source>Sierra Leonean Leone</source>
-        <translation></translation>
+        <translation>塞拉利昂利昂</translation>
     </message>
     <message>
         <source>Somali Shilling</source>
-        <translation></translation>
+        <translation>索马里先令</translation>
     </message>
     <message>
         <source>Surinamese Dollar</source>
-        <translation></translation>
+        <translation>苏里南元</translation>
     </message>
     <message>
         <source>South Sudanese Pound</source>
-        <translation></translation>
+        <translation>南苏丹镑</translation>
     </message>
     <message>
         <source>São Tomé and Príncipe Dobra</source>
-        <translation></translation>
+        <translation>圣多美和普林西比多布拉</translation>
     </message>
     <message>
         <source>Salvadoran Colon</source>
-        <translation></translation>
+        <translation>萨尔瓦多科隆</translation>
     </message>
     <message>
         <source>Syrian pound</source>
-        <translation></translation>
+        <translation>叙利亚镑</translation>
     </message>
     <message>
         <source>Swazi Lilangeni</source>
-        <translation></translation>
+        <translation>斯威士兰吉尼</translation>
     </message>
     <message>
         <source>Thai Baht</source>
-        <translation></translation>
+        <translation>泰铢</translation>
     </message>
     <message>
         <source>Tajikistan Ruble</source>
-        <translation></translation>
+        <translation>塔吉克斯坦卢布</translation>
     </message>
     <message>
         <source>New Turkmenistan Manat</source>
-        <translation></translation>
+        <translation>新土库曼斯坦马纳特</translation>
     </message>
     <message>
         <source>Tunisian Dinar</source>
-        <translation></translation>
+        <translation>突尼斯第纳尔</translation>
     </message>
     <message>
         <source>Tongan Paʻanga</source>
-        <translation></translation>
+        <translation>汤加潘加</translation>
     </message>
     <message>
         <source>Turkish Lira</source>
-        <translation></translation>
+        <translation>土耳其里拉</translation>
     </message>
     <message>
         <source>Trinidad Tobago Dollar</source>
-        <translation></translation>
+        <translation>特立尼达多巴哥元</translation>
     </message>
     <message>
         <source>New Taiwan Dollar </source>
-        <translation></translation>
+        <translation>新台币</translation>
     </message>
     <message>
         <source>Tanzanian Shilling</source>
-        <translation></translation>
+        <translation>坦桑尼亚先令</translation>
     </message>
     <message>
         <source>Ukrainian Hryvnia</source>
-        <translation></translation>
+        <translation>乌克兰格里夫纳</translation>
     </message>
     <message>
         <source>Ugandan Shilling</source>
-        <translation></translation>
+        <translation>乌干达先令</translation>
     </message>
     <message>
         <source>U.S. Dollar</source>
-        <translation></translation>
+        <translation>美元</translation>
     </message>
     <message>
         <source>Uruguayan Peso</source>
-        <translation></translation>
+        <translation>乌拉圭比索</translation>
     </message>
     <message>
         <source>Uzbekistan Sum</source>
-        <translation></translation>
+        <translation>乌兹别克斯坦苏姆</translation>
     </message>
     <message>
         <source>Venezuelan Bolivar</source>
-        <translation></translation>
+        <translation>委内瑞拉玻利瓦尔</translation>
     </message>
     <message>
         <source>Vietnamese Dong</source>
-        <translation></translation>
+        <translation>越南盾</translation>
     </message>
     <message>
         <source>Vanuatu Vatu</source>
-        <translation></translation>
+        <translation>瓦努阿图瓦图</translation>
     </message>
     <message>
         <source>Samoan Tala</source>
-        <translation></translation>
+        <translation>萨摩亚塔拉</translation>
     </message>
     <message>
         <source>Central African CFA Franc</source>
-        <translation></translation>
+        <translation>中非法郎</translation>
     </message>
     <message>
         <source>East Caribbean Dollar</source>
-        <translation></translation>
+        <translation>东加勒比元</translation>
     </message>
     <message>
         <source>West African CFA Franc</source>
-        <translation></translation>
+        <translation>西非法郎</translation>
     </message>
     <message>
         <source>CFP Franc</source>
-        <translation></translation>
+        <translation>法国和平的法郎 （塔希提）</translation>
     </message>
     <message>
         <source>Yemeni Rial</source>
-        <translation></translation>
+        <translation>也门里亚尔</translation>
     </message>
     <message>
         <source>South African Rand</source>
-        <translation></translation>
+        <translation>南非兰特</translation>
     </message>
     <message>
         <source>Zambian Kwacha</source>
-        <translation></translation>
+        <translation>赞比亚克瓦查</translation>
     </message>
 </context>
 </TS>
