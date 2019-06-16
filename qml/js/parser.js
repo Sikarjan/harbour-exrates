@@ -25,7 +25,7 @@ console.log(url)
             }else{
                 rateModel.hasError = false
                 if(save){
-                    editResponse(response, currency);
+                    editResponse(currency);
                 }else{
                     updateBaseRateModel();
                 }
@@ -43,18 +43,18 @@ console.log(url)
 }
 function updateBaseRateModel(){
     baseRateModel.clear()
-    var currency
+    baseRateModelCopy = []
 
     if(rateModel.source === 0){
         baseRateModel.append({"currency": "EUR", "cName": "Euro"})
+        baseRateModelCopy.push({"currency": "EUR", "cName": "Euro"})
         response = sortByProperty(response, "name")
-        baseRateModelCopy = response
         for(var i in response){
             baseRateModel.append({"currency": response[i].code, "cName": cNames[response[i].code]})
+            baseRateModelCopy.push({"currency": response[i].code, "cName": cNames[response[i].code]})
         }
     }else{
-        baseRateModelCopy.clear()
-        for(currency in response.rates){
+        for(var currency in response.rates){
             baseRateModel.append({"currency": currency, "cName": cNames[currency]})
             baseRateModelCopy.push({"currency": currency, "cName": cNames[currency]})
         }
@@ -63,12 +63,20 @@ function updateBaseRateModel(){
 
 function baseRateSearch(querry){
     baseRateModel.clear();
+    var q = querry.toLowerCase();
 
     for (var i=0; i<baseRateModelCopy.length; i++) {
-        if (querry === "" || baseRateModelCopy[i].name.indexOf(querry) >= 0) {
-            baseRateModel.append({"currency": baseRateModelCopy[i].code, "cName": baseRateModelCopy[i].name})
+        if (q === "" || baseRateModelCopy[i].cName.toLowerCase().indexOf(q) >= 0) {
+            baseRateModel.append({"currency": baseRateModelCopy[i].currency, "cName": baseRateModelCopy[i].cName})
         }
     }
+
+    for(i=0;i<baseRateModelCopy.length; i++){
+        if(baseRateModelCopy[i].currency.toLowerCase().indexOf(q) >= 0){
+            baseRateModel.append({"currency": baseRateModelCopy[i].currency, "cName": baseRateModelCopy[i].cName})
+        }
+    }
+
     if(baseRateModel.count === 0){
         baseRateModel.append({"currency": "ERR", "cName": qsTr("No match") })
     }
@@ -76,18 +84,26 @@ function baseRateSearch(querry){
 
 function rateSearch(querry){
     rateModel.clear()
+    var q = querry.toLowerCase()
 
     for (var i=0; i<rateModelCopy.count; i++) {
-        if (querry === "" || rateModelCopy.get(i).cName.indexOf(querry) >= 0) {
+        if (q === "" || rateModelCopy.get(i).cName.toLowerCase().indexOf(q) >= 0) {
             rateModel.append(rateModelCopy.get(i))
         }
     }
+
+    for (i=0; i<rateModelCopy.count; i++) {
+        if (q === "" || rateModelCopy.get(i).currency.toLowerCase().indexOf(q) >= 0) {
+            rateModel.append(rateModelCopy.get(i))
+        }
+    }
+
     if(rateModel.count === 0){
         rateModel.append({"cName": qsTr("No match"), "currency": "ERR", "rate": 0 })
     }
 }
 
-function editResponse(response, baseRate){
+function editResponse(baseRate){
     var time
     var currency
 

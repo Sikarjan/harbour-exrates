@@ -356,7 +356,7 @@ apis提供不同货币的汇率，因此您所寻找的货币可能无法使用�
     </message>
     <message>
         <source>Fiji Dollar</source>
-        <translation斐济元></translation>
+        <translation>斐济元</translation>
     </message>
     <message>
         <source>U.K. Pound Sterling</source>

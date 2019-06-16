@@ -140,7 +140,7 @@ The apis provide rates for different currencies therefore the currency your are 
     </message>
     <message>
         <source>Requires a rate update or selection of a new base rate to take affect.</source>
-        <translation>Nécessite une mise à jour des taux ou le choix d'une autre device de base.</translation>
+        <translation>Nécessite une mise à jour des taux ou le choix d&apos;une autre device de base.</translation>
     </message>
     <message>
         <source>Reset Currency List</source>
@@ -156,7 +156,7 @@ The apis provide rates for different currencies therefore the currency your are 
     </message>
     <message>
         <source>This button resets the &apos;Convert to&apos; list to an alphabetical order.</source>
-        <translation>Restaure l'ordre d'affichage alphabétique des devises.</translation>
+        <translation>Restaure l&apos;ordre d&apos;affichage alphabétique des devises.</translation>
     </message>
     <message>
         <source>Rearrange &apos;Convert to&apos; list</source>
@@ -175,11 +175,11 @@ The apis provide rates for different currencies therefore the currency your are 
     </message>
     <message>
         <source>The server was not able to load rates for this currency. Please select a different base currency.</source>
-        <translation>Le serveur n'a pas pu charger les taux de cette devise. Sélectionnez une devise de base différente.</translation>
+        <translation>Le serveur n&apos;a pas pu charger les taux de cette devise. Sélectionnez une devise de base différente.</translation>
     </message>
     <message>
         <source>The api did not respond. Please try again later.</source>
-        <translation>L'API n'a pas répondu. Réessayez plus tard.</translation>
+        <translation>L&apos;API n&apos;a pas répondu. Réessayez plus tard.</translation>
     </message>
     <message>
         <source>No match</source>
@@ -698,10 +698,6 @@ The apis provide rates for different currencies therefore the currency your are 
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Tongan Pa?anga</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Turkish Lira</source>
         <translation type="unfinished"></translation>
     </message>
@@ -779,6 +775,10 @@ The apis provide rates for different currencies therefore the currency your are 
     </message>
     <message>
         <source>Zambian Kwacha</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Tongan Paʻanga</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

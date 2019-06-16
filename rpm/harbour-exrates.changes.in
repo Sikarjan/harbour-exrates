@@ -1,3 +1,9 @@
+* Sun Jun 09 2019 Sikarjan <store@innobiz.de> 1.1-1
+- [new] Favourite four currencies are displayed on cover
+- [improvment] Search is not case sensitive
+- [improvment] Search includes ISO-4217-Code matches
+- [improvment] French and Chinese translation updated
+
 * Sun Jun 09 2019 Sikarjan <store@innobiz.de> 1.0-1
 - [new] Second source added
 - [new] Option page added
