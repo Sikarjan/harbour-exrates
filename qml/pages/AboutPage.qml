@@ -1,5 +1,5 @@
 import QtQuick 2.0
-import Sailfish.Silica 1.1
+import Sailfish.Silica 1.0
 
 Page {
     id: page
@@ -24,7 +24,7 @@ Page {
             width: parent.width
             color: Theme.highlightColor
             font.pixelSize: Theme.fontSizeMedium
-            text: qsTr("Version:")+" 1.0"
+            text: qsTr("Version:")+" 1.1"
         }
 
         Text {

@@ -252,7 +252,7 @@ apis提供不同货币的汇率，因此您所寻找的货币可能无法使用�
     </message>
     <message>
         <source>Burundian Franc</source>
-        <translation><布隆迪法郎/translation>
+        <translation>布隆迪法郎</translation>
     </message>
     <message>
         <source>Brunei Dollar</source>
@@ -424,7 +424,7 @@ apis提供不同货币的汇率，因此您所寻找的货币可能无法使用�
     </message>
     <message>
         <source>Iraqi Dinar</source>
-        <translation><伊拉克第纳尔/translation>
+        <translation>伊拉克第纳尔</translation>
     </message>
     <message>
         <source>Iranian Rial</source>
@@ -620,7 +620,7 @@ apis提供不同货币的汇率，因此您所寻找的货币可能无法使用�
     </message>
     <message>
         <source>Serbian Dinar</source>
-        <translation>塞尔维亚第纳尔>/translation>
+        <translation>塞尔维亚第纳尔</translation>
     </message>
     <message>
         <source>Russian Rouble</source>
