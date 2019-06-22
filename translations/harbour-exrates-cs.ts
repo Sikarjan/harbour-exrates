@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="de_DE">
+<TS version="2.1" language="cs">
 <context>
     <name>AboutPage</name>
     <message>
         <source>About</source>
-        <translation>Über die App</translation>
+        <translation type="unfinished">O aplikaci</translation>
     </message>
     <message>
         <source>Version:</source>
-        <translation>Version:</translation>
+        <translation type="unfinished">Verze:</translation>
     </message>
     <message>
         <source>
@@ -20,208 +20,209 @@
 &lt;/ul&gt;
 The apis provide rates for different currencies therefore the currency your are looking for might not be available. Also the rates are only updated once per day.&lt;/p&gt;
 &lt;p&gt;Please support me by sending bug reports or suggestions via Github. You can find the project &lt;a href=&quot;https://github.com/Sikarjan/harbour-exrates&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Aktuell verwendet die App nur offene APIs um an Wechselkurse zu kommen. Folgende APIs können verwendet werden:
+        <translation type="unfinished">
+&lt;p&gt;Pro získávání kurzů v tuto chvíli používá aplikace opensource api. Použitá api:
 &lt;ul&gt;
     &lt;li&gt;&lt;a href=&quot;https://www.floatrates.com/indes.php&quot;&gt;FloatRates-API&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;https://www.exchangerate-api.com/index.php&quot;&gt;ExchangeRate-API&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-Die APIs haben Wechselkruse für unterschiedliche Währungen und nicht alle Währungen sind verfügbar. Außerdem können die Wechselkurse nur einmal pro Tag aktualisiert werden.&lt;/p&gt;
-&lt;p&gt;Ihr könnt mich unterstützen in dem man Fehler und Verbesserungsvorschläge auf GitHub meldet. Das Repository kann man &lt;a href=&quot;https://github.com/Sikarjan/harbour-exrates&quot;&gt;hier&lt;/a&gt; finden.&lt;/p&gt;</translation>
+Api poskytují přístup k měnám, ale některé měny mohou chybět. Také kurzy jsou aktualizovány pouze jednou denně.&lt;/p&gt;
+&lt;p&gt;Podpořte aplikaci hlášením bugů a navrhujte zlepšení a další funkce na Githubu. Projekt najdete &lt;a href=&quot;https://github.com/Sikarjan/harbour-exrates&quot;&gt;zde&lt;/a&gt;.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
     <name>BasePage</name>
     <message>
         <source>Base Currency</source>
-        <translation>Basiswährung</translation>
+        <translation type="unfinished">Základní měna</translation>
     </message>
     <message>
         <source>Show search field</source>
-        <translation>Suche einblenden</translation>
+        <translation type="unfinished">Zobrazit vyhledávací pole</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Suche</translation>
+        <translation type="unfinished">Hledat</translation>
     </message>
     <message>
         <source>Hide search field</source>
-        <translation>Suchfeld ausblenden</translation>
+        <translation type="unfinished">Skrýt vyhledávací pole</translation>
     </message>
 </context>
 <context>
     <name>CoverPage</name>
     <message>
         <source>Currency Converter</source>
-        <translation>Wechselkursrechner</translation>
+        <translation type="unfinished">Převodník měn</translation>
     </message>
 </context>
 <context>
     <name>FirstPage</name>
     <message>
-        <source>ExRates</source>
-        <translation>ExRates</translation>
+        <source>About</source>
+        <translation type="unfinished">O aplikaci</translation>
     </message>
     <message>
         <source>Select Base Currency</source>
-        <translation>Wähle eine Basiswährung</translation>
-    </message>
-    <message>
-        <source>Sum to convert</source>
-        <translation>Betrag zum umrechnen</translation>
-    </message>
-    <message>
-        <source>Enter sum</source>
-        <translation>Betrag eingeben</translation>
-    </message>
-    <message>
-        <source>Sum in </source>
-        <translation>Betrag in </translation>
+        <translation type="unfinished">Vybrat výchozí měnu</translation>
     </message>
     <message>
         <source>Update Rates</source>
-        <translation>Kurse aktualisieren</translation>
+        <translation type="unfinished">Aktualizovat kurzy</translation>
     </message>
     <message>
-        <source>Convert to: </source>
-        <translation>Umrechnen in: </translation>
-    </message>
-    <message>
-        <source>Result</source>
-        <translation>Ergebnis</translation>
+        <source>ExRates</source>
+        <translation type="unfinished">ExRates</translation>
     </message>
     <message>
         <source>Base Currency: </source>
-        <translation>Basiswährung:</translation>
+        <translation type="unfinished">Výchozí měna: </translation>
     </message>
     <message>
         <source>Last update: </source>
-        <translation>Letzte Aktualisierung: </translation>
+        <translation type="unfinished">Poslední aktualizace: </translation>
+    </message>
+    <message>
+        <source>Sum to convert</source>
+        <translation type="unfinished">Počet pro převod</translation>
+    </message>
+    <message>
+        <source>Enter sum</source>
+        <translation type="unfinished">Vložte počet</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation type="unfinished">Výsledek</translation>
+    </message>
+    <message>
+        <source>Sum in </source>
+        <translation type="unfinished">Suma v </translation>
+    </message>
+    <message>
+        <source>Convert to: </source>
+        <translation type="unfinished">Převést na: </translation>
     </message>
     <message>
         <source>Select a base currency from the drop down menu. This requires a internet connection. New rates can be downloaded once per day.</source>
-        <translation>Wähle eine Basisrate aus dem Pull-Menü. Hierfür ist eine Verbindung zum Internet erforderlich. Neue Kurse können einmal am Tag heruntergeladen werden.</translation>
-    </message>
-    <message>
-        <source>About</source>
-        <translation>Über die App</translation>
+        <translation type="unfinished">Vyberte výchozí měnu z horního menu. Je potřeba internetové připojení. Kurzy lze aktualizovat jednou denně.</translation>
     </message>
     <message>
         <source>Move up</source>
-        <translation>Nach oben</translation>
+        <translation type="unfinished">Posunout nahoru</translation>
     </message>
     <message>
         <source>Move down</source>
-        <translation>Nach unten</translation>
+        <translation type="unfinished">Posunout dolů</translation>
     </message>
     <message>
         <source>Options</source>
-        <translation>Einstellungen</translation>
+        <translation type="unfinished">Nastavení</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Suche</translation>
+        <translation type="unfinished">Hledat</translation>
     </message>
     <message>
         <source>Hide search field</source>
-        <translation>Suchfeld ausblenden</translation>
+        <translation type="unfinished">Skrýt vyhledávací pole</translation>
     </message>
     <message>
         <source>Show search field</source>
-        <translation>Suche einblenden</translation>
+        <translation type="unfinished">Zobrazit vyhledávací pole</translation>
     </message>
     <message>
         <source>Okay</source>
-        <translation>Okay</translation>
+        <translation type="unfinished">OK</translation>
     </message>
 </context>
 <context>
     <name>OptionPage</name>
     <message>
         <source>App Settings</source>
-        <translation>App Einstellungen</translation>
+        <translation type="unfinished">Nastavení aplikace</translation>
     </message>
     <message>
         <source>Source</source>
-        <translation>Quelle</translation>
+        <translation type="unfinished">Zdroj</translation>
     </message>
     <message>
         <source>Reset Currency List</source>
-        <translation>Währungsliste zurücksetzen</translation>
+        <translation type="unfinished">Obnovit seznam měn</translation>
     </message>
     <message>
         <source>Resetting List</source>
-        <translation>Liste wird zurückgesetzt</translation>
+        <translation type="unfinished">Obnovuji seznam měn</translation>
     </message>
     <message>
         <source>This button resets the &apos;Convert to&apos; list to an alphabetical order.</source>
-        <translation>Hier wird die &apos;Umrechnen in&apos; Liste wieder alphabetisch sortiert.</translation>
+        <translation type="unfinished">Toto tlačítko resetuje seznam měl do pořadí podle abecedy.</translation>
     </message>
     <message>
         <source>Requires a rate update or selection of a new base rate to take affect.</source>
-        <translation>Benötigt eine Aktualisierung der Wechselkurse oder die Auswahl einer neuen Basisrate.</translation>
+        <translation type="unfinished">Vyžaduje aktualizaci kurzu nebo výběr nové výchozí měny.</translation>
     </message>
     <message>
         <source>List was successfully reset</source>
-        <translation>Die Liste ist erfolgreich zurückgesetzt worden</translation>
+        <translation type="unfinished">Seznam měn byl úspěšně obnoven</translation>
     </message>
     <message>
         <source>Rearrange &apos;Convert to&apos; list</source>
-        <translation>&apos;Umrechnung in&apos; Liste neuordnen</translation>
+        <translation type="unfinished">Přizpůsobit seznam měn</translation>
     </message>
     <message>
         <source>Puts the selected currency on top of &apos;Convert to&apos; list.</source>
-        <translation>Verschiebt die ausgewählte Währung an den Anfang der &apos;Umrechnung in&apos; Liste.</translation>
+        <translation type="unfinished">Zvolenou měnu přesune na začátek seznamu měn.</translation>
     </message>
 </context>
 <context>
     <name>parser</name>
     <message>
         <source>The api responded with an error. Currently no exchange rates are available. Please try again later or file a bug report on GitHub, see about page for details.</source>
-        <translation>Die API hat mit einem Fehler geantwortet. Aktuell sind keine Wechselkurse verfügbar. Bitte versuchen Sie es später nocheinmal oder stellen Sie einen Fehlerbericht auf GitHub, Details in Über die App.</translation>
+        <translation type="unfinished">Momentálně nejsou k dispozici kurzy měn. Zkuste to prosím později nebo nahlašte bug na GitHub.</translation>
     </message>
     <message>
         <source>The api did not respond. Please try again later.</source>
-        <translation>Die API hat nicht reagiert. Bitte versuchen Sie es später erneut.</translation>
+        <translation type="unfinished">Api neodpovídá. Zkuste to prosím později.</translation>
     </message>
     <message>
         <source>U.A.E Dirham</source>
-        <translation>VAE Dirham</translation>
+        <translation type="unfinished">U.A.E Dirham</translation>
     </message>
     <message>
         <source>Afghan Afghani</source>
-        <translation>Afganischer Afghani</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Albanian Lek</source>
-        <translation>Albanischer Lek</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Armenia Dram</source>
-        <translation>Armenischer Dram</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Neth. Antillean Guilder</source>
-        <translation>Niederländische Antillen-Gulden</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Angolan Kwanza</source>
-        <translation>Angolischer Kwanza</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Argentine Peso</source>
-        <translation>Argentinischer Peso</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Australian Dollar</source>
-        <translation>Australischer Dollar</translation>
+        <translation type="unfinished">Australský dolar</translation>
     </message>
     <message>
         <source>Aruban Florin</source>
-        <translation>Aruba Florin</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Azerbaijan Manat</source>
-        <translation>Aserbaidschan Manat</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Bosnia and Herzegovina convertible Mark</source>
@@ -269,7 +270,7 @@ Die APIs haben Wechselkruse für unterschiedliche Währungen und nicht alle Wäh
     </message>
     <message>
         <source>Belarussian Ruble</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Běloruský rubl</translation>
     </message>
     <message>
         <source>Belize Dollar</source>
@@ -277,7 +278,7 @@ Die APIs haben Wechselkruse für unterschiedliche Währungen und nicht alle Wäh
     </message>
     <message>
         <source>Canadian Dollar</source>
-        <translation>Kanadischer Dollar</translation>
+        <translation type="unfinished">Kanadský dolar</translation>
     </message>
     <message>
         <source>Congolese Franc</source>
@@ -285,7 +286,7 @@ Die APIs haben Wechselkruse für unterschiedliche Währungen und nicht alle Wäh
     </message>
     <message>
         <source>Swiss Franc</source>
-        <translation>Schweizer Franken</translation>
+        <translation type="unfinished">Švýcarský frank</translation>
     </message>
     <message>
         <source>Chilean Peso</source>
@@ -293,7 +294,7 @@ Die APIs haben Wechselkruse für unterschiedliche Währungen und nicht alle Wäh
     </message>
     <message>
         <source>Chinese Yuan</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Čínský yuan</translation>
     </message>
     <message>
         <source>Colombian Peso</source>
@@ -313,7 +314,7 @@ Die APIs haben Wechselkruse für unterschiedliche Währungen und nicht alle Wäh
     </message>
     <message>
         <source>Czech Koruna</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Česká koruna</translation>
     </message>
     <message>
         <source>Djiboutian Franc</source>
@@ -321,7 +322,7 @@ Die APIs haben Wechselkruse für unterschiedliche Währungen und nicht alle Wäh
     </message>
     <message>
         <source>Danish Krone</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Dánská koruna</translation>
     </message>
     <message>
         <source>Dominican Peso</source>
@@ -333,7 +334,7 @@ Die APIs haben Wechselkruse für unterschiedliche Währungen und nicht alle Wäh
     </message>
     <message>
         <source>Egyptian Pound</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Egyptská libra</translation>
     </message>
     <message>
         <source>Eritrean Nakfa</source>
@@ -345,7 +346,7 @@ Die APIs haben Wechselkruse für unterschiedliche Währungen und nicht alle Wäh
     </message>
     <message>
         <source>Euro</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Euro</translation>
     </message>
     <message>
         <source>Fiji Dollar</source>
@@ -353,7 +354,7 @@ Die APIs haben Wechselkruse für unterschiedliche Währungen und nicht alle Wäh
     </message>
     <message>
         <source>U.K. Pound Sterling</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Britské libry</translation>
     </message>
     <message>
         <source>Georgian Lari</source>
@@ -393,7 +394,7 @@ Die APIs haben Wechselkruse für unterschiedliche Währungen und nicht alle Wäh
     </message>
     <message>
         <source>Croatian Kuna</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Chorvatská kuna</translation>
     </message>
     <message>
         <source>Haitian Gourde</source>
@@ -401,7 +402,7 @@ Die APIs haben Wechselkruse für unterschiedliche Währungen und nicht alle Wäh
     </message>
     <message>
         <source>Hungarian Forint</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Maďarský forint</translation>
     </message>
     <message>
         <source>Indonesian Rupiah</source>
@@ -425,7 +426,7 @@ Die APIs haben Wechselkruse für unterschiedliche Währungen und nicht alle Wäh
     </message>
     <message>
         <source>Icelandic Krona</source>
-        <translation>Isländische Krone</translation>
+        <translation type="unfinished">Islandská koruna</translation>
     </message>
     <message>
         <source>Jamaican Dollar</source>
@@ -437,7 +438,7 @@ Die APIs haben Wechselkruse für unterschiedliche Währungen und nicht alle Wäh
     </message>
     <message>
         <source>Japanese Yen</source>
-        <translation>Japanischer Yen</translation>
+        <translation type="unfinished">Japonský yen</translation>
     </message>
     <message>
         <source>Kenyan Shilling</source>
@@ -553,7 +554,7 @@ Die APIs haben Wechselkruse für unterschiedliche Währungen und nicht alle Wäh
     </message>
     <message>
         <source>Norwegian Krone</source>
-        <translation>Norwegische Krone</translation>
+        <translation type="unfinished">Norská koruna</translation>
     </message>
     <message>
         <source>Nepalese Rupee</source>
@@ -561,7 +562,7 @@ Die APIs haben Wechselkruse für unterschiedliche Währungen und nicht alle Wäh
     </message>
     <message>
         <source>New Zealand Dollar</source>
-        <translation>Neu Seeländischer Dollar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Omani Rial</source>
@@ -589,7 +590,7 @@ Die APIs haben Wechselkruse für unterschiedliche Währungen und nicht alle Wäh
     </message>
     <message>
         <source>Polish Zloty</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Polský zlotý</translation>
     </message>
     <message>
         <source>Paraguayan Guaraní</source>
@@ -609,7 +610,7 @@ Die APIs haben Wechselkruse für unterschiedliche Währungen und nicht alle Wäh
     </message>
     <message>
         <source>Russian Rouble</source>
-        <translation>Rusischer Rubel</translation>
+        <translation type="unfinished">Ruský rubl</translation>
     </message>
     <message>
         <source>Rwandan Franc</source>
@@ -633,7 +634,7 @@ Die APIs haben Wechselkruse für unterschiedliche Währungen und nicht alle Wäh
     </message>
     <message>
         <source>Swedish Krona</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Švédská koruna</translation>
     </message>
     <message>
         <source>Singapore Dollar</source>
@@ -693,7 +694,7 @@ Die APIs haben Wechselkruse für unterschiedliche Währungen und nicht alle Wäh
     </message>
     <message>
         <source>Turkish Lira</source>
-        <translation>Türkische Lira</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Trinidad Tobago Dollar</source>
@@ -717,7 +718,7 @@ Die APIs haben Wechselkruse für unterschiedliche Währungen und nicht alle Wäh
     </message>
     <message>
         <source>U.S. Dollar</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">U.S. dolar</translation>
     </message>
     <message>
         <source>Uruguayan Peso</source>
@@ -773,7 +774,7 @@ Die APIs haben Wechselkruse für unterschiedliche Währungen und nicht alle Wäh
     </message>
     <message>
         <source>The server was not able to load rates for this currency. Please select a different base currency.</source>
-        <translation>Die gewählte Quelle hat keine Daten zu dieser Währung. Bitte wählen Sie eine andere Basiswährung.</translation>
+        <translation type="unfinished">Serveru se nepodařilo načíst kurz pro tuto měnu. Vyberte si jinou výchozí měnu.</translation>
     </message>
     <message>
         <source>Cambodian Riel</source>
@@ -785,7 +786,7 @@ Die APIs haben Wechselkruse für unterschiedliche Währungen und nicht alle Wäh
     </message>
     <message>
         <source>No match</source>
-        <translation>Keine Übereinstimmung</translation>
+        <translation type="unfinished">Nenašla se shoda</translation>
     </message>
 </context>
 </TS>
