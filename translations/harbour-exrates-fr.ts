@@ -89,11 +89,11 @@ The apis provide rates for different currencies therefore the currency your are 
     </message>
     <message>
         <source>Sum in </source>
-        <translation>Montant en</translation>
+        <translation>Montant en </translation>
     </message>
     <message>
         <source>Convert to: </source>
-        <translation>Convertir en :</translation>
+        <translation>Convertir en : </translation>
     </message>
     <message>
         <source>Select a base currency from the drop down menu. This requires a internet connection. New rates can be downloaded once per day.</source>
