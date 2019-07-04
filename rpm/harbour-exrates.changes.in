@@ -1,5 +1,10 @@
+* Sat Jul 4 2019 Sikarjan <store@innobiz.de> 1.3-1
+- [improvement] Chinese and French translation updated
+- [improvement] Numbers localized
+- [bug] Fixed NaN error when comma is used as decimal separator
+
 * Sat Jun 2 2019 Sikarjan <store@innobiz.de> 1.2-1
-- [improvment] Chinese translation updated
+- [improvement] Chinese translation updated
 - [new] Czeck translation added
 
 * Tue Jun 18 2019 Sikarjan <store@innobiz.de> 1.1-2
@@ -7,16 +12,16 @@
 
 * Sun Jun 16 2019 Sikarjan <store@innobiz.de> 1.1-1
 - [new] Favourite four currencies are displayed on cover
-- [improvment] Search is not case sensitive
-- [improvment] Search includes ISO-4217-Code matches
-- [improvment] French and Chinese translation updated
+- [improvement] Search is not case sensitive
+- [improvement] Search includes ISO-4217-Code matches
+- [improvement] French and Chinese translation updated
 
 * Sun Jun 09 2019 Sikarjan <store@innobiz.de> 1.0-1
 - [new] Second source added
 - [new] Option page added
 - [new] Search field option added to Base Rates Page
 - [new] Search field option added to Convert-to-list
-- [improvment] Convert to delegates, width for code and rate adjusted to screen size
+- [improvement] Convert to delegates, width for code and rate adjusted to screen size
 
 * Sat May 10 2019 Sikarjan <store@innobiz.de> 0.3-1
 - [new] Rates BGN and HRK added
@@ -30,7 +35,7 @@
 
 * Sat May 10 2019 Sikarjan <store@innobiz.de> 0.2-1
 - [bug] Settings were not restored correctly
-- [improvment] Last update date is displayed in a local format (needs a rate update)
+- [improvement] Last update date is displayed in a local format (needs a rate update)
 - [new] German translation added
 
 * Wed May 08 2019 Sikarjan <store@innobiz.de> 0.1-1

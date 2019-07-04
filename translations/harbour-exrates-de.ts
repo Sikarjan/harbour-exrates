@@ -133,6 +133,10 @@ Die APIs haben Wechselkruse für unterschiedliche Währungen und nicht alle Wäh
         <source>Okay</source>
         <translation>Okay</translation>
     </message>
+    <message>
+        <source>%L1</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>OptionPage</name>

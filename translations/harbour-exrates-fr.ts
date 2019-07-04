@@ -127,6 +127,10 @@ The apis provide rates for different currencies therefore the currency your are 
         <source>Okay</source>
         <translation>Valider</translation>
     </message>
+    <message>
+        <source>%L1</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>OptionPage</name>

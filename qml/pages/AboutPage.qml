@@ -24,7 +24,7 @@ Page {
             width: parent.width
             color: Theme.highlightColor
             font.pixelSize: Theme.fontSizeMedium
-            text: qsTr("Version:")+" 1.1"
+            text: qsTr("Version:")+" 1.3"
         }
 
         Text {

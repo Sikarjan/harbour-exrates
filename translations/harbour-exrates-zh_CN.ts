@@ -132,6 +132,10 @@ apis 提供不同货币的汇率，因此您所寻找的货币可能无法使用
         <source>Okay</source>
         <translation>确认</translation>
     </message>
+    <message>
+        <source>%L1</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>OptionPage</name>

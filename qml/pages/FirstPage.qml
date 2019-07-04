@@ -118,8 +118,13 @@ Page {
                     label: qsTr("Sum to convert")
                     placeholderText: qsTr("Enter sum")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    text: qsTr("%L1").arg(input)
+
+
+                    property double input
+
                     EnterKey.onClicked:  {
-                        result.text = Math.round(text * rateModel.rate*100)/100
+                        result.output = Math.round(text.replace(',', '.') * rateModel.rate*100)/100
                     }
                 }
 
@@ -128,12 +133,15 @@ Page {
                     width: parent.width
                     color: Theme.highlightColor
                     inputMethodHints: Qt.ImhDigitsOnly
+                    text: qsTr("%L1").arg(output)
 
                     placeholderText: qsTr("Result")
                     label: qsTr("Sum in ") + rateModel.cFullName
 
+                    property double output
+
                     EnterKey.onClicked: {
-                        insert.text = Math.round(text * 1/rateModel.rate*100)/100
+                        insert.input = Math.round(text * 1/rateModel.rate*100)/100
                     }
                 }
 
@@ -197,7 +205,7 @@ Page {
                         Label { text: cName; width: line.contentWidth; clip: true }
                         Label { text: currency; width: Theme.fontSizeMedium*2 }
                         Label {
-                            text: insert.text === "" ? Math.round(rate*10000)/10000:Math.round(insert.text * rate*100)/100
+                            text: insert.text === "" ? qsTr("%L1").arg(Math.round(rate*10000)/10000):qsTr("%L1").arg(Math.round(insert.text.replace(",",".") * rate*100)/100)
                             width: Theme.fontSizeMedium*3
                         }
 
