@@ -25,7 +25,7 @@ The apis provide rates for different currencies therefore the currency your are 
     &lt;li&gt;&lt;a href=&quot;https://www.exchangerate-api.com/index.php&quot;&gt;ExchangeRate-API&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 apis 提供不同货币的汇率，因此您所寻找的货币可能无法使用。 此汇率仅每天更新一次。 &lt;/p&gt;
-&lt;p&gt; 请通过Github发送错误报告或建议来支持我。 你可以在此找到这个项目 &lt;a href=&quot;https://github.com/Sikarjan/harbour-exrates&quot;&gt;&lt;/a&gt;.&lt;/p&gt;</translation>
+&lt;p&gt; 请通过 Github 发送错误报告或建议来支持我。 你可以在此处找到该项目 &lt;a href=&quot;https://github.com/Sikarjan/harbour-exrates&quot;&gt;&lt;/a&gt;.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -134,7 +134,7 @@ apis 提供不同货币的汇率，因此您所寻找的货币可能无法使用
     </message>
     <message>
         <source>%L1</source>
-        <translation type="unfinished"></translation>
+        <translation>%L1</translation>
     </message>
 </context>
 <context>
@@ -180,11 +180,11 @@ apis 提供不同货币的汇率，因此您所寻找的货币可能无法使用
     <name>parser</name>
     <message>
         <source>The api responded with an error. Currently no exchange rates are available. Please try again later or file a bug report on GitHub, see about page for details.</source>
-        <translation>api返回一个错误。 目前没有汇率可用。 请稍后再试或在 GitHub 上提交错误报告，有关详细信息，请参阅页面。</translation>
+        <translation>api 返回一个错误。 目前无可用汇率，请稍后再试或在 GitHub 上提交错误报告，有关详细信息，请参阅页面。</translation>
     </message>
     <message>
         <source>The api did not respond. Please try again later.</source>
-        <translation>api未响应，请稍后再试。</translation>
+        <translation>api 未响应，请稍后再试。</translation>
     </message>
     <message>
         <source>The server was not able to load rates for this currency. Please select a different base currency.</source>
