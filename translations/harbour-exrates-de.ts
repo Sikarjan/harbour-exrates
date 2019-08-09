@@ -135,7 +135,7 @@ Die APIs haben Wechselkruse für unterschiedliche Währungen und nicht alle Wäh
     </message>
     <message>
         <source>%L1</source>
-        <translation type="unfinished"></translation>
+        <translation>%L1</translation>
     </message>
 </context>
 <context>
@@ -229,43 +229,43 @@ Die APIs haben Wechselkruse für unterschiedliche Währungen und nicht alle Wäh
     </message>
     <message>
         <source>Bosnia and Herzegovina convertible Mark</source>
-        <translation type="unfinished"></translation>
+        <translation>Bosnien und Herzegowina Konvertible Mark</translation>
     </message>
     <message>
         <source>Barbadian Dollar</source>
-        <translation type="unfinished"></translation>
+        <translation>Barbados Dollar</translation>
     </message>
     <message>
         <source>Bangladeshi Taka</source>
-        <translation type="unfinished"></translation>
+        <translation>Bangladesischer Taka</translation>
     </message>
     <message>
         <source>Bulgarian Lev</source>
-        <translation type="unfinished"></translation>
+        <translation>Bulgarischer Lev</translation>
     </message>
     <message>
         <source>Bahrain Dinar</source>
-        <translation type="unfinished"></translation>
+        <translation>Bahrain Dinar</translation>
     </message>
     <message>
         <source>Burundian Franc</source>
-        <translation type="unfinished"></translation>
+        <translation>Burundi Franc</translation>
     </message>
     <message>
         <source>Brunei Dollar</source>
-        <translation type="unfinished"></translation>
+        <translation>Brunei Dollar</translation>
     </message>
     <message>
         <source>Bolivian Boliviano</source>
-        <translation type="unfinished"></translation>
+        <translation>Bolivianischer Boliviano</translation>
     </message>
     <message>
         <source>Brazilian Real</source>
-        <translation type="unfinished"></translation>
+        <translation>Brasilianischer Real</translation>
     </message>
     <message>
         <source>Bahamian Dollar</source>
-        <translation type="unfinished"></translation>
+        <translation>Bahama Dollar</translation>
     </message>
     <message>
         <source>Botswana Pula</source>

@@ -124,6 +124,7 @@ Page {
                     property double input
 
                     EnterKey.onClicked:  {
+                        console.log("hello =)")
                         result.output = Math.round(text.replace(',', '.') * rateModel.rate*100)/100
                     }
                 }
@@ -141,7 +142,7 @@ Page {
                     property double output
 
                     EnterKey.onClicked: {
-                        insert.input = Math.round(text * 1/rateModel.rate*100)/100
+                        insert.input = Math.round(text.replace(',', '.')*1/rateModel.rate*100)/100
                     }
                 }
 

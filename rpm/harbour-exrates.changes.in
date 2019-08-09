@@ -1,3 +1,8 @@
+* Sat Aug 9 2019 Sikarjan <store@innobiz.de> 1.4-1
+- [bug] Fixed NaN error when comma is used as decimal separator in output field
+- [improvement] Rearranged option page to fix issue with remorse view
+- [improvement] Chinese translation updated
+
 * Sat Jul 4 2019 Sikarjan <store@innobiz.de> 1.3-1
 - [improvement] Chinese and French translation updated
 - [improvement] Numbers localized
