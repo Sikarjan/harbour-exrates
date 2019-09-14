@@ -52,7 +52,7 @@ Die APIs haben Wechselkruse für unterschiedliche Währungen und nicht alle Wäh
     <name>CoverPage</name>
     <message>
         <source>Currency Converter</source>
-        <translation>Wechselkursrechner</translation>
+        <translation>Wechselkurs Rechner</translation>
     </message>
 </context>
 <context>
@@ -357,7 +357,7 @@ Die APIs haben Wechselkruse für unterschiedliche Währungen und nicht alle Wäh
     </message>
     <message>
         <source>U.K. Pound Sterling</source>
-        <translation type="unfinished"></translation>
+        <translation>U.K. Pfund Sterling</translation>
     </message>
     <message>
         <source>Georgian Lari</source>
@@ -445,7 +445,7 @@ Die APIs haben Wechselkruse für unterschiedliche Währungen und nicht alle Wäh
     </message>
     <message>
         <source>Kenyan Shilling</source>
-        <translation type="unfinished"></translation>
+        <translation>Kenianischer Schilling</translation>
     </message>
     <message>
         <source>Kyrgyzstan Som</source>
@@ -453,7 +453,7 @@ Die APIs haben Wechselkruse für unterschiedliche Währungen und nicht alle Wäh
     </message>
     <message>
         <source>South Korean Won</source>
-        <translation type="unfinished"></translation>
+        <translation>Südkoreanischer Won</translation>
     </message>
     <message>
         <source>Kuwaiti Dinar</source>

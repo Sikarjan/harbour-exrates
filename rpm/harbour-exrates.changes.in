@@ -1,3 +1,7 @@
+* Sat Aug 14 2019 Sikarjan <store@innobiz.de> 1.5-1
+- [bug] Fixed exchange rate not beeing updated on a rate update
+- [improvement] added busy indicator when updating
+
 * Sat Aug 9 2019 Sikarjan <store@innobiz.de> 1.4-1
 - [bug] Fixed NaN error when comma is used as decimal separator in output field
 - [improvement] Rearranged option page to fix issue with remorse view

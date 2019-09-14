@@ -6,6 +6,8 @@ function getBaseRates(currency, save){
     var xhr = new XMLHttpRequest();
     var url
 
+    rateModel.updating = true;
+
     if(rateModel.source === 0){
         url = "https://www.floatrates.com/daily/"+currency+".json"
     }else{
@@ -135,6 +137,8 @@ function editResponse(baseRate){
 
     loadRateModel()
 
+    rateModel.updating = false;
+
     if(pageStack.currentPage){
         pageStack.pop()
     }
@@ -220,6 +224,9 @@ function loadRateModel() {
             for(var i=0;i<rs.rows.length;i++){
                 rateModel.append({"currency": rs.rows.item(i).currency, "cName": cNames[rs.rows.item(i).currency], "rate": rs.rows.item(i).rate})
                 rateModelCopy.append({"currency": rs.rows.item(i).currency, "cName": cNames[rs.rows.item(i).currency], "rate": rs.rows.item(i).rate})
+                if(rateModel.cName === rs.rows.item(i).currency){
+                    rateModel.rate = rs.rows.item(i).rate;
+                }
             }
         }
     });

@@ -19,6 +19,7 @@ Page {
 
         // PullDownMenu and PushUpMenu must be declared in SilicaFlickable, SilicaListView or SilicaGridView
         PullDownMenu {
+            busy: rateModel.updating
             MenuItem {
                 text: qsTr("About")
                 onClicked: pageStack.push(Qt.resolvedUrl("AboutPage.qml"))
@@ -33,7 +34,9 @@ Page {
             }
             MenuItem {
                 text: qsTr("Update Rates")
-                onClicked: Parser.getBaseRates(rateModel.baseCurrency, true)
+                onClicked: {
+                    Parser.getBaseRates(rateModel.baseCurrency, true)
+                }
                 visible: rateModel.count > 1
             }
         }
@@ -120,12 +123,11 @@ Page {
                     inputMethodHints: Qt.ImhDigitsOnly
                     text: qsTr("%L1").arg(input)
 
-
                     property double input
 
                     EnterKey.onClicked:  {
-                        console.log("hello =)")
                         result.output = Math.round(text.replace(',', '.') * rateModel.rate*100)/100
+                        insert.focus = false
                     }
                 }
 
@@ -143,6 +145,7 @@ Page {
 
                     EnterKey.onClicked: {
                         insert.input = Math.round(text.replace(',', '.')*1/rateModel.rate*100)/100
+                        result.focus = false
                     }
                 }
 
@@ -206,7 +209,7 @@ Page {
                         Label { text: cName; width: line.contentWidth; clip: true }
                         Label { text: currency; width: Theme.fontSizeMedium*2 }
                         Label {
-                            text: insert.text === "" ? qsTr("%L1").arg(Math.round(rate*10000)/10000):qsTr("%L1").arg(Math.round(insert.text.replace(",",".") * rate*100)/100)
+                            text: insert.text === "" || insert.text === "0" ? qsTr("%L1").arg(Math.round(rate*10000)/10000):qsTr("%L1").arg(Math.round(insert.text.replace(",",".") * rate*100)/100)
                             width: Theme.fontSizeMedium*3
                         }
 

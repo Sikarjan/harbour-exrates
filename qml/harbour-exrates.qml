@@ -23,6 +23,7 @@ ApplicationWindow
         property string errorMsg: ""
         property int source: 0
         property bool updateConvertToList
+        property bool updating: false
 
         onCNameChanged: {
             cFullName = Parser.cNames[cName]
