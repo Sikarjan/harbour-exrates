@@ -10,6 +10,12 @@ Page {
     property bool modelDataError: false
     property string statusMessage: ""
 
+    onStatusChanged: {
+        if(PageStatus.Activating){
+            result.output = Math.round(insert.text.replace(',', '.') * rateModel.rate*100)/100
+        }
+    }
+
     // The effective value will be restricted by ApplicationWindow.allowedOrientations
     allowedOrientations: Orientation.All
 
@@ -220,11 +226,11 @@ Page {
                         rateModel.cName = currency
                         if(rateModel.updateConvertToList){
                             Parser.rePosCurr(currency, 0)
+                            rateModel.move(index,0,1)
                         }
                         searchField.text = ""
                         searchField.visible = false
-                        Parser.loadRateModel()
-                        result.text = Math.round(insert.text * rateModel.rate*100)/100
+                        result.output = Math.round(insert.text * rateModel.rate*100)/100
                     }
 
                     menu: Component {

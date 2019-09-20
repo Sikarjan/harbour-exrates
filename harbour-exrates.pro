@@ -20,7 +20,6 @@ DISTFILES += qml/harbour-exrates.qml \
     qml/cover/CoverPage.qml \
     qml/pages/FirstPage.qml \
     rpm/harbour-exrates.changes.in \
-    rpm/harbour-exrates.changes.run.in \
     rpm/harbour-exrates.spec \
     rpm/harbour-exrates.yaml \
     translations/*.ts \

@@ -1,3 +1,8 @@
+* Sat Aug 14 2019 Sikarjan <store@innobiz.de> 1.6-1
+- [bug] Fixed broken "Sum" field after different currency was selected
+- [bug] Fixed jumping "Convert to list" when new rate is selected
+- [improvement] value in "Sum" field is updated on a base rate change
+
 * Sat Aug 14 2019 Sikarjan <store@innobiz.de> 1.5-1
 - [bug] Fixed exchange rate not beeing updated on a rate update
 - [improvement] added busy indicator when updating
