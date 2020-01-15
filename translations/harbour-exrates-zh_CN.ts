@@ -20,13 +20,13 @@
 &lt;/ul&gt;
 The apis provide rates for different currencies therefore the currency your are looking for might not be available. Also the rates are only updated once per day.&lt;/p&gt;
 &lt;p&gt;Please support me by sending bug reports or suggestions via Github. You can find the project &lt;a href=&quot;https://github.com/Sikarjan/harbour-exrates&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</source>
-        <translation>目前该软件仅使用开源API以获取汇率。使用下列API： &lt;ul&gt;
+        <translation>目前该软件仅使用开源API以获取汇率。使用下列API: &lt;ul&gt;
     &lt;li&gt;&lt;a href=&quot;https://www.floatrates.com/indes.php&quot;&gt;FloatRates-API&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;https://www.exchangerate-api.com/index.php&quot;&gt;ExchangeRate-API&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-apis 提供不同货币的汇率，因此您所寻找的货币可能无法使用。 此汇率仅每天更新一次。 &lt;/p&gt;
-&lt;p&gt; 请通过 Github 发送错误报告或建议来支持我。 你可以在此处找到该项目 &lt;a href=&quot;https://github.com/Sikarjan/harbour-exrates&quot;&gt;&lt;/a&gt;.&lt;/p&gt;</translation>
-    </message>
+api 提供不同货币的汇率，因此您所寻找的货币可能无法使用。 此汇率仅每天更新一次。 &lt;/p&gt;
+&lt;p&gt; 请通过 Github 发送错误报告或建议来支持我。 你可以在此找到该项目 &lt;a href=&quot;https://github.com/Sikarjan/harbour-exrates&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</translation>
+</message>
 </context>
 <context>
     <name>BasePage</name>
