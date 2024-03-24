@@ -9,8 +9,8 @@ Name:       harbour-exrates
 # << macros
 
 Summary:    Exchange rates calculator
-Version:    1.6
-Release:    1
+Version:    1.7
+Release:    2
 Group:      Qt/Qt
 License:    GNU GENERAL PUBLIC LICENSE
 URL:        https://github.com/Sikarjan/harbour-exrates
