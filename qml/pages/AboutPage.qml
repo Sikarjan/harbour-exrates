@@ -35,7 +35,7 @@ Page {
             color: Theme.highlightColor
             font.pixelSize: Theme.fontSizeMedium
             text: "<html><style>a {color:"+ Theme.primaryColor +";}</style>" +qsTr("
-<p>Currently this app only uses only open source apis to get exchange rates. The following apis are used:
+<p>Currently this app uses only open source apis to get exchange rates. The following apis are used:
 <ul>
     <li><a href=\"https://www.floatrates.com/indes.php\">FloatRates-API</a></li>
     <li><a href=\"https://www.exchangerate-api.com/index.php\">ExchangeRate-API</a></li>
