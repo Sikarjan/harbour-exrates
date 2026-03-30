@@ -36,15 +36,19 @@ Page {
 
         BusyIndicator {
             anchors.centerIn: parent
-            running: (baseRateModel.count === 0 && !rateModel.hasError) || !content.visible
+            running: rateModel.updating || !content.visible
             size: BusyIndicatorSize.Large
         }
 
         Text {
-            anchors.centerIn: parent
+            anchors.verticalCenter: parent.verticalCenter
             x: Theme.paddingLarge
-            width: parent.width -2*x
+            width: parent.width - 2*x
+            wrapMode: Text.WordWrap
+            textFormat: Text.RichText
             visible: rateModel.hasError
+            color: Theme.highlightColor
+            font.pixelSize: Theme.fontSizeMedium
             text: rateModel.errorMsg
         }
 
@@ -85,8 +89,13 @@ Page {
 
                         Image {
                             source: "qrc:/icons/flags/"+ currency + ".png"
-                            width: 80
                             anchors.verticalCenter: parent.verticalCenter
+                            width: 80
+                            onStatusChanged: {
+                                if(status === Image.Error){
+                                    source = "qrc:/icons/flags/placeholder.png"
+                                }
+                            }
                         }
 
                         Label {
@@ -101,6 +110,7 @@ Page {
                         content.visible = false
                         rateModel.baseName = cName
                         rateModel.baseCurrency = currency
+                        rateModel.rateDate = ""
                         Parser.setSetting("baseCurrency", currency)
                         Parser.setSetting("baseName", cName)
                         if(rateModel.cName !== ""){

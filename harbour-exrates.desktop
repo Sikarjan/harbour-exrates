@@ -10,3 +10,8 @@ Name=ExRates
 # Remember to comment out the following line, if you do not want to use
 # a different app name in German locale (de).
 Name[de]=ExRates
+
+[X-Sailjail]
+Permissions=Internet
+OrganizationName=de.innobiz
+ApplicationName=harbour-exrates

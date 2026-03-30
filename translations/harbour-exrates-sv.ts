@@ -13,21 +13,21 @@
     </message>
     <message>
         <source>
-&lt;p&gt;Currently this app only uses only open source apis to get exchange rates. The following apis are used:
+&lt;p&gt;Currently this app uses only open source apis to get exchange rates. The following APIs are used:
 &lt;ul&gt;
     &lt;li&gt;&lt;a href=&quot;https://www.floatrates.com/indes.php&quot;&gt;FloatRates-API&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;https://www.exchangerate-api.com/index.php&quot;&gt;ExchangeRate-API&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-The apis provide rates for different currencies therefore the currency your are looking for might not be available. Also the rates are only updated once per day.&lt;/p&gt;
+The APIs provide rates for different currencies therefore the currency your are looking for might not be available. Also the rates are only updated once per day.&lt;/p&gt;
 &lt;p&gt;Please support me by sending bug reports or suggestions via Github. You can find the project &lt;a href=&quot;https://github.com/Sikarjan/harbour-exrates&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</source>
         <translation>
-&lt;p&gt;För närvarande använder den här appen endast API:er med öppen källkod för att hämta växelkurser. Följande API:er används:
+&lt;p&gt;Den här appen använder endast öppna API:er för att hämta växelkurser. Följande API:er används:
 &lt;ul&gt;
     &lt;li&gt;&lt;a href=&quot;https://www.floatrates.com/indes.php&quot;&gt;FloatRates-API&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;https://www.exchangerate-api.com/index.php&quot;&gt;ExchangeRate-API&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-API:erna ger växelkurser för olika valutor, därför kanske den valuta du letar efter inte är tillgänglig. Dessutom uppdateras växelkurserna bara en gång per dag.&lt;/p&gt;
-&lt;p&gt;Stöd mig gärna genom att skicka felrapporter eller förslag via Github. Du hittar projektet &lt;a href=&quot;https://github.com/Sikarjan/harbour-exrates&quot;&gt;här&lt;/a&gt;.&lt;/p&gt;</translation>
+API:erna tillhandahåller kurser för olika valutor, så den valuta du söker kanske inte är tillgänglig. Kurserna uppdateras dessutom endast en gång per dag.&lt;/p&gt;
+&lt;p&gt;Stöd mig genom att skicka felrapporter eller förslag via GitHub. Du hittar projektet &lt;a href=&quot;https://github.com/Sikarjan/harbour-exrates&quot;&gt;här&lt;/a&gt;.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -80,7 +80,7 @@ API:erna ger växelkurser för olika valutor, därför kanske den valuta du leta
     </message>
     <message>
         <source>Last update: </source>
-        <translation>Uppdaterad: </translation>
+        <translation>Senast uppdaterad: </translation>
     </message>
     <message>
         <source>Sum to convert</source>
@@ -159,7 +159,7 @@ API:erna ger växelkurser för olika valutor, därför kanske den valuta du leta
     </message>
     <message>
         <source>This button resets the &apos;Convert to&apos; list to an alphabetical order.</source>
-        <translation>Den här knappen återställer listan &quot;Omvandla till&quot; till alfabetisk ordning.</translation>
+        <translation>Den här knappen återställer listan "Omvandla till" till alfabetisk ordning.</translation>
     </message>
     <message>
         <source>Requires a rate update or selection of a new base rate to take affect.</source>
@@ -171,182 +171,198 @@ API:erna ger växelkurser för olika valutor, därför kanske den valuta du leta
     </message>
     <message>
         <source>Rearrange &apos;Convert to&apos; list</source>
-        <translation>Sortera om listan &quot;Omvandla till&quot;</translation>
+        <translation>Sortera om listan "Omvandla till"</translation>
     </message>
     <message>
         <source>Puts the selected currency on top of &apos;Convert to&apos; list.</source>
-        <translation>Placerar den valda valutan överst i listan &quot;Omvandla till&quot;.</translation>
+        <translation>Placerar den valda valutan överst i listan "Omvandla till".</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>Spara</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Avbryt</translation>
+    </message>
+    <message>
+        <source>Personal access tokens</source>
+        <translation>Personliga åtkomsttokens</translation>
+    </message>
+    <message>
+        <source>Here personal access tokens for comercial websites can be added. Most websites offer a free plan for personal use.</source>
+        <translation>Här kan du lägga till personliga åtkomsttokens för kommersiella webbplatser. De flesta webbplatser erbjuder en gratisplan för privat bruk.</translation>
+    </message>
+    <message>
+        <source>API Token for personal access to ExchangeRate</source>
+        <translation>API-token för personlig åtkomst till ExchangeRate</translation>
     </message>
 </context>
 <context>
     <name>parser</name>
     <message>
-        <source>The api responded with an error. Currently no exchange rates are available. Please try again later or file a bug report on GitHub, see about page for details.</source>
-        <translation>API:et svarade med ett fel. För närvarande finns inga växelkurser tillgängliga. Försök igen senare eller posta en felrapport på GitHub, se om-sidan för mer information.</translation>
-    </message>
-    <message>
-        <source>The api did not respond. Please try again later.</source>
-        <translation>API:et svarade inte. Försök igen senare.</translation>
+        <source>No match</source>
+        <translation>Ingen träff</translation>
     </message>
     <message>
         <source>U.A.E Dirham</source>
-        <translation>U.A.E Dirham</translation>
+        <translation>Förenade Arabemiratens dirham</translation>
     </message>
     <message>
         <source>Afghan Afghani</source>
-        <translation>Afghanska Afghani</translation>
+        <translation>Afghansk afghani</translation>
     </message>
     <message>
         <source>Albanian Lek</source>
-        <translation>Albanska Lek</translation>
+        <translation>Albansk lek</translation>
     </message>
     <message>
         <source>Armenia Dram</source>
-        <translation>Armeniska Dram</translation>
+        <translation>Armenisk dram</translation>
     </message>
     <message>
         <source>Neth. Antillean Guilder</source>
-        <translation>Nederl. Antillean-Guilder</translation>
+        <translation>Nederländska Antillernas gulden</translation>
     </message>
     <message>
         <source>Angolan Kwanza</source>
-        <translation>Angolanska Kwanza</translation>
+        <translation>Angolansk kwanza</translation>
     </message>
     <message>
         <source>Argentine Peso</source>
-        <translation>Argentinska Peso</translation>
+        <translation>Argentinsk peso</translation>
     </message>
     <message>
         <source>Australian Dollar</source>
-        <translation>Australiska Dollar</translation>
+        <translation>Australisk dollar</translation>
     </message>
     <message>
         <source>Aruban Florin</source>
-        <translation>Arubanska Floriner</translation>
+        <translation>Arubansk florin</translation>
     </message>
     <message>
         <source>Azerbaijan Manat</source>
-        <translation>Azerbaijanska Manat</translation>
+        <translation>Azerbajdzjansk manat</translation>
     </message>
     <message>
         <source>Bosnia and Herzegovina convertible Mark</source>
-        <translation>Bosnia och Herzegovina-konvertibla Mark</translation>
+        <translation>Bosnien och Hercegovinas konvertibla mark</translation>
     </message>
     <message>
         <source>Barbadian Dollar</source>
-        <translation>Barbadiska Dollar</translation>
+        <translation>Barbadisk dollar</translation>
     </message>
     <message>
         <source>Bangladeshi Taka</source>
-        <translation>Bangladeshiska Taka</translation>
+        <translation>Bangladeshisk taka</translation>
     </message>
     <message>
         <source>Bulgarian Lev</source>
-        <translation>Bulgariska Lev</translation>
+        <translation>Bulgarisk lev</translation>
     </message>
     <message>
         <source>Bahrain Dinar</source>
-        <translation>Bahrain-Dinarer</translation>
+        <translation>Bahrainsk dinar</translation>
     </message>
     <message>
         <source>Burundian Franc</source>
-        <translation>Burundiska Frank</translation>
+        <translation>Burundisk franc</translation>
     </message>
     <message>
         <source>Brunei Dollar</source>
-        <translation>Brunei-Dollar</translation>
+        <translation>Bruneisk dollar</translation>
     </message>
     <message>
         <source>Bolivian Boliviano</source>
-        <translation>Bolivianska Boliviano</translation>
+        <translation>Boliviansk boliviano</translation>
     </message>
     <message>
         <source>Brazilian Real</source>
-        <translation>Brasilianska Real</translation>
+        <translation>Brasiliansk real</translation>
     </message>
     <message>
         <source>Bahamian Dollar</source>
-        <translation>Bahamas-dollar</translation>
+        <translation>Bahamansk dollar</translation>
     </message>
     <message>
         <source>Botswana Pula</source>
-        <translation>Botswana Pula</translation>
+        <translation>Botswansk pula</translation>
     </message>
     <message>
         <source>Belarussian Ruble</source>
-        <translation>Belarusiska Rubel</translation>
+        <translation>Vitrysk rubel</translation>
     </message>
     <message>
         <source>Belize Dollar</source>
-        <translation>Belize-dollar</translation>
+        <translation>Belizisk dollar</translation>
     </message>
     <message>
         <source>Canadian Dollar</source>
-        <translation>Kanadensiska Dollar</translation>
+        <translation>Kanadensisk dollar</translation>
     </message>
     <message>
         <source>Congolese Franc</source>
-        <translation>Kongolesiska Frank</translation>
+        <translation>Kongolesisk franc</translation>
     </message>
     <message>
         <source>Swiss Franc</source>
-        <translation>Schweiziska frank</translation>
+        <translation>Schweizisk franc</translation>
     </message>
     <message>
         <source>Chilean Peso</source>
-        <translation>Chilenska Peso</translation>
+        <translation>Chilensk peso</translation>
     </message>
     <message>
         <source>Chinese Yuan</source>
-        <translation>Kinesiska Yuan</translation>
+        <translation>Kinesisk yuan</translation>
     </message>
     <message>
         <source>Colombian Peso</source>
-        <translation>Kolombianska Peso</translation>
+        <translation>Colombiansk peso</translation>
     </message>
     <message>
         <source>Costa Rican Colón</source>
-        <translation>Costa Ricanska Colón</translation>
+        <translation>Costaricansk colón</translation>
     </message>
     <message>
         <source>Cuban Peso</source>
-        <translation>Kubanska Peso</translation>
+        <translation>Kubansk peso</translation>
     </message>
     <message>
         <source>Cape Verde Escudo</source>
-        <translation>Cape Verde-Escudo</translation>
+        <translation>Kap Verdiska escudo</translation>
     </message>
     <message>
         <source>Czech Koruna</source>
-        <translation>Tjeckiska Koruna</translation>
+        <translation>Tjeckisk koruna</translation>
     </message>
     <message>
         <source>Djiboutian Franc</source>
-        <translation>Djiboutianska Frank</translation>
+        <translation>Djiboutisk franc</translation>
     </message>
     <message>
         <source>Danish Krone</source>
-        <translation>Danska kronor</translation>
+        <translation>Dansk krona</translation>
     </message>
     <message>
         <source>Dominican Peso</source>
-        <translation>Dominikanska Peso</translation>
+        <translation>Dominikansk peso</translation>
     </message>
     <message>
         <source>Algerian Dinar</source>
-        <translation>Algeriska Dinarer</translation>
+        <translation>Algerisk dinar</translation>
     </message>
     <message>
         <source>Egyptian Pound</source>
-        <translation>Egyptiska Pund</translation>
+        <translation>Egyptiskt pund</translation>
     </message>
     <message>
         <source>Eritrean Nakfa</source>
-        <translation>Eritreanska Nakfa</translation>
+        <translation>Eritreansk nakfa</translation>
     </message>
     <message>
         <source>Ethiopian Birr</source>
-        <translation>Etiopiska Birr</translation>
+        <translation>Etiopisk birr</translation>
     </message>
     <message>
         <source>Euro</source>
@@ -354,431 +370,423 @@ API:erna ger växelkurser för olika valutor, därför kanske den valuta du leta
     </message>
     <message>
         <source>Fiji Dollar</source>
-        <translation>Fiji-dollar</translation>
+        <translation>Fijiansk dollar</translation>
     </message>
     <message>
         <source>U.K. Pound Sterling</source>
-        <translation>U.K. Sterling Pund</translation>
+        <translation>Brittiskt pund sterling</translation>
     </message>
     <message>
         <source>Georgian Lari</source>
-        <translation>Georgiska Lari</translation>
+        <translation>Georgisk lari</translation>
     </message>
     <message>
         <source>Ghanaian Cedi</source>
-        <translation>Ghanaianska Cedi</translation>
+        <translation>Ghansk cedi</translation>
     </message>
     <message>
         <source>Gibraltar Pound</source>
-        <translation>Gibraltar-pund</translation>
+        <translation>Gibraltarskt pund</translation>
     </message>
     <message>
         <source>Gambian Dalasi</source>
-        <translation>Gambianska Dalasi</translation>
+        <translation>Gambisk dalasi</translation>
     </message>
     <message>
         <source>Guinean Franc</source>
-        <translation>Guineanska Frank</translation>
+        <translation>Guineansk franc</translation>
     </message>
     <message>
         <source>Guatemalan Quetzal</source>
-        <translation>Guatemalanska Quetzal</translation>
+        <translation>Guatemalansk quetzal</translation>
     </message>
     <message>
         <source>Guyanese Dollar</source>
-        <translation>Guyanesiska Dollar</translation>
+        <translation>Guyansk dollar</translation>
     </message>
     <message>
         <source>Hong Kong Dollar</source>
-        <translation>Hong Kong-dollar</translation>
+        <translation>Hongkongdollar</translation>
     </message>
     <message>
         <source>Honduran Lempira</source>
-        <translation>Honduranska Lempira</translation>
+        <translation>Honduransk lempira</translation>
     </message>
     <message>
         <source>Croatian Kuna</source>
-        <translation>Kroatiska Kuna</translation>
+        <translation>Kroatisk kuna</translation>
     </message>
     <message>
         <source>Haitian Gourde</source>
-        <translation>Haitianska Gourde</translation>
+        <translation>Haitisk gourde</translation>
     </message>
     <message>
         <source>Hungarian Forint</source>
-        <translation>Ungerska Forint</translation>
+        <translation>Ungersk forint</translation>
     </message>
     <message>
         <source>Indonesian Rupiah</source>
-        <translation>Indonesiska Rupier</translation>
+        <translation>Indonesisk rupiah</translation>
     </message>
     <message>
         <source>Israeli New Sheqel</source>
-        <translation>Israeliska Sheqel</translation>
+        <translation>Israelsk ny shekel</translation>
     </message>
     <message>
         <source>Indian Rupee</source>
-        <translation>Indiska Rupier</translation>
+        <translation>Indisk rupie</translation>
     </message>
     <message>
         <source>Iraqi Dinar</source>
-        <translation>Irakiska Dinarer</translation>
+        <translation>Irakisk dinar</translation>
     </message>
     <message>
         <source>Iranian Rial</source>
-        <translation>Iranska Rial</translation>
+        <translation>Iransk rial</translation>
     </message>
     <message>
         <source>Icelandic Krona</source>
-        <translation>Isländska kronor</translation>
+        <translation>Isländsk krona</translation>
     </message>
     <message>
         <source>Jamaican Dollar</source>
-        <translation>Jamaikanska Dollar</translation>
+        <translation>Jamaicansk dollar</translation>
     </message>
     <message>
         <source>Jordanian Dinar</source>
-        <translation>Jordanska Dinarer</translation>
+        <translation>Jordansk dinar</translation>
     </message>
     <message>
         <source>Japanese Yen</source>
-        <translation>Japanska Yen</translation>
+        <translation>Japansk yen</translation>
     </message>
     <message>
         <source>Kenyan Shilling</source>
-        <translation>Kenyanska Shilling</translation>
+        <translation>Kenyansk shilling</translation>
     </message>
     <message>
         <source>Kyrgyzstan Som</source>
-        <translation>Kyrgyzstan Som</translation>
+        <translation>Kirgizisk som</translation>
     </message>
     <message>
         <source>South Korean Won</source>
-        <translation>Sydkoreanska Won</translation>
+        <translation>Sydkoreansk won</translation>
     </message>
     <message>
         <source>Kuwaiti Dinar</source>
-        <translation>Kuwaitiska Dinarer</translation>
+        <translation>Kuwaitisk dinar</translation>
     </message>
     <message>
         <source>Kazakhstani Tenge</source>
-        <translation>Kazakiska Tenge</translation>
+        <translation>Kazakisk tenge</translation>
     </message>
     <message>
         <source>Lao Kip</source>
-        <translation>Lao Kip</translation>
+        <translation>Laotisk kip</translation>
     </message>
     <message>
         <source>Lebanese Pound</source>
-        <translation>Libanesiska Pund</translation>
+        <translation>Libanesiskt pund</translation>
     </message>
     <message>
         <source>Sri Lanka Rupee</source>
-        <translation>Sri Lankesika rupier</translation>
+        <translation>Srilankesisk rupie</translation>
     </message>
     <message>
         <source>Liberian Dollar</source>
-        <translation>Liberiska Dollar</translation>
+        <translation>Liberisk dollar</translation>
     </message>
     <message>
         <source>Lesotho Loti</source>
-        <translation>Lesotho Loti</translation>
+        <translation>Lesothisk loti</translation>
     </message>
     <message>
         <source>Libyan Dinar</source>
-        <translation>Libyska Dinarer</translation>
+        <translation>Libysk dinar</translation>
     </message>
     <message>
         <source>Moroccan Dirham</source>
-        <translation>Marocanska Dirham</translation>
+        <translation>Marockansk dirham</translation>
     </message>
     <message>
         <source>Moldova Lei</source>
-        <translation>Moldaviska Lei</translation>
+        <translation>Moldavisk leu</translation>
     </message>
     <message>
         <source>Malagasy Ariary</source>
-        <translation>Malagasy Ariary</translation>
+        <translation>Madagaskisk ariary</translation>
     </message>
     <message>
         <source>Macedonian Denar</source>
-        <translation>Makedonska Denar</translation>
+        <translation>Makedonisk denar</translation>
     </message>
     <message>
         <source>Myanma Kyat</source>
-        <translation>Myanma Kyat</translation>
+        <translation>Myanmarsk kyat</translation>
     </message>
     <message>
         <source>Mongolian Togrog</source>
-        <translation>Mongoliska Togrog</translation>
+        <translation>Mongolisk tögrög</translation>
     </message>
     <message>
         <source>Macanese Pataca</source>
-        <translation>Macanesiska Pataca</translation>
+        <translation>Macao-pataca</translation>
     </message>
     <message>
         <source>Mauritanian Ouguiya</source>
-        <translation>Mauritanska Ouguiya</translation>
+        <translation>Mauretansk ouguiya</translation>
     </message>
     <message>
         <source>Mauritian Rupee</source>
-        <translation>Mauritianska Rupier</translation>
+        <translation>Mauritisk rupie</translation>
     </message>
     <message>
         <source>Maldivian Rufiyaa</source>
-        <translation>Maldiviska Rufiyaa</translation>
+        <translation>Maldivisk rufiyaa</translation>
     </message>
     <message>
         <source>Malawian Kwacha</source>
-        <translation>Malawian Kwacha</translation>
+        <translation>Malawisk kwacha</translation>
     </message>
     <message>
         <source>Mexican Peso</source>
-        <translation>Mexikanska Peso</translation>
+        <translation>Mexikansk peso</translation>
     </message>
     <message>
         <source>Malaysian Ringgit</source>
-        <translation>Malaysiska Ringgit</translation>
+        <translation>Malaysisk ringgit</translation>
     </message>
     <message>
         <source>Mozambican Metical</source>
-        <translation>Mozambikanska Metical</translation>
+        <translation>Moçambikisk metical</translation>
     </message>
     <message>
         <source>Namibian Dollar</source>
-        <translation>Namibiska Dollar</translation>
+        <translation>Namibisk dollar</translation>
     </message>
     <message>
         <source>Nigerian Naira</source>
-        <translation>Nigerianska Naira</translation>
+        <translation>Nigeriansk naira</translation>
     </message>
     <message>
         <source>Nicaraguan Córdoba</source>
-        <translation>Nicaraguanska Córdoba</translation>
+        <translation>Nicaraguansk córdoba</translation>
     </message>
     <message>
         <source>Norwegian Krone</source>
-        <translation>Norska kronor</translation>
+        <translation>Norsk krona</translation>
     </message>
     <message>
         <source>Nepalese Rupee</source>
-        <translation>Nepalesiska Rupier</translation>
+        <translation>Nepalesisk rupie</translation>
     </message>
     <message>
         <source>New Zealand Dollar</source>
-        <translation>Nya Zealändska Dollar</translation>
+        <translation>Nyzeeländsk dollar</translation>
     </message>
     <message>
         <source>Omani Rial</source>
-        <translation>Omanska Rial</translation>
+        <translation>Omansk rial</translation>
     </message>
     <message>
         <source>Panamanian Balboa</source>
-        <translation>Panamanska Balboa</translation>
+        <translation>Panamansk balboa</translation>
     </message>
     <message>
         <source>Peruvian Nuevo Sol</source>
-        <translation>Peruanska Nuevo Sol</translation>
+        <translation>Peruansk nuevo sol</translation>
     </message>
     <message>
         <source>Papua New Guinean Kina</source>
-        <translation>Papua Nya Guineanska Kina</translation>
+        <translation>Papua Nya Guineansk kina</translation>
     </message>
     <message>
         <source>Philippine Peso</source>
-        <translation>Filipinska Peso</translation>
+        <translation>Filippinsk peso</translation>
     </message>
     <message>
         <source>Pakistani Rupee</source>
-        <translation>Pakistanska Rupier</translation>
+        <translation>Pakistansk rupie</translation>
     </message>
     <message>
         <source>Polish Zloty</source>
-        <translation>Polska Zloty</translation>
+        <translation>Polsk zloty</translation>
     </message>
     <message>
         <source>Paraguayan Guaraní</source>
-        <translation>Paraguayanska Guaraní</translation>
+        <translation>Paraguayansk guaraní</translation>
     </message>
     <message>
         <source>Qatari Rial</source>
-        <translation>Qatariska Rial</translation>
+        <translation>Qatarisk rial</translation>
     </message>
     <message>
         <source>Romanian New Leu</source>
-        <translation>Rumänska  Leu</translation>
+        <translation>Rumänsk leu</translation>
     </message>
     <message>
         <source>Serbian Dinar</source>
-        <translation>Serbiska Dinarer</translation>
+        <translation>Serbisk dinar</translation>
     </message>
     <message>
         <source>Russian Rouble</source>
-        <translation>Ryska Rubel</translation>
+        <translation>Rysk rubel</translation>
     </message>
     <message>
         <source>Rwandan Franc</source>
-        <translation>Rwandiska frank</translation>
+        <translation>Rwandisk franc</translation>
     </message>
     <message>
         <source>Saudi Riyal</source>
-        <translation>Saudiska Riyal</translation>
+        <translation>Saudisk riyal</translation>
     </message>
     <message>
         <source>Solomon Islands Dollar</source>
-        <translation>Salomonöarnas Dollar</translation>
+        <translation>Salomonöarnas dollar</translation>
     </message>
     <message>
         <source>Seychelles Rupee</source>
-        <translation>Seychellernas rupier</translation>
+        <translation>Seychellisk rupie</translation>
     </message>
     <message>
         <source>Sudanese Pound</source>
-        <translation>Sudanesiska Pund</translation>
+        <translation>Sudanesiskt pund</translation>
     </message>
     <message>
         <source>Swedish Krona</source>
-        <translation>Svenska kronor</translation>
+        <translation>Svensk krona</translation>
     </message>
     <message>
         <source>Singapore Dollar</source>
-        <translation>Singaporeanska Dollar</translation>
+        <translation>Singaporiansk dollar</translation>
     </message>
     <message>
         <source>Sierra Leonean Leone</source>
-        <translation>Sierra Leonean Leone</translation>
+        <translation>Sierra Leonesisk leone</translation>
     </message>
     <message>
         <source>Somali Shilling</source>
-        <translation>Somaliska Shilling</translation>
+        <translation>Somalisk shilling</translation>
     </message>
     <message>
         <source>Surinamese Dollar</source>
-        <translation>Surinamesiska Dollar</translation>
+        <translation>Surinamesisk dollar</translation>
     </message>
     <message>
         <source>South Sudanese Pound</source>
-        <translation>Sydsudanska Pund</translation>
+        <translation>Sydsudanesiskt pund</translation>
     </message>
     <message>
         <source>São Tomé and Príncipe Dobra</source>
-        <translation>São Tomé och Príncipe Dobra</translation>
+        <translation>São Tomé och Príncipe-dobra</translation>
     </message>
     <message>
         <source>Salvadoran Colon</source>
-        <translation>Salvadoreanska Colon</translation>
+        <translation>Salvadoransk colón</translation>
     </message>
     <message>
         <source>Syrian pound</source>
-        <translation>Syrianska Pund</translation>
+        <translation>Syriskt pund</translation>
     </message>
     <message>
         <source>Swazi Lilangeni</source>
-        <translation>Swazi Lilangeni</translation>
+        <translation>Swaziländsk lilangeni</translation>
     </message>
     <message>
         <source>Thai Baht</source>
-        <translation>Thailändska Baht</translation>
+        <translation>Thailändsk baht</translation>
     </message>
     <message>
         <source>Tajikistan Ruble</source>
-        <translation>Tajikistanska Rubel</translation>
+        <translation>Tadzjikisk rubel</translation>
     </message>
     <message>
         <source>New Turkmenistan Manat</source>
-        <translation>Turkmenistanska Manat</translation>
+        <translation>Turkmenistansk manat</translation>
     </message>
     <message>
         <source>Tunisian Dinar</source>
-        <translation>Tunisiska Dinar</translation>
+        <translation>Tunisisk dinar</translation>
     </message>
     <message>
         <source>Tongan Paʻanga</source>
-        <translation>Tongan Paʻanga</translation>
+        <translation>Tongansk paʻanga</translation>
     </message>
     <message>
         <source>Turkish Lira</source>
-        <translation>Turkiska Lira</translation>
+        <translation>Turkisk lira</translation>
     </message>
     <message>
         <source>Trinidad Tobago Dollar</source>
-        <translation>Trinidad Tobago-Dollar</translation>
-    </message>
-    <message>
-        <source>New Taiwan Dollar </source>
-        <translation>Taiwanesiska Dollar</translation>
+        <translation>Trinidad och Tobago-dollar</translation>
     </message>
     <message>
         <source>Tanzanian Shilling</source>
-        <translation>Tanzanianska Shilling</translation>
+        <translation>Tanzanisk shilling</translation>
     </message>
     <message>
         <source>Ukrainian Hryvnia</source>
-        <translation>Ukrainska Hryvnia</translation>
+        <translation>Ukrainsk hryvnia</translation>
     </message>
     <message>
         <source>Ugandan Shilling</source>
-        <translation>Ugandesiska Shilling</translation>
+        <translation>Ugandisk shilling</translation>
     </message>
     <message>
         <source>U.S. Dollar</source>
-        <translation>U.S. Dollar</translation>
+        <translation>Amerikansk dollar</translation>
     </message>
     <message>
         <source>Uruguayan Peso</source>
-        <translation>Uruguayansk Peso</translation>
+        <translation>Uruguayansk peso</translation>
     </message>
     <message>
         <source>Uzbekistan Sum</source>
-        <translation>Uzbekiska Sum</translation>
+        <translation>Uzbekisk sum</translation>
     </message>
     <message>
         <source>Venezuelan Bolivar</source>
-        <translation>Venezuelanska Bolivar</translation>
+        <translation>Venezuelansk bolivar</translation>
     </message>
     <message>
         <source>Vietnamese Dong</source>
-        <translation>Vietnamesiska Dong</translation>
+        <translation>Vietnamesisk dong</translation>
     </message>
     <message>
         <source>Vanuatu Vatu</source>
-        <translation>Vanuatu Vatu</translation>
+        <translation>Vanuatisk vatu</translation>
     </message>
     <message>
         <source>Samoan Tala</source>
-        <translation>Samoanska Tala</translation>
+        <translation>Samoansk tala</translation>
     </message>
     <message>
         <source>Central African CFA Franc</source>
-        <translation>Centralafrikanska Frank</translation>
+        <translation>Centralafrikansk CFA-franc</translation>
     </message>
     <message>
         <source>East Caribbean Dollar</source>
-        <translation>Östkaribiska Dollar</translation>
+        <translation>Östkaribisk dollar</translation>
     </message>
     <message>
         <source>West African CFA Franc</source>
-        <translation>Västafrikanska Frank</translation>
+        <translation>Västafrikansk CFA-franc</translation>
     </message>
     <message>
         <source>CFP Franc</source>
-        <translation>CFP-Frank</translation>
+        <translation>CFP-franc</translation>
     </message>
     <message>
         <source>Yemeni Rial</source>
-        <translation>Yemenitiska Rial</translation>
+        <translation>Jemenitisk rial</translation>
     </message>
     <message>
         <source>South African Rand</source>
-        <translation>Sydafrikanska Rand</translation>
+        <translation>Sydafrikansk rand</translation>
     </message>
     <message>
         <source>Zambian Kwacha</source>
-        <translation>Zambianska Kwacha</translation>
-    </message>
-    <message>
-        <source>The server was not able to load rates for this currency. Please select a different base currency.</source>
-        <translation>Servern kunde inte hämta växelkursen för den här valutan. Välj en annan basvaluta.</translation>
+        <translation>Zambisk kwacha</translation>
     </message>
     <message>
         <source>Cambodian Riel</source>
@@ -786,11 +794,95 @@ API:erna ger växelkurser för olika valutor, därför kanske den valuta du leta
     </message>
     <message>
         <source>Comoro Franc</source>
-        <translation>Komorerna Franc</translation>
+        <translation>Komorisk franc</translation>
     </message>
     <message>
-        <source>No match</source>
-        <translation>Ingen träff</translation>
+        <source>The API responded with an error. Currently no exchange rates are available. Please try again later or file a bug report on GitHub, see about page for details.</source>
+        <translation>API:et svarade med ett fel. För närvarande finns inga växelkurser tillgängliga. Försök igen senare eller rapportera ett fel på GitHub, se sidan "Om" för mer information.</translation>
+    </message>
+    <message>
+        <source>The server was not able to load rates for this currency. Please select a different base currency or use a different API.</source>
+        <translation>Servern kunde inte ladda växelkurser för denna valuta. Välj en annan basvaluta eller använd ett annat API.</translation>
+    </message>
+    <message>
+        <source>The API did not respond. Please try again later.</source>
+        <translation>API:et svarade inte. Försök igen senare.</translation>
+    </message>
+    <message>
+        <source>The API response could not be processed. Please report a bug an GitHub. See About page for details.</source>
+        <translation>API-svaret kunde inte bearbetas. Rapportera ett fel på GitHub. Se sidan "Om" för mer information.</translation>
+    </message>
+    <message>
+        <source>Bermudian Dollar</source>
+        <translation>Bermudisk dollar</translation>
+    </message>
+    <message>
+        <source>Bhutanese Ngultrum</source>
+        <translation>Bhutanesisk ngultrum</translation>
+    </message>
+    <message>
+        <source>Chilean Unit of Account (UF)</source>
+        <translation>Chilensk redovisningsenhet (UF)</translation>
+    </message>
+    <message>
+        <source>Chinese Yuan (offshore)</source>
+        <translation>Kinesisk yuan (offshore)</translation>
+    </message>
+    <message>
+        <source>Falkland Islands Pound</source>
+        <translation>Falklandsöarnas pund</translation>
+    </message>
+    <message>
+        <source>Faroese Króna</source>
+        <translation>Färöisk krona</translation>
+    </message>
+    <message>
+        <source>Guernsey Pound</source>
+        <translation>Guernsey-pund</translation>
+    </message>
+    <message>
+        <source>Isle of Man Pound</source>
+        <translation>Manx-pund</translation>
+    </message>
+    <message>
+        <source>Jersey Pound</source>
+        <translation>Jersey-pund</translation>
+    </message>
+    <message>
+        <source>Kiribati Dollar</source>
+        <translation>Kiribatisk dollar</translation>
+    </message>
+    <message>
+        <source>Cayman Islands Dollar</source>
+        <translation>Caymanöarnas dollar</translation>
+    </message>
+    <message>
+        <source>Saint Helena Pound</source>
+        <translation>Sankta Helena-pund</translation>
+    </message>
+    <message>
+        <source>Tuvaluan Dollar</source>
+        <translation>Tuvaluansk dollar</translation>
+    </message>
+    <message>
+        <source>New Taiwan Dollar</source>
+        <translation>Ny taiwanesisk dollar</translation>
+    </message>
+    <message>
+        <source>Congo Franc</source>
+        <translation>Kongolesisk franc</translation>
+    </message>
+    <message>
+        <source>Special Drawing Rights</source>
+        <translation>Särskilda dragningsrätter</translation>
+    </message>
+    <message>
+        <source>Zimbabwean Gold</source>
+        <translation>Zimbabwisk guld</translation>
+    </message>
+    <message>
+        <source>Zimbabwean Dollar</source>
+        <translation>Zimbabwisk dollar</translation>
     </message>
 </context>
 </TS>

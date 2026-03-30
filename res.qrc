@@ -152,5 +152,12 @@
         <file>icons/flags/ZMW.png</file>
         <file>icons/flags/TJS.png</file>
         <file>icons/flags/KHR.png</file>
+        <file>icons/flags/placeholder.png</file>
+        <file>icons/flags/BMD.png</file>
+        <file>icons/flags/BTN.png</file>
+        <file>icons/flags/CLF.png</file>
+        <file>icons/flags/CNH.png</file>
+        <file>icons/flags/FKP.png</file>
+        <file>icons/flags/FOK.png</file>
     </qresource>
 </RCC>

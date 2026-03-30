@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="zh_CN">
 <context>
     <name>AboutPage</name>
     <message>
@@ -13,19 +13,21 @@
     </message>
     <message>
         <source>
-&lt;p&gt;Currently this app only uses only open source apis to get exchange rates. The following apis are used:
+&lt;p&gt;Currently this app uses only open source apis to get exchange rates. The following APIs are used:
 &lt;ul&gt;
     &lt;li&gt;&lt;a href=&quot;https://www.floatrates.com/indes.php&quot;&gt;FloatRates-API&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;https://www.exchangerate-api.com/index.php&quot;&gt;ExchangeRate-API&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-The apis provide rates for different currencies therefore the currency your are looking for might not be available. Also the rates are only updated once per day.&lt;/p&gt;
+The APIs provide rates for different currencies therefore the currency your are looking for might not be available. Also the rates are only updated once per day.&lt;/p&gt;
 &lt;p&gt;Please support me by sending bug reports or suggestions via Github. You can find the project &lt;a href=&quot;https://github.com/Sikarjan/harbour-exrates&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</source>
-        <translation>目前该软件仅使用开源API以获取汇率。使用下列API: &lt;ul&gt;
+        <translation>
+&lt;p&gt;本应用仅使用开源API获取汇率。使用的API如下：
+&lt;ul&gt;
     &lt;li&gt;&lt;a href=&quot;https://www.floatrates.com/indes.php&quot;&gt;FloatRates-API&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;https://www.exchangerate-api.com/index.php&quot;&gt;ExchangeRate-API&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-api 提供不同货币的汇率，因此您所寻找的货币可能无法使用。 此汇率仅每天更新一次。 &lt;/p&gt;
-&lt;p&gt; 请通过 Github 发送错误报告或建议来支持我。 你可以在此找到该项目 &lt;a href=&quot;https://github.com/Sikarjan/harbour-exrates&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</translation>
+API提供不同货币的汇率，但您查找的货币可能不可用。此外，汇率每天仅更新一次。&lt;/p&gt;
+&lt;p&gt;请通过GitHub发送错误报告或建议来支持我。您可以&lt;a href=&quot;https://github.com/Sikarjan/harbour-exrates&quot;&gt;在这里&lt;/a&gt;找到项目。&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -70,7 +72,7 @@ api 提供不同货币的汇率，因此您所寻找的货币可能无法使用�
     </message>
     <message>
         <source>Enter sum</source>
-        <translation>金额</translation>
+        <translation>输入金额</translation>
     </message>
     <message>
         <source>Sum in </source>
@@ -82,7 +84,7 @@ api 提供不同货币的汇率，因此您所寻找的货币可能无法使用�
     </message>
     <message>
         <source>Convert to: </source>
-        <translation>转换总额：</translation>
+        <translation>转换为：</translation>
     </message>
     <message>
         <source>Result</source>
@@ -98,7 +100,7 @@ api 提供不同货币的汇率，因此您所寻找的货币可能无法使用�
     </message>
     <message>
         <source>Select a base currency from the drop down menu. This requires a internet connection. New rates can be downloaded once per day.</source>
-        <translation>请从下拉菜单中选择基本货币。 这需要互联网连接，每天可下载一次新汇率。</translation>
+        <translation>请从下拉菜单中选择基本货币。这需要互联网连接，每天可下载一次新汇率。</translation>
     </message>
     <message>
         <source>About</source>
@@ -153,7 +155,7 @@ api 提供不同货币的汇率，因此您所寻找的货币可能无法使用�
     </message>
     <message>
         <source>Reset Currency List</source>
-        <translation>重置汇率列表</translation>
+        <translation>重置货币列表</translation>
     </message>
     <message>
         <source>Resetting List</source>
@@ -165,31 +167,39 @@ api 提供不同货币的汇率，因此您所寻找的货币可能无法使用�
     </message>
     <message>
         <source>This button resets the &apos;Convert to&apos; list to an alphabetical order.</source>
-        <translation>该按钮重置“转换到”列表为字母表顺序。</translation>
+        <translation>该按钮将“转换为”列表重置为字母顺序。</translation>
     </message>
     <message>
         <source>Rearrange &apos;Convert to&apos; list</source>
-        <translation>重新排列“转换到”列表。</translation>
+        <translation>重新排列“转换为”列表</translation>
     </message>
     <message>
         <source>Puts the selected currency on top of &apos;Convert to&apos; list.</source>
-        <translation>将所选货币放置于“转换到”列表顶部。</translation>
+        <translation>将所选货币放置于“转换为”列表顶部。</translation>
+    </message>
+    <message>
+        <source>API Token for personal access to ExchangeRate</source>
+        <translation>用于个人访问ExchangeRate的API令牌</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>保存</translation>
+    </message>
+    <message>
+        <source>Personal access tokens</source>
+        <translation>个人访问令牌</translation>
+    </message>
+    <message>
+        <source>Here personal access tokens for comercial websites can be added. Most websites offer a free plan for personal use.</source>
+        <translation>在此可以添加用于商业网站的个人访问令牌。大多数网站为个人使用提供免费方案。</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>取消</translation>
     </message>
 </context>
 <context>
     <name>parser</name>
-    <message>
-        <source>The api responded with an error. Currently no exchange rates are available. Please try again later or file a bug report on GitHub, see about page for details.</source>
-        <translation>api 返回一个错误。 目前无可用汇率，请稍后再试或在 GitHub 上提交错误报告，有关详细信息，请参阅页面。</translation>
-    </message>
-    <message>
-        <source>The api did not respond. Please try again later.</source>
-        <translation>api 未响应，请稍后再试。</translation>
-    </message>
-    <message>
-        <source>The server was not able to load rates for this currency. Please select a different base currency.</source>
-        <translation>服务器无法加载该种货币汇率，请另选别的基础货币。</translation>
-    </message>
     <message>
         <source>No match</source>
         <translation>无匹配项</translation>
@@ -236,7 +246,7 @@ api 提供不同货币的汇率，因此您所寻找的货币可能无法使用�
     </message>
     <message>
         <source>Bosnia and Herzegovina convertible Mark</source>
-        <translation>波斯尼亚及黑塞哥维纳可兑换马克</translation>
+        <translation>波斯尼亚及黑塞哥维那可兑换马克</translation>
     </message>
     <message>
         <source>Barbadian Dollar</source>
@@ -280,7 +290,7 @@ api 提供不同货币的汇率，因此您所寻找的货币可能无法使用�
     </message>
     <message>
         <source>Belarussian Ruble</source>
-        <translation>白俄罗斯卢比</translation>
+        <translation>白俄罗斯卢布</translation>
     </message>
     <message>
         <source>Belize Dollar</source>
@@ -459,14 +469,6 @@ api 提供不同货币的汇率，因此您所寻找的货币可能无法使用�
         <translation>吉尔吉斯斯坦索姆</translation>
     </message>
     <message>
-        <source>Cambodian Riel</source>
-        <translation>柬埔寨里尔</translation>
-    </message>
-    <message>
-        <source>Comoro Franc</source>
-        <translation>科莫多法郎</translation>
-    </message>
-    <message>
         <source>South Korean Won</source>
         <translation>韩元</translation>
     </message>
@@ -620,7 +622,7 @@ api 提供不同货币的汇率，因此您所寻找的货币可能无法使用�
     </message>
     <message>
         <source>Romanian New Leu</source>
-        <translation>阿曼新列伊</translation>
+        <translation>罗马尼亚新列伊</translation>
     </message>
     <message>
         <source>Serbian Dinar</source>
@@ -719,10 +721,6 @@ api 提供不同货币的汇率，因此您所寻找的货币可能无法使用�
         <translation>特立尼达多巴哥元</translation>
     </message>
     <message>
-        <source>New Taiwan Dollar </source>
-        <translation>新台币</translation>
-    </message>
-    <message>
         <source>Tanzanian Shilling</source>
         <translation>坦桑尼亚先令</translation>
     </message>
@@ -776,7 +774,7 @@ api 提供不同货币的汇率，因此您所寻找的货币可能无法使用�
     </message>
     <message>
         <source>CFP Franc</source>
-        <translation>法国和平的法郎 （塔希提）</translation>
+        <translation>法国和平的法郎（塔希提）</translation>
     </message>
     <message>
         <source>Yemeni Rial</source>
@@ -789,6 +787,94 @@ api 提供不同货币的汇率，因此您所寻找的货币可能无法使用�
     <message>
         <source>Zambian Kwacha</source>
         <translation>赞比亚克瓦查</translation>
+    </message>
+    <message>
+        <source>The API responded with an error. Currently no exchange rates are available. Please try again later or file a bug report on GitHub, see about page for details.</source>
+        <translation>API返回错误。目前没有可用的汇率。请稍后重试或在GitHub上提交错误报告，详情请见“关于”页面。</translation>
+    </message>
+    <message>
+        <source>The server was not able to load rates for this currency. Please select a different base currency or use a different API.</source>
+        <translation>服务器无法加载该货币的汇率。请选择不同的基础货币或使用不同的API。</translation>
+    </message>
+    <message>
+        <source>The API did not respond. Please try again later.</source>
+        <translation>API未响应。请稍后重试。</translation>
+    </message>
+    <message>
+        <source>The API response could not be processed. Please report a bug an GitHub. See About page for details.</source>
+        <translation>无法处理API响应。请在GitHub上报告错误。详情请见“关于”页面。</translation>
+    </message>
+    <message>
+        <source>Bermudian Dollar</source>
+        <translation>百慕大元</translation>
+    </message>
+    <message>
+        <source>Bhutanese Ngultrum</source>
+        <translation>不丹努扎姆</translation>
+    </message>
+    <message>
+        <source>Chilean Unit of Account (UF)</source>
+        <translation>智利会计单位（UF）</translation>
+    </message>
+    <message>
+        <source>Chinese Yuan (offshore)</source>
+        <translation>人民币（离岸）</translation>
+    </message>
+    <message>
+        <source>Falkland Islands Pound</source>
+        <translation>福克兰镑</translation>
+    </message>
+    <message>
+        <source>Faroese Króna</source>
+        <translation>法罗克朗</translation>
+    </message>
+    <message>
+        <source>Guernsey Pound</source>
+        <translation>根西镑</translation>
+    </message>
+    <message>
+        <source>Isle of Man Pound</source>
+        <translation>马恩岛镑</translation>
+    </message>
+    <message>
+        <source>Jersey Pound</source>
+        <translation>泽西镑</translation>
+    </message>
+    <message>
+        <source>Kiribati Dollar</source>
+        <translation>基里巴斯元</translation>
+    </message>
+    <message>
+        <source>Cayman Islands Dollar</source>
+        <translation>开曼群岛元</translation>
+    </message>
+    <message>
+        <source>Saint Helena Pound</source>
+        <translation>圣赫勒拿镑</translation>
+    </message>
+    <message>
+        <source>Tuvaluan Dollar</source>
+        <translation>图瓦卢元</translation>
+    </message>
+    <message>
+        <source>New Taiwan Dollar</source>
+        <translation>新台币</translation>
+    </message>
+    <message>
+        <source>Congo Franc</source>
+        <translation>刚果法郎</translation>
+    </message>
+    <message>
+        <source>Special Drawing Rights</source>
+        <translation>特别提款权</translation>
+    </message>
+    <message>
+        <source>Zimbabwean Gold</source>
+        <translation>津巴布韦黄金</translation>
+    </message>
+    <message>
+        <source>Zimbabwean Dollar</source>
+        <translation>津巴布韦元</translation>
     </message>
 </context>
 </TS>

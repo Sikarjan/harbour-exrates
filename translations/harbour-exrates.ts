@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="de_DE">
 <context>
     <name>AboutPage</name>
     <message>
@@ -13,12 +13,12 @@
     </message>
     <message>
         <source>
-&lt;p&gt;Currently this app only uses only open source apis to get exchange rates. The following apis are used:
+&lt;p&gt;Currently this app uses only open source apis to get exchange rates. The following APIs are used:
 &lt;ul&gt;
     &lt;li&gt;&lt;a href=&quot;https://www.floatrates.com/indes.php&quot;&gt;FloatRates-API&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;https://www.exchangerate-api.com/index.php&quot;&gt;ExchangeRate-API&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-The apis provide rates for different currencies therefore the currency your are looking for might not be available. Also the rates are only updated once per day.&lt;/p&gt;
+The APIs provide rates for different currencies therefore the currency your are looking for might not be available. Also the rates are only updated once per day.&lt;/p&gt;
 &lt;p&gt;Please support me by sending bug reports or suggestions via Github. You can find the project &lt;a href=&quot;https://github.com/Sikarjan/harbour-exrates&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
@@ -170,17 +170,29 @@ The apis provide rates for different currencies therefore the currency your are 
         <source>Puts the selected currency on top of &apos;Convert to&apos; list.</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>API Token for personal access to ExchangeRate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Personal access tokens</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Here personal access tokens for comercial websites can be added. Most websites offer a free plan for personal use.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>parser</name>
-    <message>
-        <source>The api responded with an error. Currently no exchange rates are available. Please try again later or file a bug report on GitHub, see about page for details.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>The api did not respond. Please try again later.</source>
-        <translation type="unfinished"></translation>
-    </message>
     <message>
         <source>U.A.E Dirham</source>
         <translation type="unfinished"></translation>
@@ -698,10 +710,6 @@ The apis provide rates for different currencies therefore the currency your are 
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>New Taiwan Dollar </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Tanzanian Shilling</source>
         <translation type="unfinished"></translation>
     </message>
@@ -770,10 +778,6 @@ The apis provide rates for different currencies therefore the currency your are 
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>The server was not able to load rates for this currency. Please select a different base currency.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Cambodian Riel</source>
         <translation type="unfinished"></translation>
     </message>
@@ -783,6 +787,94 @@ The apis provide rates for different currencies therefore the currency your are 
     </message>
     <message>
         <source>No match</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>The API responded with an error. Currently no exchange rates are available. Please try again later or file a bug report on GitHub, see about page for details.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>The API did not respond. Please try again later.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Bermudian Dollar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Bhutanese Ngultrum</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Chilean Unit of Account (UF)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Chinese Yuan (offshore)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Falkland Islands Pound</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Faroese Króna</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Guernsey Pound</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Isle of Man Pound</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Jersey Pound</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Kiribati Dollar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cayman Islands Dollar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Saint Helena Pound</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Tuvaluan Dollar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>New Taiwan Dollar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Congo Franc</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Special Drawing Rights</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Zimbabwean Gold</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Zimbabwean Dollar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>The server was not able to load rates for this currency. Please select a different base currency or use a different API.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>The API response could not be processed. Please report a bug an GitHub. See About page for details.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

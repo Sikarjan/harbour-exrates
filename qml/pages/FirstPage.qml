@@ -51,11 +51,12 @@ Page {
         contentHeight: column.height
         VerticalScrollDecorator {}
 
+        // Error Message
         Rectangle {
             id: popUp
             anchors.fill: parent
             z: 500
-            color: Qt.rgba(0, 0, 0, 0.6)
+            color: Qt.rgba(0, 0, 0, 0.7)
             visible: msg !== ""
 
             default property alias msg: msgBox.text
@@ -211,7 +212,14 @@ Page {
                         id: line
                         x: Theme.horizontalPageMargin
                         spacing: Theme.paddingMedium
-                        Image { source: "qrc:/icons/flags/"+ currency + ".png"}
+                        Image {
+                            source: "qrc:/icons/flags/"+ currency + ".png"
+                            onStatusChanged: {
+                                if(status === Image.Error){
+                                    source = "qrc:/icons/flags/placeholder.png"
+                                }
+                            }
+                        }
                         Label { text: cName; width: line.contentWidth; clip: true }
                         Label { text: currency; width: Theme.fontSizeMedium*2 }
                         Label {
