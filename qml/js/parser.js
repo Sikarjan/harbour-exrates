@@ -11,13 +11,15 @@ function getBaseRates(currency, save){
 
     if(rateModel.source === 0){
         url = "https://www.floatrates.com/daily/"+currency+".json"
-    }else{
+    }else if(rateModel.source === 1){
         url = "https://v6.exchangerate-api.com/v6/"+rateModel.apiKey+"/latest/"+currency
+    }else if(rateModel.source === 2){
+        url = "https://api.frankfurter.dev/v2/rates?base="+currency
     }
-
+console.log(url)
     xhr.open("GET", url);
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-console.log(url)
+
     xhr.onreadystatechange = function() {
       if(xhr.readyState === 4){
         if(xhr.status === 200){
@@ -52,17 +54,24 @@ function updateBaseRateModel(){
     baseRateModelCopy = []
 
     if(rateModel.source === 0){
-        baseRateModel.append({"currency": "EUR", "cName": "Euro"})
-        baseRateModelCopy.push({"currency": "EUR", "cName": "Euro"})
+        baseRateModel.append({"currency": "EUR", "cName": cNames["EUR"]})
+        baseRateModelCopy.push({"currency": "EUR", "cName": cNames["EUR"]})
         response = sortByProperty(response, "name")
         for(var i in response){
             baseRateModel.append({"currency": response[i].code, "cName": cNames[response[i].code]})
             baseRateModelCopy.push({"currency": response[i].code, "cName": cNames[response[i].code]})
         }
-    }else{
+    }else if(rateModel.source === 1){
         for(var currency in response.conversion_rates){
             baseRateModel.append({"currency": currency, "cName": cNames[currency]})
             baseRateModelCopy.push({"currency": currency, "cName": cNames[currency]})
+        }
+    }else if(rateModel.source === 2){
+        baseRateModel.append({"currency": "EUR", "cName": cNames["EUR"]})
+        baseRateModelCopy.push({"currency": "EUR", "cName": cNames["EUR"]})
+        for(var j in response){
+            baseRateModel.append({"currency": response[j].quote, "cName": cNames[response[j].quote]})
+            baseRateModelCopy.push({"currency": response[j].quote, "cName": cNames[response[j].quote]})
         }
     }
 
@@ -127,11 +136,19 @@ function editResponse(baseRate){
         for(var i in response){
             setCurrValue(response[i].code, response[i].rate)
         }
-    }else{
+    }else if(rateModel.source === 1){
         time = new Date(response.time_last_update_unix * 1000);
         for(currency in response.conversion_rates){
             if(currency !== baseRate){
                 setCurrValue(currency, response.conversion_rates[currency])
+            }
+        }
+    }else if(rateModel.source === 2){
+        time = new Date(response[0].date);
+        for(var j in response){
+            currency = response[j].quote
+            if(currency !== baseRate){
+                setCurrValue(currency, response[j].rate)
             }
         }
     }
@@ -199,7 +216,7 @@ function getSettings() {
         var rs = tx.executeSql('SELECT * FROM settings ORDER BY setting');
         if(rs.rows.length > 0){
             for(var i=0;i<rs.rows.length;i++){
-                console.log(rs.rows.item(i).setting +": " +rs.rows.item(i).value)
+//                console.log(rs.rows.item(i).setting +": " +rs.rows.item(i).value)
                 if(rs.rows.item(i).setting === "lastUpdate"){
                     rateModel.rateDate = rs.rows.item(i).value
                 }else if(rs.rows.item(i).setting === "baseCurrency"){
@@ -337,170 +354,170 @@ function sortByProperty(a, prop){
 
 var cNames = {
     "AED": qsTr("U.A.E Dirham"),
-        "AFN": qsTr("Afghan Afghani"),
-        "ALL": qsTr("Albanian Lek"),
-        "AMD": qsTr("Armenia Dram"),
-        "ANG": qsTr("Neth. Antillean Guilder"),
-        "AOA": qsTr("Angolan Kwanza"),
-        "ARS": qsTr("Argentine Peso"),
-        "AUD": qsTr("Australian Dollar"),
-        "AWG": qsTr("Aruban Florin"),
-        "AZN": qsTr("Azerbaijan Manat"),
-        "BAM": qsTr("Bosnia and Herzegovina convertible Mark"),
-        "BBD": qsTr("Barbadian Dollar"),
-        "BDT": qsTr("Bangladeshi Taka"),
-        "BGN": qsTr("Bulgarian Lev"),
-        "BHD": qsTr("Bahrain Dinar"),
-        "BIF": qsTr("Burundian Franc"),
-        "BMD": qsTr("Bermudian Dollar"),
-        "BND": qsTr("Brunei Dollar"),
-        "BOB": qsTr("Bolivian Boliviano"),
-        "BRL": qsTr("Brazilian Real"),
-        "BSD": qsTr("Bahamian Dollar"),
-        "BTN": qsTr("Bhutanese Ngultrum"),
-        "BWP": qsTr("Botswana Pula"),
-        "BYN": qsTr("Belarussian Ruble"),
-        "BZD": qsTr("Belize Dollar"),
-        "CAD": qsTr("Canadian Dollar"),
-        "CDF": qsTr("Congolese Franc"),
-        "CHF": qsTr("Swiss Franc"),
-        "CLF": qsTr("Chilean Unit of Account (UF)"),
-        "CLP": qsTr("Chilean Peso"),
-        "CNH": qsTr("Chinese Yuan (offshore)"),
-        "CNY": qsTr("Chinese Yuan"),
-        "COP": qsTr("Colombian Peso"),
-        "CRC": qsTr("Costa Rican Col\u00f3n"),
-        "CUP": qsTr("Cuban Peso"),
-        "CVE": qsTr("Cape Verde Escudo"),
-        "CZK": qsTr("Czech Koruna"),
-        "DJF": qsTr("Djiboutian Franc"),
-        "DKK": qsTr("Danish Krone"),
-        "DOP": qsTr("Dominican Peso"),
-        "DZD": qsTr("Algerian Dinar"),
-        "EGP": qsTr("Egyptian Pound"),
-        "ERN": qsTr("Eritrean Nakfa"),
-        "ETB": qsTr("Ethiopian Birr"),
-        "EUR": qsTr("Euro"),
-        "FJD": qsTr("Fiji Dollar"),
-        "FKP": qsTr("Falkland Islands Pound"),
-        "FOK": qsTr("Faroese Króna"),
-        "GBP": qsTr("U.K. Pound Sterling"),
-        "GEL": qsTr("Georgian Lari"),
-        "GGP": qsTr("Guernsey Pound"),
-        "GHS": qsTr("Ghanaian Cedi"),
-        "GIP": qsTr("Gibraltar Pound"),
-        "GMD": qsTr("Gambian Dalasi"),
-        "GNF": qsTr("Guinean Franc"),
-        "GTQ": qsTr("Guatemalan Quetzal"),
-        "GYD": qsTr("Guyanese Dollar"),
-        "HKD": qsTr("Hong Kong Dollar"),
-        "HNL": qsTr("Honduran Lempira"),
-        "HRK": qsTr("Croatian Kuna"),
-        "HTG": qsTr("Haitian Gourde"),
-        "HUF": qsTr("Hungarian Forint"),
-        "IDR": qsTr("Indonesian Rupiah"),
-        "ILS": qsTr("Israeli New Sheqel"),
-        "IMP": qsTr("Isle of Man Pound"),
-        "INR": qsTr("Indian Rupee"),
-        "IQD": qsTr("Iraqi Dinar"),
-        "IRR": qsTr("Iranian Rial"),
-        "ISK": qsTr("Icelandic Krona"),
-        "JEP": qsTr("Jersey Pound"),
-        "JMD": qsTr("Jamaican Dollar"),
-        "JOD": qsTr("Jordanian Dinar"),
-        "JPY": qsTr("Japanese Yen"),
-        "KES": qsTr("Kenyan Shilling"),
-        "KGS": qsTr("Kyrgyzstan Som"),
-        "KHR": qsTr("Cambodian Riel"),
-        "KID": qsTr("Kiribati Dollar"),
-        "KMF": qsTr("Comoro Franc"),
-        "KRW": qsTr("South Korean Won"),
-        "KWD": qsTr("Kuwaiti Dinar"),
-        "KYD": qsTr("Cayman Islands Dollar"),
-        "KZT": qsTr("Kazakhstani Tenge"),
-        "LAK": qsTr("Lao Kip"),
-        "LBP": qsTr("Lebanese Pound"),
-        "LKR": qsTr("Sri Lanka Rupee"),
-        "LRD": qsTr("Liberian Dollar"),
-        "LSL": qsTr("Lesotho Loti"),
-        "LYD": qsTr("Libyan Dinar"),
-        "MAD": qsTr("Moroccan Dirham"),
-        "MDL": qsTr("Moldova Lei"),
-        "MGA": qsTr("Malagasy Ariary"),
-        "MKD": qsTr("Macedonian Denar"),
-        "MMK": qsTr("Myanma Kyat"),
-        "MNT": qsTr("Mongolian Togrog"),
-        "MOP": qsTr("Macanese Pataca"),
-        "MRU": qsTr("Mauritanian Ouguiya"),
-        "MUR": qsTr("Mauritian Rupee"),
-        "MVR": qsTr("Maldivian Rufiyaa"),
-        "MWK": qsTr("Malawian Kwacha"),
-        "MXN": qsTr("Mexican Peso"),
-        "MYR": qsTr("Malaysian Ringgit"),
-        "MZN": qsTr("Mozambican Metical"),
-        "NAD": qsTr("Namibian Dollar"),
-        "NGN": qsTr("Nigerian Naira"),
-        "NIO": qsTr("Nicaraguan C\u00f3rdoba"),
-        "NOK": qsTr("Norwegian Krone"),
-        "NPR": qsTr("Nepalese Rupee"),
-        "NZD": qsTr("New Zealand Dollar"),
-        "OMR": qsTr("Omani Rial"),
-        "PAB": qsTr("Panamanian Balboa"),
-        "PEN": qsTr("Peruvian Nuevo Sol"),
-        "PGK": qsTr("Papua New Guinean Kina"),
-        "PHP": qsTr("Philippine Peso"),
-        "PKR": qsTr("Pakistani Rupee"),
-        "PLN": qsTr("Polish Zloty"),
-        "PYG": qsTr("Paraguayan Guaran\u00ed"),
-        "QAR": qsTr("Qatari Rial"),
-        "RON": qsTr("Romanian New Leu"),
-        "RSD": qsTr("Serbian Dinar"),
-        "RUB": qsTr("Russian Rouble"),
-        "RWF": qsTr("Rwandan Franc"),
-        "SAR": qsTr("Saudi Riyal"),
-        "SBD": qsTr("Solomon Islands Dollar"),
-        "SCR": qsTr("Seychelles Rupee"),
-        "SDG": qsTr("Sudanese Pound"),
-        "SEK": qsTr("Swedish Krona"),
-        "SGD": qsTr("Singapore Dollar"),
-        "SHP": qsTr("Saint Helena Pound"),
-        "SLL": qsTr("Sierra Leonean Leone"),
-        "SLE": qsTr("Sierra Leonean Leone"),
-        "SOS": qsTr("Somali Shilling"),
-        "SRD": qsTr("Surinamese Dollar"),
-        "SSP": qsTr("South Sudanese Pound"),
-        "STN": qsTr("S\u00e3o Tom\u00e9 and Pr\u00edncipe Dobra"),
-        "SVC": qsTr("Salvadoran Colon"),
-        "SYP": qsTr("Syrian pound"),
-        "SZL": qsTr("Swazi Lilangeni"),
-        "THB": qsTr("Thai Baht"),
-        "TJS": qsTr("Tajikistan Ruble"),
-        "TMT": qsTr("New Turkmenistan Manat"),
-        "TND": qsTr("Tunisian Dinar"),
-        "TOP": qsTr("Tongan Pa\u02bbanga"),
-        "TRY": qsTr("Turkish Lira"),
-        "TTD": qsTr("Trinidad Tobago Dollar"),
-        "TVD": qsTr("Tuvaluan Dollar"),
-        "TWD": qsTr("New Taiwan Dollar"),
-        "TZS": qsTr("Tanzanian Shilling"),
-        "UAH": qsTr("Ukrainian Hryvnia"),
-        "UGX": qsTr("Ugandan Shilling"),
-        "USD": qsTr("U.S. Dollar"),
-        "UYU": qsTr("Uruguayan Peso"),
-        "UZS": qsTr("Uzbekistan Sum"),
-        "VES": qsTr("Venezuelan Bolivar"),
-        "VND": qsTr("Vietnamese Dong"),
-        "VUV": qsTr("Vanuatu Vatu"),
-        "WST": qsTr("Samoan Tala"),
-        "XAF": qsTr("Central African CFA Franc"),
-        "XCD": qsTr("East Caribbean Dollar"),
-        "XCG": qsTr("Congo Franc"),
-        "XDR": qsTr("Special Drawing Rights"),
-        "XOF": qsTr("West African CFA Franc"),
-        "XPF": qsTr("CFP Franc"),
-        "YER": qsTr("Yemeni Rial"),
-        "ZAR": qsTr("South African Rand"),
-        "ZMW": qsTr("Zambian Kwacha"),
-        "ZWG": qsTr("Zimbabwean Gold"),
-        "ZWL": qsTr("Zimbabwean Dollar")
+    "AFN": qsTr("Afghan Afghani"),
+    "ALL": qsTr("Albanian Lek"),
+    "AMD": qsTr("Armenia Dram"),
+    "ANG": qsTr("Neth. Antillean Guilder"),
+    "AOA": qsTr("Angolan Kwanza"),
+    "ARS": qsTr("Argentine Peso"),
+    "AUD": qsTr("Australian Dollar"),
+    "AWG": qsTr("Aruban Florin"),
+    "AZN": qsTr("Azerbaijan Manat"),
+    "BAM": qsTr("Bosnia and Herzegovina convertible Mark"),
+    "BBD": qsTr("Barbadian Dollar"),
+    "BDT": qsTr("Bangladeshi Taka"),
+    "BGN": qsTr("Bulgarian Lev"),
+    "BHD": qsTr("Bahrain Dinar"),
+    "BIF": qsTr("Burundian Franc"),
+    "BMD": qsTr("Bermudian Dollar"),
+    "BND": qsTr("Brunei Dollar"),
+    "BOB": qsTr("Bolivian Boliviano"),
+    "BRL": qsTr("Brazilian Real"),
+    "BSD": qsTr("Bahamian Dollar"),
+    "BTN": qsTr("Bhutanese Ngultrum"),
+    "BWP": qsTr("Botswana Pula"),
+    "BYN": qsTr("Belarussian Ruble"),
+    "BZD": qsTr("Belize Dollar"),
+    "CAD": qsTr("Canadian Dollar"),
+    "CDF": qsTr("Congolese Franc"),
+    "CHF": qsTr("Swiss Franc"),
+    "CLF": qsTr("Chilean Unit of Account (UF)"),
+    "CLP": qsTr("Chilean Peso"),
+    "CNH": qsTr("Chinese Yuan (offshore)"),
+    "CNY": qsTr("Chinese Yuan"),
+    "COP": qsTr("Colombian Peso"),
+    "CRC": qsTr("Costa Rican Col\u00f3n"),
+    "CUP": qsTr("Cuban Peso"),
+    "CVE": qsTr("Cape Verde Escudo"),
+    "CZK": qsTr("Czech Koruna"),
+    "DJF": qsTr("Djiboutian Franc"),
+    "DKK": qsTr("Danish Krone"),
+    "DOP": qsTr("Dominican Peso"),
+    "DZD": qsTr("Algerian Dinar"),
+    "EGP": qsTr("Egyptian Pound"),
+    "ERN": qsTr("Eritrean Nakfa"),
+    "ETB": qsTr("Ethiopian Birr"),
+    "EUR": qsTr("Euro"),
+    "FJD": qsTr("Fiji Dollar"),
+    "FKP": qsTr("Falkland Islands Pound"),
+    "FOK": qsTr("Faroese Króna"),
+    "GBP": qsTr("U.K. Pound Sterling"),
+    "GEL": qsTr("Georgian Lari"),
+    "GGP": qsTr("Guernsey Pound"),
+    "GHS": qsTr("Ghanaian Cedi"),
+    "GIP": qsTr("Gibraltar Pound"),
+    "GMD": qsTr("Gambian Dalasi"),
+    "GNF": qsTr("Guinean Franc"),
+    "GTQ": qsTr("Guatemalan Quetzal"),
+    "GYD": qsTr("Guyanese Dollar"),
+    "HKD": qsTr("Hong Kong Dollar"),
+    "HNL": qsTr("Honduran Lempira"),
+    "HRK": qsTr("Croatian Kuna"),
+    "HTG": qsTr("Haitian Gourde"),
+    "HUF": qsTr("Hungarian Forint"),
+    "IDR": qsTr("Indonesian Rupiah"),
+    "ILS": qsTr("Israeli New Sheqel"),
+    "IMP": qsTr("Isle of Man Pound"),
+    "INR": qsTr("Indian Rupee"),
+    "IQD": qsTr("Iraqi Dinar"),
+    "IRR": qsTr("Iranian Rial"),
+    "ISK": qsTr("Icelandic Krona"),
+    "JEP": qsTr("Jersey Pound"),
+    "JMD": qsTr("Jamaican Dollar"),
+    "JOD": qsTr("Jordanian Dinar"),
+    "JPY": qsTr("Japanese Yen"),
+    "KES": qsTr("Kenyan Shilling"),
+    "KGS": qsTr("Kyrgyzstan Som"),
+    "KHR": qsTr("Cambodian Riel"),
+    "KID": qsTr("Kiribati Dollar"),
+    "KMF": qsTr("Comoro Franc"),
+    "KRW": qsTr("South Korean Won"),
+    "KWD": qsTr("Kuwaiti Dinar"),
+    "KYD": qsTr("Cayman Islands Dollar"),
+    "KZT": qsTr("Kazakhstani Tenge"),
+    "LAK": qsTr("Lao Kip"),
+    "LBP": qsTr("Lebanese Pound"),
+    "LKR": qsTr("Sri Lanka Rupee"),
+    "LRD": qsTr("Liberian Dollar"),
+    "LSL": qsTr("Lesotho Loti"),
+    "LYD": qsTr("Libyan Dinar"),
+    "MAD": qsTr("Moroccan Dirham"),
+    "MDL": qsTr("Moldova Lei"),
+    "MGA": qsTr("Malagasy Ariary"),
+    "MKD": qsTr("Macedonian Denar"),
+    "MMK": qsTr("Myanma Kyat"),
+    "MNT": qsTr("Mongolian Togrog"),
+    "MOP": qsTr("Macanese Pataca"),
+    "MRU": qsTr("Mauritanian Ouguiya"),
+    "MUR": qsTr("Mauritian Rupee"),
+    "MVR": qsTr("Maldivian Rufiyaa"),
+    "MWK": qsTr("Malawian Kwacha"),
+    "MXN": qsTr("Mexican Peso"),
+    "MYR": qsTr("Malaysian Ringgit"),
+    "MZN": qsTr("Mozambican Metical"),
+    "NAD": qsTr("Namibian Dollar"),
+    "NGN": qsTr("Nigerian Naira"),
+    "NIO": qsTr("Nicaraguan C\u00f3rdoba"),
+    "NOK": qsTr("Norwegian Krone"),
+    "NPR": qsTr("Nepalese Rupee"),
+    "NZD": qsTr("New Zealand Dollar"),
+    "OMR": qsTr("Omani Rial"),
+    "PAB": qsTr("Panamanian Balboa"),
+    "PEN": qsTr("Peruvian Nuevo Sol"),
+    "PGK": qsTr("Papua New Guinean Kina"),
+    "PHP": qsTr("Philippine Peso"),
+    "PKR": qsTr("Pakistani Rupee"),
+    "PLN": qsTr("Polish Zloty"),
+    "PYG": qsTr("Paraguayan Guaran\u00ed"),
+    "QAR": qsTr("Qatari Rial"),
+    "RON": qsTr("Romanian New Leu"),
+    "RSD": qsTr("Serbian Dinar"),
+    "RUB": qsTr("Russian Rouble"),
+    "RWF": qsTr("Rwandan Franc"),
+    "SAR": qsTr("Saudi Riyal"),
+    "SBD": qsTr("Solomon Islands Dollar"),
+    "SCR": qsTr("Seychelles Rupee"),
+    "SDG": qsTr("Sudanese Pound"),
+    "SEK": qsTr("Swedish Krona"),
+    "SGD": qsTr("Singapore Dollar"),
+    "SHP": qsTr("Saint Helena Pound"),
+    "SLL": qsTr("Sierra Leonean Leone"),
+    "SLE": qsTr("Sierra Leonean Leone"),
+    "SOS": qsTr("Somali Shilling"),
+    "SRD": qsTr("Surinamese Dollar"),
+    "SSP": qsTr("South Sudanese Pound"),
+    "STN": qsTr("S\u00e3o Tom\u00e9 and Pr\u00edncipe Dobra"),
+    "SVC": qsTr("Salvadoran Colon"),
+    "SYP": qsTr("Syrian pound"),
+    "SZL": qsTr("Swazi Lilangeni"),
+    "THB": qsTr("Thai Baht"),
+    "TJS": qsTr("Tajikistan Ruble"),
+    "TMT": qsTr("New Turkmenistan Manat"),
+    "TND": qsTr("Tunisian Dinar"),
+    "TOP": qsTr("Tongan Pa\u02bbanga"),
+    "TRY": qsTr("Turkish Lira"),
+    "TTD": qsTr("Trinidad Tobago Dollar"),
+    "TVD": qsTr("Tuvaluan Dollar"),
+    "TWD": qsTr("New Taiwan Dollar"),
+    "TZS": qsTr("Tanzanian Shilling"),
+    "UAH": qsTr("Ukrainian Hryvnia"),
+    "UGX": qsTr("Ugandan Shilling"),
+    "USD": qsTr("U.S. Dollar"),
+    "UYU": qsTr("Uruguayan Peso"),
+    "UZS": qsTr("Uzbekistan Sum"),
+    "VES": qsTr("Venezuelan Bolivar"),
+    "VND": qsTr("Vietnamese Dong"),
+    "VUV": qsTr("Vanuatu Vatu"),
+    "WST": qsTr("Samoan Tala"),
+    "XAF": qsTr("Central African CFA Franc"),
+    "XCD": qsTr("East Caribbean Dollar"),
+    "XCG": qsTr("Congo Franc"),
+    "XDR": qsTr("Special Drawing Rights"),
+    "XOF": qsTr("West African CFA Franc"),
+    "XPF": qsTr("CFP Franc"),
+    "YER": qsTr("Yemeni Rial"),
+    "ZAR": qsTr("South African Rand"),
+    "ZMW": qsTr("Zambian Kwacha"),
+    "ZWG": qsTr("Zimbabwean Gold"),
+    "ZWL": qsTr("Zimbabwean Dollar")
 }

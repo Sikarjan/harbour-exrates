@@ -1,6 +1,7 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
 import QtQuick.LocalStorage 2.0
+import QtQuick.XmlListModel 2.0
 import "pages"
 import "js/parser.js" as Parser
 import "js/globals.js" as Globals
@@ -49,7 +50,6 @@ ApplicationWindow
             Parser.getSettings()
             if(rateModel.apiKey == ""){
                 rateModel.apiKey = Globals.exchangeRateKey
-                console.log('setting standard key')
             }
         }
     }

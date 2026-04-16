@@ -159,7 +159,7 @@ API poskytují kurzy pro různé měny, ale hledaná měna nemusí být vždy do
     </message>
     <message>
         <source>This button resets the &apos;Convert to&apos; list to an alphabetical order.</source>
-        <translation>Toto tlačítko obnoví seznam "Převést na" do abecedního pořadí.</translation>
+        <translation>Toto tlačítko obnoví seznam &quot;Převést na&quot; do abecedního pořadí.</translation>
     </message>
     <message>
         <source>Requires a rate update or selection of a new base rate to take affect.</source>
@@ -171,11 +171,11 @@ API poskytují kurzy pro různé měny, ale hledaná měna nemusí být vždy do
     </message>
     <message>
         <source>Rearrange &apos;Convert to&apos; list</source>
-        <translation>Upravit seznam "Převést na"</translation>
+        <translation>Upravit seznam &quot;Převést na&quot;</translation>
     </message>
     <message>
         <source>Puts the selected currency on top of &apos;Convert to&apos; list.</source>
-        <translation>Přesune vybranou měnu na začátek seznamu "Převést na".</translation>
+        <translation>Přesune vybranou měnu na začátek seznamu &quot;Převést na&quot;.</translation>
     </message>
     <message>
         <source>Save</source>
@@ -798,7 +798,7 @@ API poskytují kurzy pro různé měny, ale hledaná měna nemusí být vždy do
     </message>
     <message>
         <source>The API responded with an error. Currently no exchange rates are available. Please try again later or file a bug report on GitHub, see about page for details.</source>
-        <translation>API vrátilo chybu. Momentálně nejsou dostupné žádné směnné kurzy. Zkuste to prosím později nebo nahlašte chybu na GitHubu, podrobnosti najdete na stránce "O aplikaci".</translation>
+        <translation>API vrátilo chybu. Momentálně nejsou dostupné žádné směnné kurzy. Zkuste to prosím později nebo nahlašte chybu na GitHubu, podrobnosti najdete na stránce &quot;O aplikaci&quot;.</translation>
     </message>
     <message>
         <source>The server was not able to load rates for this currency. Please select a different base currency or use a different API.</source>
@@ -810,7 +810,7 @@ API poskytují kurzy pro různé měny, ale hledaná měna nemusí být vždy do
     </message>
     <message>
         <source>The API response could not be processed. Please report a bug an GitHub. See About page for details.</source>
-        <translation>Odpověď API nemohla být zpracována. Nahlašte prosím chybu na GitHubu. Podrobnosti najdete na stránce "O aplikaci".</translation>
+        <translation>Odpověď API nemohla být zpracována. Nahlašte prosím chybu na GitHubu. Podrobnosti najdete na stránce &quot;O aplikaci&quot;.</translation>
     </message>
     <message>
         <source>Bermudian Dollar</source>

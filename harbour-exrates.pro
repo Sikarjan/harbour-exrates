@@ -39,7 +39,8 @@ TRANSLATIONS += translations/harbour-exrates-de.ts \
     translations/harbour-exrates-fr.ts \
     translations/harbour-exrates-zh_CN.ts\
     translations/harbour-exrates-cs.ts \
-    translations/harbour-exrates-sv.ts
+    translations/harbour-exrates-sv.ts \
+    translations/harbour-exrates-nb_NO.ts
 
 RESOURCES += \
     res.qrc

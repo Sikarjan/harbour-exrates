@@ -159,7 +159,7 @@ API:erna tillhandahåller kurser för olika valutor, så den valuta du söker ka
     </message>
     <message>
         <source>This button resets the &apos;Convert to&apos; list to an alphabetical order.</source>
-        <translation>Den här knappen återställer listan "Omvandla till" till alfabetisk ordning.</translation>
+        <translation>Den här knappen återställer listan &quot;Omvandla till&quot; till alfabetisk ordning.</translation>
     </message>
     <message>
         <source>Requires a rate update or selection of a new base rate to take affect.</source>
@@ -171,11 +171,11 @@ API:erna tillhandahåller kurser för olika valutor, så den valuta du söker ka
     </message>
     <message>
         <source>Rearrange &apos;Convert to&apos; list</source>
-        <translation>Sortera om listan "Omvandla till"</translation>
+        <translation>Sortera om listan &quot;Omvandla till&quot;</translation>
     </message>
     <message>
         <source>Puts the selected currency on top of &apos;Convert to&apos; list.</source>
-        <translation>Placerar den valda valutan överst i listan "Omvandla till".</translation>
+        <translation>Placerar den valda valutan överst i listan &quot;Omvandla till&quot;.</translation>
     </message>
     <message>
         <source>Save</source>
@@ -798,7 +798,7 @@ API:erna tillhandahåller kurser för olika valutor, så den valuta du söker ka
     </message>
     <message>
         <source>The API responded with an error. Currently no exchange rates are available. Please try again later or file a bug report on GitHub, see about page for details.</source>
-        <translation>API:et svarade med ett fel. För närvarande finns inga växelkurser tillgängliga. Försök igen senare eller rapportera ett fel på GitHub, se sidan "Om" för mer information.</translation>
+        <translation>API:et svarade med ett fel. För närvarande finns inga växelkurser tillgängliga. Försök igen senare eller rapportera ett fel på GitHub, se sidan &quot;Om&quot; för mer information.</translation>
     </message>
     <message>
         <source>The server was not able to load rates for this currency. Please select a different base currency or use a different API.</source>
@@ -810,7 +810,7 @@ API:erna tillhandahåller kurser för olika valutor, så den valuta du söker ka
     </message>
     <message>
         <source>The API response could not be processed. Please report a bug an GitHub. See About page for details.</source>
-        <translation>API-svaret kunde inte bearbetas. Rapportera ett fel på GitHub. Se sidan "Om" för mer information.</translation>
+        <translation>API-svaret kunde inte bearbetas. Rapportera ett fel på GitHub. Se sidan &quot;Om&quot; för mer information.</translation>
     </message>
     <message>
         <source>Bermudian Dollar</source>

@@ -113,10 +113,10 @@ Page {
                         rateModel.rateDate = ""
                         Parser.setSetting("baseCurrency", currency)
                         Parser.setSetting("baseName", cName)
-                        if(rateModel.cName !== ""){
+/*                        if(rateModel.cName !== ""){
                             rateModel.cName = rateModel.get(0).currency
                             rateModel.rate = rateModel.get(0).rate
-                        }
+                        }*/
                         page.inProgress = Parser.getBaseRates(currency, true)
                     }
                 }

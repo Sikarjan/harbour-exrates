@@ -47,6 +47,7 @@ Dialog {
                     menu: ContextMenu {
                         MenuItem { text: "floatrates.com" }
                         MenuItem { text: "exchangerate-api.com" }
+                        MenuItem { text: "frankfurter.app" }
                     }
 
                     onCurrentIndexChanged: {
@@ -99,6 +100,8 @@ Dialog {
 
             Column {
                 width: parent.width
+                spacing: Theme.paddingMedium
+                visible: source.currentIndex === 1
 
                 Label {
                     width: parent.width -2*x
